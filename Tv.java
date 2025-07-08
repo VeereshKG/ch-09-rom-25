@@ -1,17 +1,17 @@
-class Projector{
+class Tv{
 
  static  boolean onOrOff;
-  static int maxVolume = 8;
+static int maxVolume = 15;
 static int minVolume;
-static int currentVolume = 3;
+static int currentVolume = 7;
 
 public static void onOrOff(){
  if(onOrOff == false){
  onOrOff = true;
- System.out.println("the Projector is on");
+ System.out.println("the Tv is on");
  }else{
  onOrOff = false;
- System.out.println("the Projector is off");
+ System.out.println("the Tv is off");
  }
  
    }
@@ -26,7 +26,7 @@ else{
 System.out.println("max volume reached");
 }
 else{
-	System.out.println("please turn on Projector");
+	System.out.println(" turn on Tv");
 }
 }
 
@@ -36,12 +36,12 @@ public static void decreaseVolume(){
 	if(onOrOff == true)
 		if(minVolume<currentVolume){
 			currentVolume = currentVolume-1;
-System.out.println("the Current volume is"+currentVolume);
+               System.out.println("the Current volume is"+currentVolume);
 			}else{
 				System.out.println("min volume reached");
 			}
 		else{
-			System.out.println("please turn on Projector");
+			System.out.println("please turn on Tv");
 		}	
 }
 }

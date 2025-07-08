@@ -1,7 +1,30 @@
 class ProjectorRunner{
-public static void main(String[]image){
-System.out.println("Main Started");
-Projector.projector();
-System.out.println("Main ended");
+	public static void main(String[]project){
+		
+		Projector.onOrOff();
+		
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		Projector.increasevolume();
+		
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		Projector.decreaseVolume();
+		
+		
+	}
 
-}}
+
+}

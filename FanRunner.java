@@ -1,7 +1,25 @@
 class FanRunner{
-public static void main(String[]fans){
-System.out.println("Main Started");
-Fan.fan();
-System.out.println("Main ended");
+	
+	public static void main (String []fan){
+		Fan.onOrOff();
+		
+		Fan.increaseSpeed();
+		Fan.increaseSpeed();  
+		Fan.increaseSpeed();
+		Fan.increaseSpeed();
+		Fan.increaseSpeed();
+		Fan.increaseSpeed();
+		
+		Fan.decreaseSpeed();
+        Fan.decreaseSpeed();
+		Fan.decreaseSpeed();
+		Fan.decreaseSpeed();
+		Fan.decreaseSpeed();
+		Fan.decreaseSpeed();
+		
+		
+	}
 
-}}
+
+
+}
