@@ -1,286 +1,266 @@
-class CourtCaseRunner {
-
-	public static void main(String[] court) {
-
+class CourtCaseRunner{
+	
+	public static void main(String[] court){
 		CourtCase ref1 = new CourtCase();
 		ref1.caseId = 1;
-		ref1.caseTitle = "State vs Sharma";
-		ref1.courtName = "Supreme Court";
-		ref1.judgeName = "Justice Rao";
-		ref1.caseType = "Criminal";
-		ref1.isClosed = false;
-		System.out.println("the case id is " + ref1.caseId);
-		System.out.println("the case title is " + ref1.caseTitle);
-		System.out.println("the court name is " + ref1.courtName);
-		System.out.println("the judge name is " + ref1.judgeName);
-		System.out.println("the case type is " + ref1.caseType);
-		System.out.println("is case closed? " + ref1.isClosed);
-
+		ref1.caseName = "accident";
+		ref1.lawerName = "raju";
+		ref1.caseOpenDate = "12/05/2000";
+		ref1.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref1.caseId);
+		System.out.println("the case name is "+ref1.caseName);
+		System.out.println("the lawerName is "+ref1.lawerName);
+		System.out.println("the case open Date "+ref1.caseOpenDate);
+		System.out.println("is case closed "+ref1.isCaseClosed);
+		
 		CourtCase ref2 = new CourtCase();
 		ref2.caseId = 2;
-		ref2.caseTitle = "Mehta vs State";
-		ref2.courtName = "High Court Delhi";
-		ref2.judgeName = "Justice Banerjee";
-		ref2.caseType = "Civil";
-		ref2.isClosed = true;
-		System.out.println("the case id is " + ref2.caseId);
-		System.out.println("the case title is " + ref2.caseTitle);
-		System.out.println("the court name is " + ref2.courtName);
-		System.out.println("the judge name is " + ref2.judgeName);
-		System.out.println("the case type is " + ref2.caseType);
-		System.out.println("is case closed? " + ref2.isClosed);
-
+		ref2.caseName = "land";
+		ref2.lawerName = "ravi";
+		ref2.caseOpenDate = "12/05/2005";
+		ref2.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref2.caseId);
+		System.out.println("the case name is "+ref2.caseName);
+		System.out.println("the lawerName is "+ref2.lawerName);
+		System.out.println("the case open Date "+ref2.caseOpenDate);
+		System.out.println("is case closed "+ref2.isCaseClosed);
+		
 		CourtCase ref3 = new CourtCase();
 		ref3.caseId = 3;
-		ref3.caseTitle = "Patel vs Desai";
-		ref3.courtName = "District Court Mumbai";
-		ref3.judgeName = "Justice Iyer";
-		ref3.caseType = "Family";
-		ref3.isClosed = false;
-		System.out.println("the case id is " + ref3.caseId);
-		System.out.println("the case title is " + ref3.caseTitle);
-		System.out.println("the court name is " + ref3.courtName);
-		System.out.println("the judge name is " + ref3.judgeName);
-		System.out.println("the case type is " + ref3.caseType);
-		System.out.println("is case closed? " + ref3.isClosed);
-
+		ref3.caseName = "house";
+		ref3.lawerName = "veeresh";
+		ref3.caseOpenDate = "25/02/2024";
+		ref3.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref3.caseId);
+		System.out.println("the case name is "+ref3.caseName);
+		System.out.println("the lawerName is "+ref3.lawerName);
+		System.out.println("the case open Date "+ref3.caseOpenDate);
+		System.out.println("is case closed "+ref3.isCaseClosed);
+		
 		CourtCase ref4 = new CourtCase();
 		ref4.caseId = 4;
-		ref4.caseTitle = "Khan vs Khan";
-		ref4.courtName = "Family Court Lucknow";
-		ref4.judgeName = "Justice Thomas";
-		ref4.caseType = "Divorce";
-		ref4.isClosed = true;
-		System.out.println("the case id is " + ref4.caseId);
-		System.out.println("the case title is " + ref4.caseTitle);
-		System.out.println("the court name is " + ref4.courtName);
-		System.out.println("the judge name is " + ref4.judgeName);
-		System.out.println("the case type is " + ref4.caseType);
-		System.out.println("is case closed? " + ref4.isClosed);
-
+		ref4.caseName = "accident";
+		ref4.lawerName = "raju";
+		ref4.caseOpenDate = "12/05/2000";
+		ref4.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref4.caseId);
+		System.out.println("the case name is "+ref4.caseName);
+		System.out.println("the lawerName is "+ref4.lawerName);
+		System.out.println("the case open Date "+ref4.caseOpenDate);
+		System.out.println("is case closed "+ref4.isCaseClosed);
+		
 		CourtCase ref5 = new CourtCase();
 		ref5.caseId = 5;
-		ref5.caseTitle = "IT Dept vs Roy";
-		ref5.courtName = "Tax Court Pune";
-		ref5.judgeName = "Justice Narang";
-		ref5.caseType = "Tax";
-		ref5.isClosed = false;
-		System.out.println("the case id is " + ref5.caseId);
-		System.out.println("the case title is " + ref5.caseTitle);
-		System.out.println("the court name is " + ref5.courtName);
-		System.out.println("the judge name is " + ref5.judgeName);
-		System.out.println("the case type is " + ref5.caseType);
-		System.out.println("is case closed? " + ref5.isClosed);
-
+		ref5.caseName = "divorce";
+		ref5.lawerName = "shashank";
+		ref5.caseOpenDate = "02/02/2020";
+		ref5.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref5.caseId);
+		System.out.println("the case name is "+ref5.caseName);
+		System.out.println("the lawerName is "+ref5.lawerName);
+		System.out.println("the case open Date "+ref5.caseOpenDate);
+		System.out.println("is case closed "+ref5.isCaseClosed);
+		
 		CourtCase ref6 = new CourtCase();
 		ref6.caseId = 6;
-		ref6.caseTitle = "Green NGO vs Factory Ltd";
-		ref6.courtName = "NGT";
-		ref6.judgeName = "Justice Kamat";
-		ref6.caseType = "Environmental";
-		ref6.isClosed = true;
-		System.out.println("the case id is " + ref6.caseId);
-		System.out.println("the case title is " + ref6.caseTitle);
-		System.out.println("the court name is " + ref6.courtName);
-		System.out.println("the judge name is " + ref6.judgeName);
-		System.out.println("the case type is " + ref6.caseType);
-		System.out.println("is case closed? " + ref6.isClosed);
-
+		ref6.caseName = "tenant dispute";
+		ref6.lawerName = "chethan";
+		ref6.caseOpenDate = "12/05/1999";
+		ref6.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref6.caseId);
+		System.out.println("the case name is "+ref6.caseName);
+		System.out.println("the lawerName is "+ref6.lawerName);
+		System.out.println("the case open Date "+ref6.caseOpenDate);
+		System.out.println("is case closed "+ref6.isCaseClosed);
+		
 		CourtCase ref7 = new CourtCase();
 		ref7.caseId = 7;
-		ref7.caseTitle = "Sharma vs University";
-		ref7.courtName = "High Court Punjab";
-		ref7.judgeName = "Justice Malik";
-		ref7.caseType = "Education";
-		ref7.isClosed = false;
-		System.out.println("the case id is " + ref7.caseId);
-		System.out.println("the case title is " + ref7.caseTitle);
-		System.out.println("the court name is " + ref7.courtName);
-		System.out.println("the judge name is " + ref7.judgeName);
-		System.out.println("the case type is " + ref7.caseType);
-		System.out.println("is case closed? " + ref7.isClosed);
-
+		ref7.caseName = "land dispute";
+		ref7.lawerName = "pramod";
+		ref7.caseOpenDate = "25/02/1995";
+		ref7.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref7.caseId);
+		System.out.println("the case name is "+ref7.caseName);
+		System.out.println("the lawerName is "+ref7.lawerName);
+		System.out.println("the case open Date "+ref7.caseOpenDate);
+		System.out.println("is case closed "+ref7.isCaseClosed);
+		
 		CourtCase ref8 = new CourtCase();
 		ref8.caseId = 8;
-		ref8.caseTitle = "Corporate vs Union";
-		ref8.courtName = "Labour Court";
-		ref8.judgeName = "Justice Bhat";
-		ref8.caseType = "Labour";
-		ref8.isClosed = false;
-		System.out.println("the case id is " + ref8.caseId);
-		System.out.println("the case title is " + ref8.caseTitle);
-		System.out.println("the court name is " + ref8.courtName);
-		System.out.println("the judge name is " + ref8.judgeName);
-		System.out.println("the case type is " + ref8.caseType);
-		System.out.println("is case closed? " + ref8.isClosed);
-
+		ref8.caseName = "home dispute";
+		ref8.lawerName = "teja";
+		ref8.caseOpenDate = "12/05/1999";
+		ref8.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref8.caseId);
+		System.out.println("the case name is "+ref8.caseName);
+		System.out.println("the lawerName is "+ref8.lawerName);
+		System.out.println("the case open Date "+ref8.caseOpenDate);
+		System.out.println("is case closed "+ref8.isCaseClosed);
+		
 		CourtCase ref9 = new CourtCase();
 		ref9.caseId = 9;
-		ref9.caseTitle = "Election Commission vs Candidate";
-		ref9.courtName = "Supreme Court";
-		ref9.judgeName = "Justice Prasad";
-		ref9.caseType = "Election";
-		ref9.isClosed = true;
-		System.out.println("the case id is " + ref9.caseId);
-		System.out.println("the case title is " + ref9.caseTitle);
-		System.out.println("the court name is " + ref9.courtName);
-		System.out.println("the judge name is " + ref9.judgeName);
-		System.out.println("the case type is " + ref9.caseType);
-		System.out.println("is case closed? " + ref9.isClosed);
-
+		ref9.caseName = "tenant dispute";
+		ref9.lawerName = "shiva";
+		ref9.caseOpenDate = "25/06/2024";
+		ref9.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref9.caseId);
+		System.out.println("the case name is "+ref9.caseName);
+		System.out.println("the lawerName is "+ref9.lawerName);
+		System.out.println("the case open Date "+ref9.caseOpenDate);
+		System.out.println("is case closed "+ref9.isCaseClosed);
+		
 		CourtCase ref10 = new CourtCase();
 		ref10.caseId = 10;
-		ref10.caseTitle = "XYZ vs ABC Pvt Ltd";
-		ref10.courtName = "Consumer Court";
-		ref10.judgeName = "Justice Sen";
-		ref10.caseType = "Consumer";
-		ref10.isClosed = true;
-		System.out.println("the case id is " + ref10.caseId);
-		System.out.println("the case title is " + ref10.caseTitle);
-		System.out.println("the court name is " + ref10.courtName);
-		System.out.println("the judge name is " + ref10.judgeName);
-		System.out.println("the case type is " + ref10.caseType);
-		System.out.println("is case closed? " + ref10.isClosed);
+		ref10.caseName = "vehicle dispute";
+		ref10.lawerName = "chiru";
+		ref10.caseOpenDate = "12/05/2006";
+		ref10.isCaseClosed = true;
 		
-				CourtCase ref11 = new CourtCase();
+		System.out.println("the case id is "+ref10.caseId);
+		System.out.println("the case name is "+ref10.caseName);
+		System.out.println("the lawerName is "+ref10.lawerName);
+		System.out.println("the case open Date "+ref10.caseOpenDate);
+		System.out.println("is case closed "+ref10.isCaseClosed);
+		
+		CourtCase ref11 = new CourtCase();
 		ref11.caseId = 11;
-		ref11.caseTitle = "Builder vs Apartment Owners";
-		ref11.courtName = "Consumer Court";
-		ref11.judgeName = "Justice Naik";
-		ref11.caseType = "Consumer";
-		ref11.isClosed = false;
-		System.out.println("the case id is " + ref11.caseId);
-		System.out.println("the case title is " + ref11.caseTitle);
-		System.out.println("the court name is " + ref11.courtName);
-		System.out.println("the judge name is " + ref11.judgeName);
-		System.out.println("the case type is " + ref11.caseType);
-		System.out.println("is case closed? " + ref11.isClosed);
-
+		ref11.caseName = "accident";
+		ref11.lawerName = "raju";
+		ref11.caseOpenDate = "12/05/2000";
+		ref11.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref11.caseId);
+		System.out.println("the case name is "+ref11.caseName);
+		System.out.println("the lawerName is "+ref11.lawerName);
+		System.out.println("the case open Date "+ref11.caseOpenDate);
+		System.out.println("is case closed "+ref11.isCaseClosed);
+		
 		CourtCase ref12 = new CourtCase();
 		ref12.caseId = 12;
-		ref12.caseTitle = "Media Group vs Activist";
-		ref12.courtName = "High Court Kolkata";
-		ref12.judgeName = "Justice Ghosh";
-		ref12.caseType = "Defamation";
-		ref12.isClosed = true;
-		System.out.println("the case id is " + ref12.caseId);
-		System.out.println("the case title is " + ref12.caseTitle);
-		System.out.println("the court name is " + ref12.courtName);
-		System.out.println("the judge name is " + ref12.judgeName);
-		System.out.println("the case type is " + ref12.caseType);
-		System.out.println("is case closed? " + ref12.isClosed);
-
+		ref12.caseName = "bike accident";
+		ref12.lawerName = "jeeva";
+		ref12.caseOpenDate = "12/05/2025";
+		ref12.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref12.caseId);
+		System.out.println("the case name is "+ref12.caseName);
+		System.out.println("the lawerName is "+ref12.lawerName);
+		System.out.println("the case open Date "+ref12.caseOpenDate);
+		System.out.println("is case closed "+ref12.isCaseClosed);
+		
 		CourtCase ref13 = new CourtCase();
 		ref13.caseId = 13;
-		ref13.caseTitle = "Tenant vs Landlord";
-		ref13.courtName = "Civil Court Hyderabad";
-		ref13.judgeName = "Justice Lal";
-		ref13.caseType = "Property";
-		ref13.isClosed = false;
-		System.out.println("the case id is " + ref13.caseId);
-		System.out.println("the case title is " + ref13.caseTitle);
-		System.out.println("the court name is " + ref13.courtName);
-		System.out.println("the judge name is " + ref13.judgeName);
-		System.out.println("the case type is " + ref13.caseType);
-		System.out.println("is case closed? " + ref13.isClosed);
-
+		ref13.caseName = "car accident";
+		ref13.lawerName = "veena";
+		ref13.caseOpenDate = "15/03/2023";
+		ref13.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref13.caseId);
+		System.out.println("the case name is "+ref13.caseName);
+		System.out.println("the lawerName is "+ref13.lawerName);
+		System.out.println("the case open Date "+ref13.caseOpenDate);
+		System.out.println("is case closed "+ref13.isCaseClosed);
+		
 		CourtCase ref14 = new CourtCase();
 		ref14.caseId = 14;
-		ref14.caseTitle = "Govt vs Hospital";
-		ref14.courtName = "Medical Tribunal";
-		ref14.judgeName = "Justice Saxena";
-		ref14.caseType = "Medical Negligence";
-		ref14.isClosed = false;
-		System.out.println("the case id is " + ref14.caseId);
-		System.out.println("the case title is " + ref14.caseTitle);
-		System.out.println("the court name is " + ref14.courtName);
-		System.out.println("the judge name is " + ref14.judgeName);
-		System.out.println("the case type is " + ref14.caseType);
-		System.out.println("is case closed? " + ref14.isClosed);
-
+		ref14.caseName = "accident";
+		ref14.lawerName = "kiran";
+		ref14.caseOpenDate = "12/05/2000";
+		ref14.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref14.caseId);
+		System.out.println("the case name is "+ref14.caseName);
+		System.out.println("the lawerName is "+ref14.lawerName);
+		System.out.println("the case open Date "+ref14.caseOpenDate);
+		System.out.println("is case closed "+ref14.isCaseClosed);
+		
 		CourtCase ref15 = new CourtCase();
 		ref15.caseId = 15;
-		ref15.caseTitle = "Bank vs Sharma";
-		ref15.courtName = "Debt Recovery Tribunal";
-		ref15.judgeName = "Justice Kale";
-		ref15.caseType = "Finance";
-		ref15.isClosed = true;
-		System.out.println("the case id is " + ref15.caseId);
-		System.out.println("the case title is " + ref15.caseTitle);
-		System.out.println("the court name is " + ref15.courtName);
-		System.out.println("the judge name is " + ref15.judgeName);
-		System.out.println("the case type is " + ref15.caseType);
-		System.out.println("is case closed? " + ref15.isClosed);
-
+		ref15.caseName = "divorce";
+		ref15.lawerName = "puni";
+		ref15.caseOpenDate = "02/04/2006";
+		ref15.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref15.caseId);
+		System.out.println("the case name is "+ref15.caseName);
+		System.out.println("the lawerName is "+ref15.lawerName);
+		System.out.println("the case open Date "+ref15.caseOpenDate);
+		System.out.println("is case closed "+ref15.isCaseClosed);
+		
 		CourtCase ref16 = new CourtCase();
 		ref16.caseId = 16;
-		ref16.caseTitle = "College vs Student";
-		ref16.courtName = "Education Tribunal";
-		ref16.judgeName = "Justice Reddy";
-		ref16.caseType = "Education";
-		ref16.isClosed = false;
-		System.out.println("the case id is " + ref16.caseId);
-		System.out.println("the case title is " + ref16.caseTitle);
-		System.out.println("the court name is " + ref16.courtName);
-		System.out.println("the judge name is " + ref16.judgeName);
-		System.out.println("the case type is " + ref16.caseType);
-		System.out.println("is case closed? " + ref16.isClosed);
-
+		ref16.caseName = "tenant dispute";
+		ref16.lawerName = "chethan";
+		ref16.caseOpenDate = "12/05/1999";
+		ref16.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref16.caseId);
+		System.out.println("the case name is "+ref16.caseName);
+		System.out.println("the lawerName is "+ref16.lawerName);
+		System.out.println("the case open Date "+ref16.caseOpenDate);
+		System.out.println("is case closed "+ref16.isCaseClosed);
+		
 		CourtCase ref17 = new CourtCase();
 		ref17.caseId = 17;
-		ref17.caseTitle = "NGO vs State Forest Dept";
-		ref17.courtName = "Green Tribunal";
-		ref17.judgeName = "Justice Menon";
-		ref17.caseType = "Environmental";
-		ref17.isClosed = false;
-		System.out.println("the case id is " + ref17.caseId);
-		System.out.println("the case title is " + ref17.caseTitle);
-		System.out.println("the court name is " + ref17.courtName);
-		System.out.println("the judge name is " + ref17.judgeName);
-		System.out.println("the case type is " + ref17.caseType);
-		System.out.println("is case closed? " + ref17.isClosed);
-
+		ref17.caseName = "land dispute";
+		ref17.lawerName = "pramod";
+		ref17.caseOpenDate = "25/02/1995";
+		ref17.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref17.caseId);
+		System.out.println("the case name is "+ref17.caseName);
+		System.out.println("the lawerName is "+ref17.lawerName);
+		System.out.println("the case open Date "+ref17.caseOpenDate);
+		System.out.println("is case closed "+ref17.isCaseClosed);
+		
 		CourtCase ref18 = new CourtCase();
 		ref18.caseId = 18;
-		ref18.caseTitle = "Traffic Dept vs Citizen";
-		ref18.courtName = "Traffic Court";
-		ref18.judgeName = "Justice Rao";
-		ref18.caseType = "Traffic Violation";
-		ref18.isClosed = true;
-		System.out.println("the case id is " + ref18.caseId);
-		System.out.println("the case title is " + ref18.caseTitle);
-		System.out.println("the court name is " + ref18.courtName);
-		System.out.println("the judge name is " + ref18.judgeName);
-		System.out.println("the case type is " + ref18.caseType);
-		System.out.println("is case closed? " + ref18.isClosed);
-
+		ref18.caseName = "home dispute";
+		ref18.lawerName = "teja";
+		ref18.caseOpenDate = "12/05/1999";
+		ref18.isCaseClosed = false;
+		
+		System.out.println("the case id is "+ref18.caseId);
+		System.out.println("the case name is "+ref18.caseName);
+		System.out.println("the lawerName is "+ref18.lawerName);
+		System.out.println("the case open Date "+ref18.caseOpenDate);
+		System.out.println("is case closed "+ref18.isCaseClosed);
+		
 		CourtCase ref19 = new CourtCase();
 		ref19.caseId = 19;
-		ref19.caseTitle = "Farmer vs Govt Subsidy";
-		ref19.courtName = "Agriculture Court";
-		ref19.judgeName = "Justice Krishnan";
-		ref19.caseType = "Civil";
-		ref19.isClosed = false;
-		System.out.println("the case id is " + ref19.caseId);
-		System.out.println("the case title is " + ref19.caseTitle);
-		System.out.println("the court name is " + ref19.courtName);
-		System.out.println("the judge name is " + ref19.judgeName);
-		System.out.println("the case type is " + ref19.caseType);
-		System.out.println("is case closed? " + ref19.isClosed);
-
+		ref19.caseName = "tenant dispute";
+		ref19.lawerName = "abhi";
+		ref19.caseOpenDate = "25/06/2024";
+		ref19.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref19.caseId);
+		System.out.println("the case name is "+ref19.caseName);
+		System.out.println("the lawerName is "+ref19.lawerName);
+		System.out.println("the case open Date "+ref19.caseOpenDate);
+		System.out.println("is case closed "+ref19.isCaseClosed);
+		
 		CourtCase ref20 = new CourtCase();
 		ref20.caseId = 20;
-		ref20.caseTitle = "Citizen vs Police";
-		ref20.courtName = "Human Rights Court";
-		ref20.judgeName = "Justice Kulkarni";
-		ref20.caseType = "Rights Violation";
-		ref20.isClosed = true;
-		System.out.println("the case id is " + ref20.caseId);
-		System.out.println("the case title is " + ref20.caseTitle);
-		System.out.println("the court name is " + ref20.courtName);
-		System.out.println("the judge name is " + ref20.judgeName);
-		System.out.println("the case type is " + ref20.caseType);
-		System.out.println("is case closed? " + ref20.isClosed);
-
+		ref20.caseName = "vehicle";
+		ref20.lawerName = "manoj";
+		ref20.caseOpenDate = "06/06/1999";
+		ref20.isCaseClosed = true;
+		
+		System.out.println("the case id is "+ref20.caseId);
+		System.out.println("the case name is "+ref20.caseName);
+		System.out.println("the lawerName is "+ref20.lawerName);
+		System.out.println("the case open Date "+ref20.caseOpenDate);
+		System.out.println("is case closed "+ref20.isCaseClosed);
+		
+		
 	}
 }

@@ -9,7 +9,7 @@ class InvitationCardRunner {
 		ref1.sender = "Ravi";
 		ref1.receiver = "Arjun";
 		ref1.date = "10-Aug-2025";
-		ref1.venue = "Green Palace, Mysore";
+		ref1.venue = " Mysore";
 		System.out.println("the card id is " + ref1.cardId);
 		System.out.println("the occasion is " + ref1.occasion);
 		System.out.println("the sender is " + ref1.sender);
@@ -23,7 +23,7 @@ class InvitationCardRunner {
 		ref2.sender = "Kavya";
 		ref2.receiver = "Neha";
 		ref2.date = "12-Jul-2025";
-		ref2.venue = "Wonderland Cafe, Bengaluru";
+		ref2.venue = "Bengaluru";
 		System.out.println("the card id is " + ref2.cardId);
 		System.out.println("the occasion is " + ref2.occasion);
 		System.out.println("the sender is " + ref2.sender);
@@ -37,7 +37,7 @@ class InvitationCardRunner {
 		ref3.sender = "Anil & Meena";
 		ref3.receiver = "Relatives";
 		ref3.date = "20-Nov-2025";
-		ref3.venue = "Hotel Leela, Chennai";
+		ref3.venue = "Chennai";
 		System.out.println("the card id is " + ref3.cardId);
 		System.out.println("the occasion is " + ref3.occasion);
 		System.out.println("the sender is " + ref3.sender);
@@ -51,7 +51,7 @@ class InvitationCardRunner {
 		ref4.sender = "Suresh";
 		ref4.receiver = "Friends";
 		ref4.date = "05-Oct-2025";
-		ref4.venue = "Ritz Banquet, Hyderabad";
+		ref4.venue = "Hyderabad";
 		System.out.println("the card id is " + ref4.cardId);
 		System.out.println("the occasion is " + ref4.occasion);
 		System.out.println("the sender is " + ref4.sender);
@@ -65,7 +65,7 @@ class InvitationCardRunner {
 		ref5.sender = "Rachana";
 		ref5.receiver = "Family";
 		ref5.date = "01-Sep-2025";
-		ref5.venue = "Sunrise Apartments, Pune";
+		ref5.venue = "Pune";
 		System.out.println("the card id is " + ref5.cardId);
 		System.out.println("the occasion is " + ref5.occasion);
 		System.out.println("the sender is " + ref5.sender);
@@ -79,7 +79,7 @@ class InvitationCardRunner {
 		ref6.sender = "Divya";
 		ref6.receiver = "Sisters";
 		ref6.date = "15-Aug-2025";
-		ref6.venue = "Shivaji Nagar, Mumbai";
+		ref6.venue = "Mumbai";
 		System.out.println("the card id is " + ref6.cardId);
 		System.out.println("the occasion is " + ref6.occasion);
 		System.out.println("the sender is " + ref6.sender);
@@ -93,7 +93,7 @@ class InvitationCardRunner {
 		ref7.sender = "Mr. Ramesh";
 		ref7.receiver = "Colleagues";
 		ref7.date = "30-Jul-2025";
-		ref7.venue = "Taj Gateway, Bengaluru";
+		ref7.venue = "Bengaluru";
 		System.out.println("the card id is " + ref7.cardId);
 		System.out.println("the occasion is " + ref7.occasion);
 		System.out.println("the sender is " + ref7.sender);
@@ -107,7 +107,7 @@ class InvitationCardRunner {
 		ref8.sender = "BCA Batch 2022";
 		ref8.receiver = "Seniors";
 		ref8.date = "25-Jul-2025";
-		ref8.venue = "College Auditorium";
+		ref8.venue = "coolage";
 		System.out.println("the card id is " + ref8.cardId);
 		System.out.println("the occasion is " + ref8.occasion);
 		System.out.println("the sender is " + ref8.sender);
@@ -121,7 +121,7 @@ class InvitationCardRunner {
 		ref9.sender = "Management";
 		ref9.receiver = "Students";
 		ref9.date = "01-Apr-2025";
-		ref9.venue = "VIT Campus, Vellore";
+		ref9.venue = "Bengaluru";
 		System.out.println("the card id is " + ref9.cardId);
 		System.out.println("the occasion is " + ref9.occasion);
 		System.out.println("the sender is " + ref9.sender);
@@ -135,7 +135,7 @@ class InvitationCardRunner {
 		ref10.sender = "Suman & Rajesh";
 		ref10.receiver = "Neighbors";
 		ref10.date = "09-Sep-2025";
-		ref10.venue = "Banashankari Hall, Bengaluru";
+		ref10.venue = "Bengaluru";
 		System.out.println("the card id is " + ref10.cardId);
 		System.out.println("the occasion is " + ref10.occasion);
 		System.out.println("the sender is " + ref10.sender);
@@ -149,7 +149,7 @@ class InvitationCardRunner {
 		ref11.sender = "Dr. Sharma";
 		ref11.receiver = "Guests";
 		ref11.date = "18-Aug-2025";
-		ref11.venue = "City Library, Delhi";
+		ref11.venue = "Delhi";
 		System.out.println("the card id is " + ref11.cardId);
 		System.out.println("the occasion is " + ref11.occasion);
 		System.out.println("the sender is " + ref11.sender);
@@ -163,7 +163,7 @@ class InvitationCardRunner {
 		ref12.sender = "Student Council";
 		ref12.receiver = "All Students";
 		ref12.date = "22-Sep-2025";
-		ref12.venue = "Main Ground, ABC College";
+		ref12.venue = "College";
 		System.out.println("the card id is " + ref12.cardId);
 		System.out.println("the occasion is " + ref12.occasion);
 		System.out.println("the sender is " + ref12.sender);
@@ -177,7 +177,7 @@ class InvitationCardRunner {
 		ref13.sender = "Event Team";
 		ref13.receiver = "Music Lovers";
 		ref13.date = "01-Oct-2025";
-		ref13.venue = "City Auditorium, Kolkata";
+		ref13.venue = "Kolkata";
 		System.out.println("the card id is " + ref13.cardId);
 		System.out.println("the occasion is " + ref13.occasion);
 		System.out.println("the sender is " + ref13.sender);
@@ -191,7 +191,7 @@ class InvitationCardRunner {
 		ref14.sender = "Final Year Students";
 		ref14.receiver = "Batchmates";
 		ref14.date = "15-May-2025";
-		ref14.venue = "The Park Hotel, Goa";
+		ref14.venue = "Goa";
 		System.out.println("the card id is " + ref14.cardId);
 		System.out.println("the occasion is " + ref14.occasion);
 		System.out.println("the sender is " + ref14.sender);
@@ -205,7 +205,7 @@ class InvitationCardRunner {
 		ref15.sender = "Ritika & Aman";
 		ref15.receiver = "Friends & Family";
 		ref15.date = "25-Dec-2025";
-		ref15.venue = "The Oberoi, Delhi";
+		ref15.venue = "Delhi";
 		System.out.println("the card id is " + ref15.cardId);
 		System.out.println("the occasion is " + ref15.occasion);
 		System.out.println("the sender is " + ref15.sender);
@@ -219,7 +219,7 @@ class InvitationCardRunner {
 		ref16.sender = "Sports Committee";
 		ref16.receiver = "Athletes";
 		ref16.date = "08-Feb-2025";
-		ref16.venue = "Stadium Grounds, Bhopal";
+		ref16.venue = "Bhopal";
 		System.out.println("the card id is " + ref16.cardId);
 		System.out.println("the occasion is " + ref16.occasion);
 		System.out.println("the sender is " + ref16.sender);
@@ -233,7 +233,7 @@ class InvitationCardRunner {
 		ref17.sender = "Alumni Association";
 		ref17.receiver = "Former Students";
 		ref17.date = "20-Mar-2025";
-		ref17.venue = "Main Hall, ABC Institute";
+		ref17.venue = "Institute";
 		System.out.println("the card id is " + ref17.cardId);
 		System.out.println("the occasion is " + ref17.occasion);
 		System.out.println("the sender is " + ref17.sender);
@@ -247,7 +247,7 @@ class InvitationCardRunner {
 		ref18.sender = "Author Society";
 		ref18.receiver = "Readers";
 		ref18.date = "12-Jan-2025";
-		ref18.venue = "Book Cafe, Jaipur";
+		ref18.venue = "Jaipur";
 		System.out.println("the card id is " + ref18.cardId);
 		System.out.println("the occasion is " + ref18.occasion);
 		System.out.println("the sender is " + ref18.sender);
@@ -261,7 +261,7 @@ class InvitationCardRunner {
 		ref19.sender = "NGO Samarth";
 		ref19.receiver = "Beneficiaries";
 		ref19.date = "07-Jun-2025";
-		ref19.venue = "Community Center, Ranchi";
+		ref19.venue = "Ranchi";
 		System.out.println("the card id is " + ref19.cardId);
 		System.out.println("the occasion is " + ref19.occasion);
 		System.out.println("the sender is " + ref19.sender);
@@ -275,7 +275,7 @@ class InvitationCardRunner {
 		ref20.sender = "Community Group";
 		ref20.receiver = "All Residents";
 		ref20.date = "04-Nov-2025";
-		ref20.venue = "Central Park, Ahmedabad";
+		ref20.venue = "Ahmedabad";
 		System.out.println("the card id is " + ref20.cardId);
 		System.out.println("the occasion is " + ref20.occasion);
 		System.out.println("the sender is " + ref20.sender);

@@ -4,5 +4,4 @@ class Politician{
 	String party;
 	String position;
 	int age;
-	double popularity;
 }

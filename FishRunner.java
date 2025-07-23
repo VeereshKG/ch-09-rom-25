@@ -142,7 +142,7 @@ class FishRunner {
 		System.out.println("the color is " + ref10.color);
 		System.out.println("origin is " + ref10.origin);
 		
-				Fish ref11 = new Fish();
+	    Fish ref11 = new Fish();
 		ref11.fishId = 11;
 		ref11.name = "Stripe";
 		ref11.species = "Zebra Danio";

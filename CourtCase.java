@@ -1,9 +1,9 @@
 class CourtCase{
 	
 	int caseId;
-	String caseTitle;
-	String courtName;
-	String judgeName;
-	String caseType;
-	boolean isClosed;
+	String caseName;
+	String lawerName;
+	String caseOpenDate;
+	boolean isCaseClosed;
+
 }

@@ -1,4 +1,5 @@
 class Jwellery{
+	
 	int jwelleryId;
 	String type;
 	String metal;

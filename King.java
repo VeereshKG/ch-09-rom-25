@@ -1,4 +1,5 @@
 class King{
+	
 	int kingId;
 	String name;
 	String kingdom;

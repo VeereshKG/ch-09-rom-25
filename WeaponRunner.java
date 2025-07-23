@@ -246,7 +246,7 @@ class WeaponRunner{
 		ref18.name = "Blowgun";
 		ref18.type = "Air-powered";
 		ref18.origin = "Amazon";
-		ref18.usage = "Silent projectile";
+		ref18.usage = "projectile";
 		ref18.price = 600.0;
 		System.out.println("the weapon id is " + ref18.weaponId);
 		System.out.println("the name is " + ref18.name);
@@ -260,7 +260,7 @@ class WeaponRunner{
 		ref19.name = "War Hammer";
 		ref19.type = "Blunt";
 		ref19.origin = "Medieval Europe";
-		ref19.usage = "Crushing armor";
+		ref19.usage = "Crushing ";
 		ref19.price = 5500.0;
 		System.out.println("the weapon id is " + ref19.weaponId);
 		System.out.println("the name is " + ref19.name);
@@ -274,8 +274,8 @@ class WeaponRunner{
 		ref20.name = "Sniper Rifle";
 		ref20.type = "Long-range";
 		ref20.origin = "USA";
-		ref20.usage = "Precision shooting";
-		ref20.price = 320000.0;
+		ref20.usage = "shooting";
+		ref20.price = 32000.0;
 		System.out.println("the weapon id is " + ref20.weaponId);
 		System.out.println("the name is " + ref20.name);
 		System.out.println("the type is " + ref20.type);

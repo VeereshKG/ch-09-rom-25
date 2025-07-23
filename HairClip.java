@@ -1,4 +1,5 @@
 public class HairClip {
+	
 	int clipId;
 	String brand;
 	double price;
