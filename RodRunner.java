@@ -1,6 +1,4 @@
 class RodRunner {
-
-
 	public static void main(String[] rod) {
 
 		Rod ref1 = new Rod();
@@ -10,12 +8,7 @@ class RodRunner {
 		ref1.weight = 15.0;
 		ref1.usage = "Construction";
 		ref1.price = 450.0;
-		System.out.println("the rod id is " + ref1.rodId);
-		System.out.println("the material is " + ref1.material);
-		System.out.println("the length is " + ref1.length);
-		System.out.println("the weight is " + ref1.weight);
-		System.out.println("the usage is " + ref1.usage);
-		System.out.println("the price is " + ref1.price);
+		ref1.getRodInfo();
 
 		Rod ref2 = new Rod();
 		ref2.rodId = 2;
@@ -24,12 +17,7 @@ class RodRunner {
 		ref2.weight = 20.0;
 		ref2.usage = "Support";
 		ref2.price = 600.0;
-		System.out.println("the rod id is " + ref2.rodId);
-		System.out.println("the material is " + ref2.material);
-		System.out.println("the length is " + ref2.length);
-		System.out.println("the weight is " + ref2.weight);
-		System.out.println("the usage is " + ref2.usage);
-		System.out.println("the price is " + ref2.price);
+		ref2.getRodInfo();
 
 		Rod ref3 = new Rod();
 		ref3.rodId = 3;
@@ -38,12 +26,7 @@ class RodRunner {
 		ref3.weight = 8.0;
 		ref3.usage = "Tent Frame";
 		ref3.price = 300.0;
-		System.out.println("the rod id is " + ref3.rodId);
-		System.out.println("the material is " + ref3.material);
-		System.out.println("the length is " + ref3.length);
-		System.out.println("the weight is " + ref3.weight);
-		System.out.println("the usage is " + ref3.usage);
-		System.out.println("the price is " + ref3.price);
+		ref3.getRodInfo();
 
 		Rod ref4 = new Rod();
 		ref4.rodId = 4;
@@ -52,12 +35,7 @@ class RodRunner {
 		ref4.weight = 2.0;
 		ref4.usage = "DIY";
 		ref4.price = 100.0;
-		System.out.println("the rod id is " + ref4.rodId);
-		System.out.println("the material is " + ref4.material);
-		System.out.println("the length is " + ref4.length);
-		System.out.println("the weight is " + ref4.weight);
-		System.out.println("the usage is " + ref4.usage);
-		System.out.println("the price is " + ref4.price);
+		ref4.getRodInfo();
 
 		Rod ref5 = new Rod();
 		ref5.rodId = 5;
@@ -66,12 +44,7 @@ class RodRunner {
 		ref5.weight = 5.0;
 		ref5.usage = "Fishing";
 		ref5.price = 800.0;
-		System.out.println("the rod id is " + ref5.rodId);
-		System.out.println("the material is " + ref5.material);
-		System.out.println("the length is " + ref5.length);
-		System.out.println("the weight is " + ref5.weight);
-		System.out.println("the usage is " + ref5.usage);
-		System.out.println("the price is " + ref5.price);
+		ref5.getRodInfo();
 
 		Rod ref6 = new Rod();
 		ref6.rodId = 6;
@@ -80,12 +53,7 @@ class RodRunner {
 		ref6.weight = 10.0;
 		ref6.usage = "Support";
 		ref6.price = 250.0;
-		System.out.println("the rod id is " + ref6.rodId);
-		System.out.println("the material is " + ref6.material);
-		System.out.println("the length is " + ref6.length);
-		System.out.println("the weight is " + ref6.weight);
-		System.out.println("the usage is " + ref6.usage);
-		System.out.println("the price is " + ref6.price);
+		ref6.getRodInfo();
 
 		Rod ref7 = new Rod();
 		ref7.rodId = 7;
@@ -94,12 +62,7 @@ class RodRunner {
 		ref7.weight = 4.0;
 		ref7.usage = "Electric Grounding";
 		ref7.price = 900.0;
-		System.out.println("the rod id is " + ref7.rodId);
-		System.out.println("the material is " + ref7.material);
-		System.out.println("the length is " + ref7.length);
-		System.out.println("the weight is " + ref7.weight);
-		System.out.println("the usage is " + ref7.usage);
-		System.out.println("the price is " + ref7.price);
+		ref7.getRodInfo();
 
 		Rod ref8 = new Rod();
 		ref8.rodId = 8;
@@ -108,12 +71,7 @@ class RodRunner {
 		ref8.weight = 25.0;
 		ref8.usage = "Scaffolding";
 		ref8.price = 1050.0;
-		System.out.println("the rod id is " + ref8.rodId);
-		System.out.println("the material is " + ref8.material);
-		System.out.println("the length is " + ref8.length);
-		System.out.println("the weight is " + ref8.weight);
-		System.out.println("the usage is " + ref8.usage);
-		System.out.println("the price is " + ref8.price);
+		ref8.getRodInfo();
 
 		Rod ref9 = new Rod();
 		ref9.rodId = 9;
@@ -122,12 +80,7 @@ class RodRunner {
 		ref9.weight = 3.5;
 		ref9.usage = "Camping";
 		ref9.price = 350.0;
-		System.out.println("the rod id is " + ref9.rodId);
-		System.out.println("the material is " + ref9.material);
-		System.out.println("the length is " + ref9.length);
-		System.out.println("the weight is " + ref9.weight);
-		System.out.println("the usage is " + ref9.usage);
-		System.out.println("the price is " + ref9.price);
+		ref9.getRodInfo();
 
 		Rod ref10 = new Rod();
 		ref10.rodId = 10;
@@ -136,26 +89,16 @@ class RodRunner {
 		ref10.weight = 6.0;
 		ref10.usage = "Fishing";
 		ref10.price = 950.0;
-		System.out.println("the rod id is " + ref10.rodId);
-		System.out.println("the material is " + ref10.material);
-		System.out.println("the length is " + ref10.length);
-		System.out.println("the weight is " + ref10.weight);
-		System.out.println("the usage is " + ref10.usage);
-		System.out.println("the price is " + ref10.price);
-		
-				Rod ref11 = new Rod();
+		ref10.getRodInfo();
+
+		Rod ref11 = new Rod();
 		ref11.rodId = 11;
 		ref11.material = "Brass";
 		ref11.length = 1.4;
 		ref11.weight = 4.5;
 		ref11.usage = "Decorative";
 		ref11.price = 400.0;
-		System.out.println("the rod id is " + ref11.rodId);
-		System.out.println("the material is " + ref11.material);
-		System.out.println("the length is " + ref11.length);
-		System.out.println("the weight is " + ref11.weight);
-		System.out.println("the usage is " + ref11.usage);
-		System.out.println("the price is " + ref11.price);
+		ref11.getRodInfo();
 
 		Rod ref12 = new Rod();
 		ref12.rodId = 12;
@@ -164,12 +107,7 @@ class RodRunner {
 		ref12.weight = 5.0;
 		ref12.usage = "Plumbing";
 		ref12.price = 120.0;
-		System.out.println("the rod id is " + ref12.rodId);
-		System.out.println("the material is " + ref12.material);
-		System.out.println("the length is " + ref12.length);
-		System.out.println("the weight is " + ref12.weight);
-		System.out.println("the usage is " + ref12.usage);
-		System.out.println("the price is " + ref12.price);
+		ref12.getRodInfo();
 
 		Rod ref13 = new Rod();
 		ref13.rodId = 13;
@@ -178,12 +116,7 @@ class RodRunner {
 		ref13.weight = 12.0;
 		ref13.usage = "Aerospace";
 		ref13.price = 3000.0;
-		System.out.println("the rod id is " + ref13.rodId);
-		System.out.println("the material is " + ref13.material);
-		System.out.println("the length is " + ref13.length);
-		System.out.println("the weight is " + ref13.weight);
-		System.out.println("the usage is " + ref13.usage);
-		System.out.println("the price is " + ref13.price);
+		ref13.getRodInfo();
 
 		Rod ref14 = new Rod();
 		ref14.rodId = 14;
@@ -192,12 +125,7 @@ class RodRunner {
 		ref14.weight = 18.0;
 		ref14.usage = "Furniture";
 		ref14.price = 750.0;
-		System.out.println("the rod id is " + ref14.rodId);
-		System.out.println("the material is " + ref14.material);
-		System.out.println("the length is " + ref14.length);
-		System.out.println("the weight is " + ref14.weight);
-		System.out.println("the usage is " + ref14.usage);
-		System.out.println("the price is " + ref14.price);
+		ref14.getRodInfo();
 
 		Rod ref15 = new Rod();
 		ref15.rodId = 15;
@@ -206,12 +134,7 @@ class RodRunner {
 		ref15.weight = 3.0;
 		ref15.usage = "Crafts";
 		ref15.price = 80.0;
-		System.out.println("the rod id is " + ref15.rodId);
-		System.out.println("the material is " + ref15.material);
-		System.out.println("the length is " + ref15.length);
-		System.out.println("the weight is " + ref15.weight);
-		System.out.println("the usage is " + ref15.usage);
-		System.out.println("the price is " + ref15.price);
+		ref15.getRodInfo();
 
 		Rod ref16 = new Rod();
 		ref16.rodId = 16;
@@ -220,12 +143,7 @@ class RodRunner {
 		ref16.weight = 14.0;
 		ref16.usage = "Machinery";
 		ref16.price = 680.0;
-		System.out.println("the rod id is " + ref16.rodId);
-		System.out.println("the material is " + ref16.material);
-		System.out.println("the length is " + ref16.length);
-		System.out.println("the weight is " + ref16.weight);
-		System.out.println("the usage is " + ref16.usage);
-		System.out.println("the price is " + ref16.price);
+		ref16.getRodInfo();
 
 		Rod ref17 = new Rod();
 		ref17.rodId = 17;
@@ -234,12 +152,7 @@ class RodRunner {
 		ref17.weight = 16.0;
 		ref17.usage = "Fencing";
 		ref17.price = 500.0;
-		System.out.println("the rod id is " + ref17.rodId);
-		System.out.println("the material is " + ref17.material);
-		System.out.println("the length is " + ref17.length);
-		System.out.println("the weight is " + ref17.weight);
-		System.out.println("the usage is " + ref17.usage);
-		System.out.println("the price is " + ref17.price);
+		ref17.getRodInfo();
 
 		Rod ref18 = new Rod();
 		ref18.rodId = 18;
@@ -248,12 +161,7 @@ class RodRunner {
 		ref18.weight = 21.0;
 		ref18.usage = "Infrastructure";
 		ref18.price = 850.0;
-		System.out.println("the rod id is " + ref18.rodId);
-		System.out.println("the material is " + ref18.material);
-		System.out.println("the length is " + ref18.length);
-		System.out.println("the weight is " + ref18.weight);
-		System.out.println("the usage is " + ref18.usage);
-		System.out.println("the price is " + ref18.price);
+		ref18.getRodInfo();
 
 		Rod ref19 = new Rod();
 		ref19.rodId = 19;
@@ -262,12 +170,7 @@ class RodRunner {
 		ref19.weight = 1.5;
 		ref19.usage = "Modeling";
 		ref19.price = 60.0;
-		System.out.println("the rod id is " + ref19.rodId);
-		System.out.println("the material is " + ref19.material);
-		System.out.println("the length is " + ref19.length);
-		System.out.println("the weight is " + ref19.weight);
-		System.out.println("the usage is " + ref19.usage);
-		System.out.println("the price is " + ref19.price);
+		ref19.getRodInfo();
 
 		Rod ref20 = new Rod();
 		ref20.rodId = 20;
@@ -276,11 +179,6 @@ class RodRunner {
 		ref20.weight = 7.0;
 		ref20.usage = "Window Frame";
 		ref20.price = 550.0;
-		System.out.println("the rod id is " + ref20.rodId);
-		System.out.println("the material is " + ref20.material);
-		System.out.println("the length is " + ref20.length);
-		System.out.println("the weight is " + ref20.weight);
-		System.out.println("the usage is " + ref20.usage);
-		System.out.println("the price is " + ref20.price);
+		ref20.getRodInfo();
 	}
-		}
+}

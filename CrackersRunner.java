@@ -9,12 +9,7 @@ class CrackersRunner {
 		ref1.price = 50.0;
 		ref1.type = "Visual";
 		ref1.isLoud = false;
-		System.out.println("the cracker id is " + ref1.crackerId);
-		System.out.println("the cracker name is " + ref1.name);
-		System.out.println("the brand is " + ref1.brand);
-		System.out.println("the price is " + ref1.price);
-		System.out.println("the type is " + ref1.type);
-		System.out.println("is it loud? " + ref1.isLoud);
+		ref1.getCrackers();
 
 		Crackers ref2 = new Crackers();
 		ref2.crackerId = 2;
@@ -23,12 +18,7 @@ class CrackersRunner {
 		ref2.price = 30.0;
 		ref2.type = "Spinning";
 		ref2.isLoud = false;
-		System.out.println("the cracker id is " + ref2.crackerId);
-		System.out.println("the cracker name is " + ref2.name);
-		System.out.println("the brand is " + ref2.brand);
-		System.out.println("the price is " + ref2.price);
-		System.out.println("the type is " + ref2.type);
-		System.out.println("is it loud? " + ref2.isLoud);
+		ref2.getCrackers();
 
 		Crackers ref3 = new Crackers();
 		ref3.crackerId = 3;
@@ -37,12 +27,7 @@ class CrackersRunner {
 		ref3.price = 40.0;
 		ref3.type = "Sound";
 		ref3.isLoud = true;
-		System.out.println("the cracker id is " + ref3.crackerId);
-		System.out.println("the cracker name is " + ref3.name);
-		System.out.println("the brand is " + ref3.brand);
-		System.out.println("the price is " + ref3.price);
-		System.out.println("the type is " + ref3.type);
-		System.out.println("is it loud? " + ref3.isLoud);
+		ref3.getCrackers();
 
 		Crackers ref4 = new Crackers();
 		ref4.crackerId = 4;
@@ -51,12 +36,7 @@ class CrackersRunner {
 		ref4.price = 20.0;
 		ref4.type = "Aerial";
 		ref4.isLoud = true;
-		System.out.println("the cracker id is " + ref4.crackerId);
-		System.out.println("the cracker name is " + ref4.name);
-		System.out.println("the brand is " + ref4.brand);
-		System.out.println("the price is " + ref4.price);
-		System.out.println("the type is " + ref4.type);
-		System.out.println("is it loud? " + ref4.isLoud);
+		ref4.getCrackers();
 
 		Crackers ref5 = new Crackers();
 		ref5.crackerId = 5;
@@ -65,12 +45,7 @@ class CrackersRunner {
 		ref5.price = 10.0;
 		ref5.type = "Handheld";
 		ref5.isLoud = false;
-		System.out.println("the cracker id is " + ref5.crackerId);
-		System.out.println("the cracker name is " + ref5.name);
-		System.out.println("the brand is " + ref5.brand);
-		System.out.println("the price is " + ref5.price);
-		System.out.println("the type is " + ref5.type);
-		System.out.println("is it loud? " + ref5.isLoud);
+		ref5.getCrackers();
 
 		Crackers ref6 = new Crackers();
 		ref6.crackerId = 6;
@@ -79,12 +54,7 @@ class CrackersRunner {
 		ref6.price = 60.0;
 		ref6.type = "Sound";
 		ref6.isLoud = true;
-		System.out.println("the cracker id is " + ref6.crackerId);
-		System.out.println("the cracker name is " + ref6.name);
-		System.out.println("the brand is " + ref6.brand);
-		System.out.println("the price is " + ref6.price);
-		System.out.println("the type is " + ref6.type);
-		System.out.println("is it loud? " + ref6.isLoud);
+		ref6.getCrackers();
 
 		Crackers ref7 = new Crackers();
 		ref7.crackerId = 7;
@@ -93,12 +63,7 @@ class CrackersRunner {
 		ref7.price = 100.0;
 		ref7.type = "Aerial";
 		ref7.isLoud = true;
-		System.out.println("the cracker id is " + ref7.crackerId);
-		System.out.println("the cracker name is " + ref7.name);
-		System.out.println("the brand is " + ref7.brand);
-		System.out.println("the price is " + ref7.price);
-		System.out.println("the type is " + ref7.type);
-		System.out.println("is it loud? " + ref7.isLoud);
+		ref7.getCrackers();
 
 		Crackers ref8 = new Crackers();
 		ref8.crackerId = 8;
@@ -107,12 +72,7 @@ class CrackersRunner {
 		ref8.price = 70.0;
 		ref8.type = "Visual";
 		ref8.isLoud = false;
-		System.out.println("the cracker id is " + ref8.crackerId);
-		System.out.println("the cracker name is " + ref8.name);
-		System.out.println("the brand is " + ref8.brand);
-		System.out.println("the price is " + ref8.price);
-		System.out.println("the type is " + ref8.type);
-		System.out.println("is it loud? " + ref8.isLoud);
+		ref8.getCrackers();
 
 		Crackers ref9 = new Crackers();
 		ref9.crackerId = 9;
@@ -121,12 +81,7 @@ class CrackersRunner {
 		ref9.price = 25.0;
 		ref9.type = "Sound";
 		ref9.isLoud = true;
-		System.out.println("the cracker id is " + ref9.crackerId);
-		System.out.println("the cracker name is " + ref9.name);
-		System.out.println("the brand is " + ref9.brand);
-		System.out.println("the price is " + ref9.price);
-		System.out.println("the type is " + ref9.type);
-		System.out.println("is it loud? " + ref9.isLoud);
+		ref9.getCrackers();
 
 		Crackers ref10 = new Crackers();
 		ref10.crackerId = 10;
@@ -135,26 +90,16 @@ class CrackersRunner {
 		ref10.price = 55.0;
 		ref10.type = "Visual";
 		ref10.isLoud = false;
-		System.out.println("the cracker id is " + ref10.crackerId);
-		System.out.println("the cracker name is " + ref10.name);
-		System.out.println("the brand is " + ref10.brand);
-		System.out.println("the price is " + ref10.price);
-		System.out.println("the type is " + ref10.type);
-		System.out.println("is it loud? " + ref10.isLoud);
-		
-				Crackers ref11 = new Crackers();
+		ref10.getCrackers();
+
+		Crackers ref11 = new Crackers();
 		ref11.crackerId = 11;
 		ref11.name = "Magic Pop";
 		ref11.brand = "Royal";
 		ref11.price = 15.0;
 		ref11.type = "Snap";
 		ref11.isLoud = false;
-		System.out.println("the cracker id is " + ref11.crackerId);
-		System.out.println("the cracker name is " + ref11.name);
-		System.out.println("the brand is " + ref11.brand);
-		System.out.println("the price is " + ref11.price);
-		System.out.println("the type is " + ref11.type);
-		System.out.println("is it loud? " + ref11.isLoud);
+		ref11.getCrackers();
 
 		Crackers ref12 = new Crackers();
 		ref12.crackerId = 12;
@@ -163,12 +108,7 @@ class CrackersRunner {
 		ref12.price = 35.0;
 		ref12.type = "Visual";
 		ref12.isLoud = false;
-		System.out.println("the cracker id is " + ref12.crackerId);
-		System.out.println("the cracker name is " + ref12.name);
-		System.out.println("the brand is " + ref12.brand);
-		System.out.println("the price is " + ref12.price);
-		System.out.println("the type is " + ref12.type);
-		System.out.println("is it loud? " + ref12.isLoud);
+		ref12.getCrackers();
 
 		Crackers ref13 = new Crackers();
 		ref13.crackerId = 13;
@@ -177,12 +117,7 @@ class CrackersRunner {
 		ref13.price = 60.0;
 		ref13.type = "Aerial";
 		ref13.isLoud = true;
-		System.out.println("the cracker id is " + ref13.crackerId);
-		System.out.println("the cracker name is " + ref13.name);
-		System.out.println("the brand is " + ref13.brand);
-		System.out.println("the price is " + ref13.price);
-		System.out.println("the type is " + ref13.type);
-		System.out.println("is it loud? " + ref13.isLoud);
+		ref13.getCrackers();
 
 		Crackers ref14 = new Crackers();
 		ref14.crackerId = 14;
@@ -191,12 +126,7 @@ class CrackersRunner {
 		ref14.price = 45.0;
 		ref14.type = "Visual";
 		ref14.isLoud = false;
-		System.out.println("the cracker id is " + ref14.crackerId);
-		System.out.println("the cracker name is " + ref14.name);
-		System.out.println("the brand is " + ref14.brand);
-		System.out.println("the price is " + ref14.price);
-		System.out.println("the type is " + ref14.type);
-		System.out.println("is it loud? " + ref14.isLoud);
+		ref14.getCrackers();
 
 		Crackers ref15 = new Crackers();
 		ref15.crackerId = 15;
@@ -205,12 +135,7 @@ class CrackersRunner {
 		ref15.price = 55.0;
 		ref15.type = "Sound";
 		ref15.isLoud = true;
-		System.out.println("the cracker id is " + ref15.crackerId);
-		System.out.println("the cracker name is " + ref15.name);
-		System.out.println("the brand is " + ref15.brand);
-		System.out.println("the price is " + ref15.price);
-		System.out.println("the type is " + ref15.type);
-		System.out.println("is it loud? " + ref15.isLoud);
+		ref15.getCrackers();
 
 		Crackers ref16 = new Crackers();
 		ref16.crackerId = 16;
@@ -219,12 +144,7 @@ class CrackersRunner {
 		ref16.price = 20.0;
 		ref16.type = "Sparkle";
 		ref16.isLoud = false;
-		System.out.println("the cracker id is " + ref16.crackerId);
-		System.out.println("the cracker name is " + ref16.name);
-		System.out.println("the brand is " + ref16.brand);
-		System.out.println("the price is " + ref16.price);
-		System.out.println("the type is " + ref16.type);
-		System.out.println("is it loud? " + ref16.isLoud);
+		ref16.getCrackers();
 
 		Crackers ref17 = new Crackers();
 		ref17.crackerId = 17;
@@ -233,12 +153,7 @@ class CrackersRunner {
 		ref17.price = 80.0;
 		ref17.type = "Aerial";
 		ref17.isLoud = true;
-		System.out.println("the cracker id is " + ref17.crackerId);
-		System.out.println("the cracker name is " + ref17.name);
-		System.out.println("the brand is " + ref17.brand);
-		System.out.println("the price is " + ref17.price);
-		System.out.println("the type is " + ref17.type);
-		System.out.println("is it loud? " + ref17.isLoud);
+		ref17.getCrackers();
 
 		Crackers ref18 = new Crackers();
 		ref18.crackerId = 18;
@@ -247,12 +162,7 @@ class CrackersRunner {
 		ref18.price = 12.0;
 		ref18.type = "Handheld";
 		ref18.isLoud = false;
-		System.out.println("the cracker id is " + ref18.crackerId);
-		System.out.println("the cracker name is " + ref18.name);
-		System.out.println("the brand is " + ref18.brand);
-		System.out.println("the price is " + ref18.price);
-		System.out.println("the type is " + ref18.type);
-		System.out.println("is it loud? " + ref18.isLoud);
+		ref18.getCrackers();
 
 		Crackers ref19 = new Crackers();
 		ref19.crackerId = 19;
@@ -261,12 +171,7 @@ class CrackersRunner {
 		ref19.price = 95.0;
 		ref19.type = "Visual";
 		ref19.isLoud = false;
-		System.out.println("the cracker id is " + ref19.crackerId);
-		System.out.println("the cracker name is " + ref19.name);
-		System.out.println("the brand is " + ref19.brand);
-		System.out.println("the price is " + ref19.price);
-		System.out.println("the type is " + ref19.type);
-		System.out.println("is it loud? " + ref19.isLoud);
+		ref19.getCrackers();
 
 		Crackers ref20 = new Crackers();
 		ref20.crackerId = 20;
@@ -275,13 +180,6 @@ class CrackersRunner {
 		ref20.price = 65.0;
 		ref20.type = "Sound";
 		ref20.isLoud = true;
-		System.out.println("the cracker id is " + ref20.crackerId);
-		System.out.println("the cracker name is " + ref20.name);
-		System.out.println("the brand is " + ref20.brand);
-		System.out.println("the price is " + ref20.price);
-		System.out.println("the type is " + ref20.type);
-		System.out.println("is it loud? " + ref20.isLoud);
-
-
+		ref20.getCrackers();
 	}
 }

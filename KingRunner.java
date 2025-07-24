@@ -1,6 +1,5 @@
 class KingRunner {
 
-
 	public static void main(String[] king) {
 
 		King ref1 = new King();
@@ -10,12 +9,7 @@ class KingRunner {
 		ref1.reignYears = 36;
 		ref1.dynasty = "Mauryan";
 		ref1.isWarrior = true;
-		System.out.println("the king id is " + ref1.kingId);
-		System.out.println("the king name is " + ref1.name);
-		System.out.println("the kingdom is " + ref1.kingdom);
-		System.out.println("the reign years are " + ref1.reignYears);
-		System.out.println("the dynasty is " + ref1.dynasty);
-		System.out.println("is he a warrior? " + ref1.isWarrior);
+		ref1.getKingInfo();
 
 		King ref2 = new King();
 		ref2.kingId = 2;
@@ -24,12 +18,7 @@ class KingRunner {
 		ref2.reignYears = 49;
 		ref2.dynasty = "Mughal";
 		ref2.isWarrior = true;
-		System.out.println("the king id is " + ref2.kingId);
-		System.out.println("the king name is " + ref2.name);
-		System.out.println("the kingdom is " + ref2.kingdom);
-		System.out.println("the reign years are " + ref2.reignYears);
-		System.out.println("the dynasty is " + ref2.dynasty);
-		System.out.println("is he a warrior? " + ref2.isWarrior);
+		ref2.getKingInfo();
 
 		King ref3 = new King();
 		ref3.kingId = 3;
@@ -38,12 +27,7 @@ class KingRunner {
 		ref3.reignYears = 24;
 		ref3.dynasty = "Mauryan";
 		ref3.isWarrior = true;
-		System.out.println("the king id is " + ref3.kingId);
-		System.out.println("the king name is " + ref3.name);
-		System.out.println("the kingdom is " + ref3.kingdom);
-		System.out.println("the reign years are " + ref3.reignYears);
-		System.out.println("the dynasty is " + ref3.dynasty);
-		System.out.println("is he a warrior? " + ref3.isWarrior);
+		ref3.getKingInfo();
 
 		King ref4 = new King();
 		ref4.kingId = 4;
@@ -52,12 +36,7 @@ class KingRunner {
 		ref4.reignYears = 27;
 		ref4.dynasty = "Bhosale";
 		ref4.isWarrior = true;
-		System.out.println("the king id is " + ref4.kingId);
-		System.out.println("the king name is " + ref4.name);
-		System.out.println("the kingdom is " + ref4.kingdom);
-		System.out.println("the reign years are " + ref4.reignYears);
-		System.out.println("the dynasty is " + ref4.dynasty);
-		System.out.println("is he a warrior? " + ref4.isWarrior);
+		ref4.getKingInfo();
 
 		King ref5 = new King();
 		ref5.kingId = 5;
@@ -66,12 +45,7 @@ class KingRunner {
 		ref5.reignYears = 30;
 		ref5.dynasty = "Chola";
 		ref5.isWarrior = true;
-		System.out.println("the king id is " + ref5.kingId);
-		System.out.println("the king name is " + ref5.name);
-		System.out.println("the kingdom is " + ref5.kingdom);
-		System.out.println("the reign years are " + ref5.reignYears);
-		System.out.println("the dynasty is " + ref5.dynasty);
-		System.out.println("is he a warrior? " + ref5.isWarrior);
+		ref5.getKingInfo();
 
 		King ref6 = new King();
 		ref6.kingId = 6;
@@ -80,12 +54,7 @@ class KingRunner {
 		ref6.reignYears = 20;
 		ref6.dynasty = "Tuluva";
 		ref6.isWarrior = true;
-		System.out.println("the king id is " + ref6.kingId);
-		System.out.println("the king name is " + ref6.name);
-		System.out.println("the kingdom is " + ref6.kingdom);
-		System.out.println("the reign years are " + ref6.reignYears);
-		System.out.println("the dynasty is " + ref6.dynasty);
-		System.out.println("is he a warrior? " + ref6.isWarrior);
+		ref6.getKingInfo();
 
 		King ref7 = new King();
 		ref7.kingId = 7;
@@ -94,12 +63,7 @@ class KingRunner {
 		ref7.reignYears = 41;
 		ref7.dynasty = "Pushyabhuti";
 		ref7.isWarrior = true;
-		System.out.println("the king id is " + ref7.kingId);
-		System.out.println("the king name is " + ref7.name);
-		System.out.println("the kingdom is " + ref7.kingdom);
-		System.out.println("the reign years are " + ref7.reignYears);
-		System.out.println("the dynasty is " + ref7.dynasty);
-		System.out.println("is he a warrior? " + ref7.isWarrior);
+		ref7.getKingInfo();
 
 		King ref8 = new King();
 		ref8.kingId = 8;
@@ -108,12 +72,7 @@ class KingRunner {
 		ref8.reignYears = 40;
 		ref8.dynasty = "Sandhawalia";
 		ref8.isWarrior = true;
-		System.out.println("the king id is " + ref8.kingId);
-		System.out.println("the king name is " + ref8.name);
-		System.out.println("the kingdom is " + ref8.kingdom);
-		System.out.println("the reign years are " + ref8.reignYears);
-		System.out.println("the dynasty is " + ref8.dynasty);
-		System.out.println("is he a warrior? " + ref8.isWarrior);
+		ref8.getKingInfo();
 
 		King ref9 = new King();
 		ref9.kingId = 9;
@@ -122,12 +81,7 @@ class KingRunner {
 		ref9.reignYears = 17;
 		ref9.dynasty = "Sultanate";
 		ref9.isWarrior = true;
-		System.out.println("the king id is " + ref9.kingId);
-		System.out.println("the king name is " + ref9.name);
-		System.out.println("the kingdom is " + ref9.kingdom);
-		System.out.println("the reign years are " + ref9.reignYears);
-		System.out.println("the dynasty is " + ref9.dynasty);
-		System.out.println("is he a warrior? " + ref9.isWarrior);
+		ref9.getKingInfo();
 
 		King ref10 = new King();
 		ref10.kingId = 10;
@@ -136,26 +90,16 @@ class KingRunner {
 		ref10.reignYears = 52;
 		ref10.dynasty = "Haryanka";
 		ref10.isWarrior = true;
-		System.out.println("the king id is " + ref10.kingId);
-		System.out.println("the king name is " + ref10.name);
-		System.out.println("the kingdom is " + ref10.kingdom);
-		System.out.println("the reign years are " + ref10.reignYears);
-		System.out.println("the dynasty is " + ref10.dynasty);
-		System.out.println("is he a warrior? " + ref10.isWarrior);
-		
-				King ref11 = new King();
+		ref10.getKingInfo();
+
+		King ref11 = new King();
 		ref11.kingId = 11;
 		ref11.name = "Prithviraj Chauhan";
 		ref11.kingdom = "Ajmer";
 		ref11.reignYears = 15;
 		ref11.dynasty = "Chahamana";
 		ref11.isWarrior = true;
-		System.out.println("the king id is " + ref11.kingId);
-		System.out.println("the king name is " + ref11.name);
-		System.out.println("the kingdom is " + ref11.kingdom);
-		System.out.println("the reign years are " + ref11.reignYears);
-		System.out.println("the dynasty is " + ref11.dynasty);
-		System.out.println("is he a warrior? " + ref11.isWarrior);
+		ref11.getKingInfo();
 
 		King ref12 = new King();
 		ref12.kingId = 12;
@@ -164,12 +108,7 @@ class KingRunner {
 		ref12.reignYears = 40;
 		ref12.dynasty = "Paramara";
 		ref12.isWarrior = true;
-		System.out.println("the king id is " + ref12.kingId);
-		System.out.println("the king name is " + ref12.name);
-		System.out.println("the kingdom is " + ref12.kingdom);
-		System.out.println("the reign years are " + ref12.reignYears);
-		System.out.println("the dynasty is " + ref12.dynasty);
-		System.out.println("is he a warrior? " + ref12.isWarrior);
+		ref12.getKingInfo();
 
 		King ref13 = new King();
 		ref13.kingId = 13;
@@ -178,12 +117,7 @@ class KingRunner {
 		ref13.reignYears = 44;
 		ref13.dynasty = "Kachwaha";
 		ref13.isWarrior = true;
-		System.out.println("the king id is " + ref13.kingId);
-		System.out.println("the king name is " + ref13.name);
-		System.out.println("the kingdom is " + ref13.kingdom);
-		System.out.println("the reign years are " + ref13.reignYears);
-		System.out.println("the dynasty is " + ref13.dynasty);
-		System.out.println("is he a warrior? " + ref13.isWarrior);
+		ref13.getKingInfo();
 
 		King ref14 = new King();
 		ref14.kingId = 14;
@@ -192,12 +126,7 @@ class KingRunner {
 		ref14.reignYears = 25;
 		ref14.dynasty = "Gupta";
 		ref14.isWarrior = true;
-		System.out.println("the king id is " + ref14.kingId);
-		System.out.println("the king name is " + ref14.name);
-		System.out.println("the kingdom is " + ref14.kingdom);
-		System.out.println("the reign years are " + ref14.reignYears);
-		System.out.println("the dynasty is " + ref14.dynasty);
-		System.out.println("is he a warrior? " + ref14.isWarrior);
+		ref14.getKingInfo();
 
 		King ref15 = new King();
 		ref15.kingId = 15;
@@ -206,12 +135,7 @@ class KingRunner {
 		ref15.reignYears = 34;
 		ref15.dynasty = "Chalukya";
 		ref15.isWarrior = true;
-		System.out.println("the king id is " + ref15.kingId);
-		System.out.println("the king name is " + ref15.name);
-		System.out.println("the kingdom is " + ref15.kingdom);
-		System.out.println("the reign years are " + ref15.reignYears);
-		System.out.println("the dynasty is " + ref15.dynasty);
-		System.out.println("is he a warrior? " + ref15.isWarrior);
+		ref15.getKingInfo();
 
 		King ref16 = new King();
 		ref16.kingId = 16;
@@ -220,12 +144,7 @@ class KingRunner {
 		ref16.reignYears = 35;
 		ref16.dynasty = "Gupta";
 		ref16.isWarrior = true;
-		System.out.println("the king id is " + ref16.kingId);
-		System.out.println("the king name is " + ref16.name);
-		System.out.println("the kingdom is " + ref16.kingdom);
-		System.out.println("the reign years are " + ref16.reignYears);
-		System.out.println("the dynasty is " + ref16.dynasty);
-		System.out.println("is he a warrior? " + ref16.isWarrior);
+		ref16.getKingInfo();
 
 		King ref17 = new King();
 		ref17.kingId = 17;
@@ -234,12 +153,7 @@ class KingRunner {
 		ref17.reignYears = 20;
 		ref17.dynasty = "Mamluk";
 		ref17.isWarrior = true;
-		System.out.println("the king id is " + ref17.kingId);
-		System.out.println("the king name is " + ref17.name);
-		System.out.println("the kingdom is " + ref17.kingdom);
-		System.out.println("the reign years are " + ref17.reignYears);
-		System.out.println("the dynasty is " + ref17.dynasty);
-		System.out.println("is he a warrior? " + ref17.isWarrior);
+		ref17.getKingInfo();
 
 		King ref18 = new King();
 		ref18.kingId = 18;
@@ -248,12 +162,7 @@ class KingRunner {
 		ref18.reignYears = 10;
 		ref18.dynasty = "Royal Family";
 		ref18.isWarrior = false;
-		System.out.println("the king id is " + ref18.kingId);
-		System.out.println("the king name is " + ref18.name);
-		System.out.println("the kingdom is " + ref18.kingdom);
-		System.out.println("the reign years are " + ref18.reignYears);
-		System.out.println("the dynasty is " + ref18.dynasty);
-		System.out.println("is he a warrior? " + ref18.isWarrior);
+		ref18.getKingInfo();
 
 		King ref19 = new King();
 		ref19.kingId = 19;
@@ -262,12 +171,7 @@ class KingRunner {
 		ref19.reignYears = 50;
 		ref19.dynasty = "Varman";
 		ref19.isWarrior = true;
-		System.out.println("the king id is " + ref19.kingId);
-		System.out.println("the king name is " + ref19.name);
-		System.out.println("the kingdom is " + ref19.kingdom);
-		System.out.println("the reign years are " + ref19.reignYears);
-		System.out.println("the dynasty is " + ref19.dynasty);
-		System.out.println("is he a warrior? " + ref19.isWarrior);
+		ref19.getKingInfo();
 
 		King ref20 = new King();
 		ref20.kingId = 20;
@@ -276,12 +180,6 @@ class KingRunner {
 		ref20.reignYears = 25;
 		ref20.dynasty = "Pallava";
 		ref20.isWarrior = true;
-		System.out.println("the king id is " + ref20.kingId);
-		System.out.println("the king name is " + ref20.name);
-		System.out.println("the kingdom is " + ref20.kingdom);
-		System.out.println("the reign years are " + ref20.reignYears);
-		System.out.println("the dynasty is " + ref20.dynasty);
-		System.out.println("is he a warrior? " + ref20.isWarrior);
+		ref20.getKingInfo();
 	}
 }
-

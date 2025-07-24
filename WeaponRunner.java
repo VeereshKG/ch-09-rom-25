@@ -1,5 +1,4 @@
-class WeaponRunner{
-
+class WeaponRunner {
 
 	public static void main(String[] weapon) {
 
@@ -10,12 +9,7 @@ class WeaponRunner{
 		ref1.origin = "Japan";
 		ref1.usage = "Slashing";
 		ref1.price = 15000.0;
-		System.out.println("the weapon id is " + ref1.weaponId);
-		System.out.println("the name is " + ref1.name);
-		System.out.println("the type is " + ref1.type);
-		System.out.println("the origin is " + ref1.origin);
-		System.out.println("the usage is " + ref1.usage);
-		System.out.println("the price is " + ref1.price);
+		ref1.getWeaponInfo();
 
 		Weapon ref2 = new Weapon();
 		ref2.weaponId = 2;
@@ -24,12 +18,7 @@ class WeaponRunner{
 		ref2.origin = "Russia";
 		ref2.usage = "Shooting";
 		ref2.price = 75000.0;
-		System.out.println("the weapon id is " + ref2.weaponId);
-		System.out.println("the name is " + ref2.name);
-		System.out.println("the type is " + ref2.type);
-		System.out.println("the origin is " + ref2.origin);
-		System.out.println("the usage is " + ref2.usage);
-		System.out.println("the price is " + ref2.price);
+		ref2.getWeaponInfo();
 
 		Weapon ref3 = new Weapon();
 		ref3.weaponId = 3;
@@ -38,12 +27,7 @@ class WeaponRunner{
 		ref3.origin = "England";
 		ref3.usage = "Archery";
 		ref3.price = 3000.0;
-		System.out.println("the weapon id is " + ref3.weaponId);
-		System.out.println("the name is " + ref3.name);
-		System.out.println("the type is " + ref3.type);
-		System.out.println("the origin is " + ref3.origin);
-		System.out.println("the usage is " + ref3.usage);
-		System.out.println("the price is " + ref3.price);
+		ref3.getWeaponInfo();
 
 		Weapon ref4 = new Weapon();
 		ref4.weaponId = 4;
@@ -52,12 +36,7 @@ class WeaponRunner{
 		ref4.origin = "Greece";
 		ref4.usage = "Thrusting";
 		ref4.price = 2000.0;
-		System.out.println("the weapon id is " + ref4.weaponId);
-		System.out.println("the name is " + ref4.name);
-		System.out.println("the type is " + ref4.type);
-		System.out.println("the origin is " + ref4.origin);
-		System.out.println("the usage is " + ref4.usage);
-		System.out.println("the price is " + ref4.price);
+		ref4.getWeaponInfo();
 
 		Weapon ref5 = new Weapon();
 		ref5.weaponId = 5;
@@ -66,12 +45,7 @@ class WeaponRunner{
 		ref5.origin = "USA";
 		ref5.usage = "Self-defense";
 		ref5.price = 45000.0;
-		System.out.println("the weapon id is " + ref5.weaponId);
-		System.out.println("the name is " + ref5.name);
-		System.out.println("the type is " + ref5.type);
-		System.out.println("the origin is " + ref5.origin);
-		System.out.println("the usage is " + ref5.usage);
-		System.out.println("the price is " + ref5.price);
+		ref5.getWeaponInfo();
 
 		Weapon ref6 = new Weapon();
 		ref6.weaponId = 6;
@@ -80,12 +54,7 @@ class WeaponRunner{
 		ref6.origin = "China";
 		ref6.usage = "Silent attack";
 		ref6.price = 7000.0;
-		System.out.println("the weapon id is " + ref6.weaponId);
-		System.out.println("the name is " + ref6.name);
-		System.out.println("the type is " + ref6.type);
-		System.out.println("the origin is " + ref6.origin);
-		System.out.println("the usage is " + ref6.usage);
-		System.out.println("the price is " + ref6.price);
+		ref6.getWeaponInfo();
 
 		Weapon ref7 = new Weapon();
 		ref7.weaponId = 7;
@@ -94,12 +63,7 @@ class WeaponRunner{
 		ref7.origin = "Germany";
 		ref7.usage = "Explosion";
 		ref7.price = 900.0;
-		System.out.println("the weapon id is " + ref7.weaponId);
-		System.out.println("the name is " + ref7.name);
-		System.out.println("the type is " + ref7.type);
-		System.out.println("the origin is " + ref7.origin);
-		System.out.println("the usage is " + ref7.usage);
-		System.out.println("the price is " + ref7.price);
+		ref7.getWeaponInfo();
 
 		Weapon ref8 = new Weapon();
 		ref8.weaponId = 8;
@@ -108,12 +72,7 @@ class WeaponRunner{
 		ref8.origin = "Europe";
 		ref8.usage = "Crushing";
 		ref8.price = 3500.0;
-		System.out.println("the weapon id is " + ref8.weaponId);
-		System.out.println("the name is " + ref8.name);
-		System.out.println("the type is " + ref8.type);
-		System.out.println("the origin is " + ref8.origin);
-		System.out.println("the usage is " + ref8.usage);
-		System.out.println("the price is " + ref8.price);
+		ref8.getWeaponInfo();
 
 		Weapon ref9 = new Weapon();
 		ref9.weaponId = 9;
@@ -122,12 +81,7 @@ class WeaponRunner{
 		ref9.origin = "USA";
 		ref9.usage = "Anti-tank";
 		ref9.price = 120000.0;
-		System.out.println("the weapon id is " + ref9.weaponId);
-		System.out.println("the name is " + ref9.name);
-		System.out.println("the type is " + ref9.type);
-		System.out.println("the origin is " + ref9.origin);
-		System.out.println("the usage is " + ref9.usage);
-		System.out.println("the price is " + ref9.price);
+		ref9.getWeaponInfo();
 
 		Weapon ref10 = new Weapon();
 		ref10.weaponId = 10;
@@ -136,26 +90,16 @@ class WeaponRunner{
 		ref10.origin = "Japan";
 		ref10.usage = "Silent throw";
 		ref10.price = 250.0;
-		System.out.println("the weapon id is " + ref10.weaponId);
-		System.out.println("the name is " + ref10.name);
-		System.out.println("the type is " + ref10.type);
-		System.out.println("the origin is " + ref10.origin);
-		System.out.println("the usage is " + ref10.usage);
-		System.out.println("the price is " + ref10.price);
-		
-				Weapon ref11 = new Weapon();
+		ref10.getWeaponInfo();
+
+		Weapon ref11 = new Weapon();
 		ref11.weaponId = 11;
 		ref11.name = "Scimitar";
 		ref11.type = "Sword";
 		ref11.origin = "Middle East";
 		ref11.usage = "Slashing";
 		ref11.price = 9800.0;
-		System.out.println("the weapon id is " + ref11.weaponId);
-		System.out.println("the name is " + ref11.name);
-		System.out.println("the type is " + ref11.type);
-		System.out.println("the origin is " + ref11.origin);
-		System.out.println("the usage is " + ref11.usage);
-		System.out.println("the price is " + ref11.price);
+		ref11.getWeaponInfo();
 
 		Weapon ref12 = new Weapon();
 		ref12.weaponId = 12;
@@ -164,12 +108,7 @@ class WeaponRunner{
 		ref12.origin = "Global";
 		ref12.usage = "Stabbing";
 		ref12.price = 1800.0;
-		System.out.println("the weapon id is " + ref12.weaponId);
-		System.out.println("the name is " + ref12.name);
-		System.out.println("the type is " + ref12.type);
-		System.out.println("the origin is " + ref12.origin);
-		System.out.println("the usage is " + ref12.usage);
-		System.out.println("the price is " + ref12.price);
+		ref12.getWeaponInfo();
 
 		Weapon ref13 = new Weapon();
 		ref13.weaponId = 13;
@@ -178,12 +117,7 @@ class WeaponRunner{
 		ref13.origin = "Germany";
 		ref13.usage = "Incineration";
 		ref13.price = 130000.0;
-		System.out.println("the weapon id is " + ref13.weaponId);
-		System.out.println("the name is " + ref13.name);
-		System.out.println("the type is " + ref13.type);
-		System.out.println("the origin is " + ref13.origin);
-		System.out.println("the usage is " + ref13.usage);
-		System.out.println("the price is " + ref13.price);
+		ref13.getWeaponInfo();
 
 		Weapon ref14 = new Weapon();
 		ref14.weaponId = 14;
@@ -192,12 +126,7 @@ class WeaponRunner{
 		ref14.origin = "Okinawa";
 		ref14.usage = "Martial arts";
 		ref14.price = 1200.0;
-		System.out.println("the weapon id is " + ref14.weaponId);
-		System.out.println("the name is " + ref14.name);
-		System.out.println("the type is " + ref14.type);
-		System.out.println("the origin is " + ref14.origin);
-		System.out.println("the usage is " + ref14.usage);
-		System.out.println("the price is " + ref14.price);
+		ref14.getWeaponInfo();
 
 		Weapon ref15 = new Weapon();
 		ref15.weaponId = 15;
@@ -206,12 +135,7 @@ class WeaponRunner{
 		ref15.origin = "Greece";
 		ref15.usage = "Fishing/Combat";
 		ref15.price = 5000.0;
-		System.out.println("the weapon id is " + ref15.weaponId);
-		System.out.println("the name is " + ref15.name);
-		System.out.println("the type is " + ref15.type);
-		System.out.println("the origin is " + ref15.origin);
-		System.out.println("the usage is " + ref15.usage);
-		System.out.println("the price is " + ref15.price);
+		ref15.getWeaponInfo();
 
 		Weapon ref16 = new Weapon();
 		ref16.weaponId = 16;
@@ -220,12 +144,7 @@ class WeaponRunner{
 		ref16.origin = "Europe";
 		ref16.usage = "Crushing";
 		ref16.price = 4000.0;
-		System.out.println("the weapon id is " + ref16.weaponId);
-		System.out.println("the name is " + ref16.name);
-		System.out.println("the type is " + ref16.type);
-		System.out.println("the origin is " + ref16.origin);
-		System.out.println("the usage is " + ref16.usage);
-		System.out.println("the price is " + ref16.price);
+		ref16.getWeaponInfo();
 
 		Weapon ref17 = new Weapon();
 		ref17.weaponId = 17;
@@ -234,12 +153,7 @@ class WeaponRunner{
 		ref17.origin = "Germany";
 		ref17.usage = "Rapid Fire";
 		ref17.price = 250000.0;
-		System.out.println("the weapon id is " + ref17.weaponId);
-		System.out.println("the name is " + ref17.name);
-		System.out.println("the type is " + ref17.type);
-		System.out.println("the origin is " + ref17.origin);
-		System.out.println("the usage is " + ref17.usage);
-		System.out.println("the price is " + ref17.price);
+		ref17.getWeaponInfo();
 
 		Weapon ref18 = new Weapon();
 		ref18.weaponId = 18;
@@ -248,12 +162,7 @@ class WeaponRunner{
 		ref18.origin = "Amazon";
 		ref18.usage = "projectile";
 		ref18.price = 600.0;
-		System.out.println("the weapon id is " + ref18.weaponId);
-		System.out.println("the name is " + ref18.name);
-		System.out.println("the type is " + ref18.type);
-		System.out.println("the origin is " + ref18.origin);
-		System.out.println("the usage is " + ref18.usage);
-		System.out.println("the price is " + ref18.price);
+		ref18.getWeaponInfo();
 
 		Weapon ref19 = new Weapon();
 		ref19.weaponId = 19;
@@ -262,12 +171,7 @@ class WeaponRunner{
 		ref19.origin = "Medieval Europe";
 		ref19.usage = "Crushing ";
 		ref19.price = 5500.0;
-		System.out.println("the weapon id is " + ref19.weaponId);
-		System.out.println("the name is " + ref19.name);
-		System.out.println("the type is " + ref19.type);
-		System.out.println("the origin is " + ref19.origin);
-		System.out.println("the usage is " + ref19.usage);
-		System.out.println("the price is " + ref19.price);
+		ref19.getWeaponInfo();
 
 		Weapon ref20 = new Weapon();
 		ref20.weaponId = 20;
@@ -276,11 +180,6 @@ class WeaponRunner{
 		ref20.origin = "USA";
 		ref20.usage = "shooting";
 		ref20.price = 32000.0;
-		System.out.println("the weapon id is " + ref20.weaponId);
-		System.out.println("the name is " + ref20.name);
-		System.out.println("the type is " + ref20.type);
-		System.out.println("the origin is " + ref20.origin);
-		System.out.println("the usage is " + ref20.usage);
-		System.out.println("the price is " + ref20.price);
+		ref20.getWeaponInfo();
 	}
 }

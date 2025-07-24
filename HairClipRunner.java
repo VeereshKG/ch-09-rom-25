@@ -1,9 +1,7 @@
-class HairClipRunner{
-	
-
+class HairClipRunner {
 
 	public static void main(String[] clip) {
-		
+
 		HairClip ref1 = new HairClip();
 		ref1.clipId = 1;
 		ref1.brand = "Scunci";
@@ -11,12 +9,7 @@ class HairClipRunner{
 		ref1.color = "Black";
 		ref1.material = "Plastic";
 		ref1.size = "Medium";
-		System.out.println("the hair clip id is " + ref1.clipId);
-		System.out.println("the brand is " + ref1.brand);
-		System.out.println("the price of hair clip is " + ref1.price);
-		System.out.println("the color of hair clip is " + ref1.color);
-		System.out.println("the material of hair clip is " + ref1.material);
-		System.out.println("the size of hair clip is " + ref1.size);
+		ref1.getHairClipInfo();
 
 		HairClip ref2 = new HairClip();
 		ref2.clipId = 2;
@@ -25,12 +18,7 @@ class HairClipRunner{
 		ref2.color = "Brown";
 		ref2.material = "Metal";
 		ref2.size = "Large";
-		System.out.println("the hair clip id is " + ref2.clipId);
-		System.out.println("the brand is " + ref2.brand);
-		System.out.println("the price of hair clip is " + ref2.price);
-		System.out.println("the color of hair clip is " + ref2.color);
-		System.out.println("the material of hair clip is " + ref2.material);
-		System.out.println("the size of hair clip is " + ref2.size);
+		ref2.getHairClipInfo();
 
 		HairClip ref3 = new HairClip();
 		ref3.clipId = 3;
@@ -39,12 +27,7 @@ class HairClipRunner{
 		ref3.color = "Pink";
 		ref3.material = "Plastic";
 		ref3.size = "Small";
-		System.out.println("the hair clip id is " + ref3.clipId);
-		System.out.println("the brand is " + ref3.brand);
-		System.out.println("the price of hair clip is " + ref3.price);
-		System.out.println("the color of hair clip is " + ref3.color);
-		System.out.println("the material of hair clip is " + ref3.material);
-		System.out.println("the size of hair clip is " + ref3.size);
+		ref3.getHairClipInfo();
 
 		HairClip ref4 = new HairClip();
 		ref4.clipId = 4;
@@ -53,12 +36,7 @@ class HairClipRunner{
 		ref4.color = "Purple";
 		ref4.material = "Metal";
 		ref4.size = "Medium";
-		System.out.println("the hair clip id is " + ref4.clipId);
-		System.out.println("the brand is " + ref4.brand);
-		System.out.println("the price of hair clip is " + ref4.price);
-		System.out.println("the color of hair clip is " + ref4.color);
-		System.out.println("the material of hair clip is " + ref4.material);
-		System.out.println("the size of hair clip is " + ref4.size);
+		ref4.getHairClipInfo();
 
 		HairClip ref5 = new HairClip();
 		ref5.clipId = 5;
@@ -67,12 +45,7 @@ class HairClipRunner{
 		ref5.color = "Gold";
 		ref5.material = "Metal";
 		ref5.size = "Large";
-		System.out.println("the hair clip id is " + ref5.clipId);
-		System.out.println("the brand is " + ref5.brand);
-		System.out.println("the price of hair clip is " + ref5.price);
-		System.out.println("the color of hair clip is " + ref5.color);
-		System.out.println("the material of hair clip is " + ref5.material);
-		System.out.println("the size of hair clip is " + ref5.size);
+		ref5.getHairClipInfo();
 
 		HairClip ref6 = new HairClip();
 		ref6.clipId = 6;
@@ -81,12 +54,7 @@ class HairClipRunner{
 		ref6.color = "Red";
 		ref6.material = "Plastic";
 		ref6.size = "Small";
-		System.out.println("the hair clip id is " + ref6.clipId);
-		System.out.println("the brand is " + ref6.brand);
-		System.out.println("the price of hair clip is " + ref6.price);
-		System.out.println("the color of hair clip is " + ref6.color);
-		System.out.println("the material of hair clip is " + ref6.material);
-		System.out.println("the size of hair clip is " + ref6.size);
+		ref6.getHairClipInfo();
 
 		HairClip ref7 = new HairClip();
 		ref7.clipId = 7;
@@ -95,12 +63,7 @@ class HairClipRunner{
 		ref7.color = "Blue";
 		ref7.material = "Plastic";
 		ref7.size = "Medium";
-		System.out.println("the hair clip id is " + ref7.clipId);
-		System.out.println("the brand is " + ref7.brand);
-		System.out.println("the price of hair clip is " + ref7.price);
-		System.out.println("the color of hair clip is " + ref7.color);
-		System.out.println("the material of hair clip is " + ref7.material);
-		System.out.println("the size of hair clip is " + ref7.size);
+		ref7.getHairClipInfo();
 
 		HairClip ref8 = new HairClip();
 		ref8.clipId = 8;
@@ -109,12 +72,7 @@ class HairClipRunner{
 		ref8.color = "Silver";
 		ref8.material = "Metal";
 		ref8.size = "Large";
-		System.out.println("the hair clip id is " + ref8.clipId);
-		System.out.println("the brand is " + ref8.brand);
-		System.out.println("the price of hair clip is " + ref8.price);
-		System.out.println("the color of hair clip is " + ref8.color);
-		System.out.println("the material of hair clip is " + ref8.material);
-		System.out.println("the size of hair clip is " + ref8.size);
+		ref8.getHairClipInfo();
 
 		HairClip ref9 = new HairClip();
 		ref9.clipId = 9;
@@ -123,12 +81,7 @@ class HairClipRunner{
 		ref9.color = "Green";
 		ref9.material = "Plastic";
 		ref9.size = "Small";
-		System.out.println("the hair clip id is " + ref9.clipId);
-		System.out.println("the brand is " + ref9.brand);
-		System.out.println("the price of hair clip is " + ref9.price);
-		System.out.println("the color of hair clip is " + ref9.color);
-		System.out.println("the material of hair clip is " + ref9.material);
-		System.out.println("the size of hair clip is " + ref9.size);
+		ref9.getHairClipInfo();
 
 		HairClip ref10 = new HairClip();
 		ref10.clipId = 10;
@@ -137,14 +90,8 @@ class HairClipRunner{
 		ref10.color = "Black";
 		ref10.material = "Metal";
 		ref10.size = "Medium";
-		System.out.println("the hair clip id is " + ref10.clipId);
-		System.out.println("the brand is " + ref10.brand);
-		System.out.println("the price of hair clip is " + ref10.price);
-		System.out.println("the color of hair clip is " + ref10.color);
-		System.out.println("the material of hair clip is " + ref10.material);
-		System.out.println("the size of hair clip is " + ref10.size);
+		ref10.getHairClipInfo();
 
-		// Repeating for next 10 objects
 		HairClip ref11 = new HairClip();
 		ref11.clipId = 11;
 		ref11.brand = "Fossil";
@@ -152,12 +99,7 @@ class HairClipRunner{
 		ref11.color = "White";
 		ref11.material = "Plastic";
 		ref11.size = "Large";
-		System.out.println("the hair clip id is " + ref11.clipId);
-		System.out.println("the brand is " + ref11.brand);
-		System.out.println("the price of hair clip is " + ref11.price);
-		System.out.println("the color of hair clip is " + ref11.color);
-		System.out.println("the material of hair clip is " + ref11.material);
-		System.out.println("the size of hair clip is " + ref11.size);
+		ref11.getHairClipInfo();
 
 		HairClip ref12 = new HairClip();
 		ref12.clipId = 12;
@@ -166,12 +108,7 @@ class HairClipRunner{
 		ref12.color = "Beige";
 		ref12.material = "Plastic";
 		ref12.size = "Small";
-		System.out.println("the hair clip id is " + ref12.clipId);
-		System.out.println("the brand is " + ref12.brand);
-		System.out.println("the price of hair clip is " + ref12.price);
-		System.out.println("the color of hair clip is " + ref12.color);
-		System.out.println("the material of hair clip is " + ref12.material);
-		System.out.println("the size of hair clip is " + ref12.size);
+		ref12.getHairClipInfo();
 
 		HairClip ref13 = new HairClip();
 		ref13.clipId = 13;
@@ -180,12 +117,7 @@ class HairClipRunner{
 		ref13.color = "Brown";
 		ref13.material = "Wood";
 		ref13.size = "Medium";
-		System.out.println("the hair clip id is " + ref13.clipId);
-		System.out.println("the brand is " + ref13.brand);
-		System.out.println("the price of hair clip is " + ref13.price);
-		System.out.println("the color of hair clip is " + ref13.color);
-		System.out.println("the material of hair clip is " + ref13.material);
-		System.out.println("the size of hair clip is " + ref13.size);
+		ref13.getHairClipInfo();
 
 		HairClip ref14 = new HairClip();
 		ref14.clipId = 14;
@@ -194,12 +126,7 @@ class HairClipRunner{
 		ref14.color = "Pink";
 		ref14.material = "Plastic";
 		ref14.size = "Small";
-		System.out.println("the hair clip id is " + ref14.clipId);
-		System.out.println("the brand is " + ref14.brand);
-		System.out.println("the price of hair clip is " + ref14.price);
-		System.out.println("the color of hair clip is " + ref14.color);
-		System.out.println("the material of hair clip is " + ref14.material);
-		System.out.println("the size of hair clip is " + ref14.size);
+		ref14.getHairClipInfo();
 
 		HairClip ref15 = new HairClip();
 		ref15.clipId = 15;
@@ -208,12 +135,7 @@ class HairClipRunner{
 		ref15.color = "Gray";
 		ref15.material = "Plastic";
 		ref15.size = "Medium";
-		System.out.println("the hair clip id is " + ref15.clipId);
-		System.out.println("the brand is " + ref15.brand);
-		System.out.println("the price of hair clip is " + ref15.price);
-		System.out.println("the color of hair clip is " + ref15.color);
-		System.out.println("the material of hair clip is " + ref15.material);
-		System.out.println("the size of hair clip is " + ref15.size);
+		ref15.getHairClipInfo();
 
 		HairClip ref16 = new HairClip();
 		ref16.clipId = 16;
@@ -222,12 +144,7 @@ class HairClipRunner{
 		ref16.color = "Orange";
 		ref16.material = "Plastic";
 		ref16.size = "Large";
-		System.out.println("the hair clip id is " + ref16.clipId);
-		System.out.println("the brand is " + ref16.brand);
-		System.out.println("the price of hair clip is " + ref16.price);
-		System.out.println("the color of hair clip is " + ref16.color);
-		System.out.println("the material of hair clip is " + ref16.material);
-		System.out.println("the size of hair clip is " + ref16.size);
+		ref16.getHairClipInfo();
 
 		HairClip ref17 = new HairClip();
 		ref17.clipId = 17;
@@ -236,12 +153,7 @@ class HairClipRunner{
 		ref17.color = "Yellow";
 		ref17.material = "Metal";
 		ref17.size = "Medium";
-		System.out.println("the hair clip id is " + ref17.clipId);
-		System.out.println("the brand is " + ref17.brand);
-		System.out.println("the price of hair clip is " + ref17.price);
-		System.out.println("the color of hair clip is " + ref17.color);
-		System.out.println("the material of hair clip is " + ref17.material);
-		System.out.println("the size of hair clip is " + ref17.size);
+		ref17.getHairClipInfo();
 
 		HairClip ref18 = new HairClip();
 		ref18.clipId = 18;
@@ -250,12 +162,7 @@ class HairClipRunner{
 		ref18.color = "Blue";
 		ref18.material = "Plastic";
 		ref18.size = "Small";
-		System.out.println("the hair clip id is " + ref18.clipId);
-		System.out.println("the brand is " + ref18.brand);
-		System.out.println("the price of hair clip is " + ref18.price);
-		System.out.println("the color of hair clip is " + ref18.color);
-		System.out.println("the material of hair clip is " + ref18.material);
-		System.out.println("the size of hair clip is " + ref18.size);
+		ref18.getHairClipInfo();
 
 		HairClip ref19 = new HairClip();
 		ref19.clipId = 19;
@@ -264,12 +171,7 @@ class HairClipRunner{
 		ref19.color = "Purple";
 		ref19.material = "Plastic";
 		ref19.size = "Medium";
-		System.out.println("the hair clip id is " + ref19.clipId);
-		System.out.println("the brand is " + ref19.brand);
-		System.out.println("the price of hair clip is " + ref19.price);
-		System.out.println("the color of hair clip is " + ref19.color);
-		System.out.println("the material of hair clip is " + ref19.material);
-		System.out.println("the size of hair clip is " + ref19.size);
+		ref19.getHairClipInfo();
 
 		HairClip ref20 = new HairClip();
 		ref20.clipId = 20;
@@ -278,11 +180,6 @@ class HairClipRunner{
 		ref20.color = "Silver";
 		ref20.material = "Metal";
 		ref20.size = "Large";
-		System.out.println("the hair clip id is " + ref20.clipId);
-		System.out.println("the brand is " + ref20.brand);
-		System.out.println("the price of hair clip is " + ref20.price);
-		System.out.println("the color of hair clip is " + ref20.color);
-		System.out.println("the material of hair clip is " + ref20.material);
-		System.out.println("the size of hair clip is " + ref20.size);
+		ref20.getHairClipInfo();
 	}
 }

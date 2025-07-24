@@ -9,12 +9,7 @@ class PipeRunner {
 		ref1.length = 10.0;
 		ref1.diameter = 2.0;
 		ref1.price = 250.0;
-		System.out.println("the pipe id is " + ref1.pipeId);
-		System.out.println("the brand is " + ref1.brand);
-		System.out.println("the type is " + ref1.type);
-		System.out.println("the length is " + ref1.length);
-		System.out.println("the diameter is " + ref1.diameter);
-		System.out.println("the price is " + ref1.price);
+		ref1.getPipeInfo();
 
 		Pipe ref2 = new Pipe();
 		ref2.pipeId = 2;
@@ -23,12 +18,7 @@ class PipeRunner {
 		ref2.length = 15.0;
 		ref2.diameter = 1.5;
 		ref2.price = 300.0;
-		System.out.println("the pipe id is " + ref2.pipeId);
-		System.out.println("the brand is " + ref2.brand);
-		System.out.println("the type is " + ref2.type);
-		System.out.println("the length is " + ref2.length);
-		System.out.println("the diameter is " + ref2.diameter);
-		System.out.println("the price is " + ref2.price);
+		ref2.getPipeInfo();
 
 		Pipe ref3 = new Pipe();
 		ref3.pipeId = 3;
@@ -37,12 +27,7 @@ class PipeRunner {
 		ref3.length = 12.0;
 		ref3.diameter = 2.5;
 		ref3.price = 280.0;
-		System.out.println("the pipe id is " + ref3.pipeId);
-		System.out.println("the brand is " + ref3.brand);
-		System.out.println("the type is " + ref3.type);
-		System.out.println("the length is " + ref3.length);
-		System.out.println("the diameter is " + ref3.diameter);
-		System.out.println("the price is " + ref3.price);
+		ref3.getPipeInfo();
 
 		Pipe ref4 = new Pipe();
 		ref4.pipeId = 4;
@@ -51,12 +36,7 @@ class PipeRunner {
 		ref4.length = 20.0;
 		ref4.diameter = 3.0;
 		ref4.price = 350.0;
-		System.out.println("the pipe id is " + ref4.pipeId);
-		System.out.println("the brand is " + ref4.brand);
-		System.out.println("the type is " + ref4.type);
-		System.out.println("the length is " + ref4.length);
-		System.out.println("the diameter is " + ref4.diameter);
-		System.out.println("the price is " + ref4.price);
+		ref4.getPipeInfo();
 
 		Pipe ref5 = new Pipe();
 		ref5.pipeId = 5;
@@ -65,12 +45,7 @@ class PipeRunner {
 		ref5.length = 18.0;
 		ref5.diameter = 1.25;
 		ref5.price = 330.0;
-		System.out.println("the pipe id is " + ref5.pipeId);
-		System.out.println("the brand is " + ref5.brand);
-		System.out.println("the type is " + ref5.type);
-		System.out.println("the length is " + ref5.length);
-		System.out.println("the diameter is " + ref5.diameter);
-		System.out.println("the price is " + ref5.price);
+		ref5.getPipeInfo();
 
 		Pipe ref6 = new Pipe();
 		ref6.pipeId = 6;
@@ -79,12 +54,7 @@ class PipeRunner {
 		ref6.length = 25.0;
 		ref6.diameter = 4.0;
 		ref6.price = 500.0;
-		System.out.println("the pipe id is " + ref6.pipeId);
-		System.out.println("the brand is " + ref6.brand);
-		System.out.println("the type is " + ref6.type);
-		System.out.println("the length is " + ref6.length);
-		System.out.println("the diameter is " + ref6.diameter);
-		System.out.println("the price is " + ref6.price);
+		ref6.getPipeInfo();
 
 		Pipe ref7 = new Pipe();
 		ref7.pipeId = 7;
@@ -93,12 +63,7 @@ class PipeRunner {
 		ref7.length = 30.0;
 		ref7.diameter = 2.0;
 		ref7.price = 280.0;
-		System.out.println("the pipe id is " + ref7.pipeId);
-		System.out.println("the brand is " + ref7.brand);
-		System.out.println("the type is " + ref7.type);
-		System.out.println("the length is " + ref7.length);
-		System.out.println("the diameter is " + ref7.diameter);
-		System.out.println("the price is " + ref7.price);
+		ref7.getPipeInfo();
 
 		Pipe ref8 = new Pipe();
 		ref8.pipeId = 8;
@@ -107,12 +72,7 @@ class PipeRunner {
 		ref8.length = 10.0;
 		ref8.diameter = 1.0;
 		ref8.price = 210.0;
-		System.out.println("the pipe id is " + ref8.pipeId);
-		System.out.println("the brand is " + ref8.brand);
-		System.out.println("the type is " + ref8.type);
-		System.out.println("the length is " + ref8.length);
-		System.out.println("the diameter is " + ref8.diameter);
-		System.out.println("the price is " + ref8.price);
+		ref8.getPipeInfo();
 
 		Pipe ref9 = new Pipe();
 		ref9.pipeId = 9;
@@ -121,12 +81,7 @@ class PipeRunner {
 		ref9.length = 8.0;
 		ref9.diameter = 1.5;
 		ref9.price = 700.0;
-		System.out.println("the pipe id is " + ref9.pipeId);
-		System.out.println("the brand is " + ref9.brand);
-		System.out.println("the type is " + ref9.type);
-		System.out.println("the length is " + ref9.length);
-		System.out.println("the diameter is " + ref9.diameter);
-		System.out.println("the price is " + ref9.price);
+		ref9.getPipeInfo();
 
 		Pipe ref10 = new Pipe();
 		ref10.pipeId = 10;
@@ -135,26 +90,16 @@ class PipeRunner {
 		ref10.length = 12.0;
 		ref10.diameter = 2.5;
 		ref10.price = 600.0;
-		System.out.println("the pipe id is " + ref10.pipeId);
-		System.out.println("the brand is " + ref10.brand);
-		System.out.println("the type is " + ref10.type);
-		System.out.println("the length is " + ref10.length);
-		System.out.println("the diameter is " + ref10.diameter);
-		System.out.println("the price is " + ref10.price);
-		
-				Pipe ref11 = new Pipe();
+		ref10.getPipeInfo();
+
+		Pipe ref11 = new Pipe();
 		ref11.pipeId = 11;
 		ref11.brand = "Tata";
 		ref11.type = "Steel";
 		ref11.length = 20.0;
 		ref11.diameter = 3.0;
 		ref11.price = 850.0;
-		System.out.println("the pipe id is " + ref11.pipeId);
-		System.out.println("the brand is " + ref11.brand);
-		System.out.println("the type is " + ref11.type);
-		System.out.println("the length is " + ref11.length);
-		System.out.println("the diameter is " + ref11.diameter);
-		System.out.println("the price is " + ref11.price);
+		ref11.getPipeInfo();
 
 		Pipe ref12 = new Pipe();
 		ref12.pipeId = 12;
@@ -163,12 +108,7 @@ class PipeRunner {
 		ref12.length = 25.0;
 		ref12.diameter = 2.0;
 		ref12.price = 390.0;
-		System.out.println("the pipe id is " + ref12.pipeId);
-		System.out.println("the brand is " + ref12.brand);
-		System.out.println("the type is " + ref12.type);
-		System.out.println("the length is " + ref12.length);
-		System.out.println("the diameter is " + ref12.diameter);
-		System.out.println("the price is " + ref12.price);
+		ref12.getPipeInfo();
 
 		Pipe ref13 = new Pipe();
 		ref13.pipeId = 13;
@@ -177,12 +117,7 @@ class PipeRunner {
 		ref13.length = 15.0;
 		ref13.diameter = 2.25;
 		ref13.price = 410.0;
-		System.out.println("the pipe id is " + ref13.pipeId);
-		System.out.println("the brand is " + ref13.brand);
-		System.out.println("the type is " + ref13.type);
-		System.out.println("the length is " + ref13.length);
-		System.out.println("the diameter is " + ref13.diameter);
-		System.out.println("the price is " + ref13.price);
+		ref13.getPipeInfo();
 
 		Pipe ref14 = new Pipe();
 		ref14.pipeId = 14;
@@ -191,12 +126,7 @@ class PipeRunner {
 		ref14.length = 35.0;
 		ref14.diameter = 5.0;
 		ref14.price = 950.0;
-		System.out.println("the pipe id is " + ref14.pipeId);
-		System.out.println("the brand is " + ref14.brand);
-		System.out.println("the type is " + ref14.type);
-		System.out.println("the length is " + ref14.length);
-		System.out.println("the diameter is " + ref14.diameter);
-		System.out.println("the price is " + ref14.price);
+		ref14.getPipeInfo();
 
 		Pipe ref15 = new Pipe();
 		ref15.pipeId = 15;
@@ -205,12 +135,7 @@ class PipeRunner {
 		ref15.length = 18.0;
 		ref15.diameter = 1.75;
 		ref15.price = 390.0;
-		System.out.println("the pipe id is " + ref15.pipeId);
-		System.out.println("the brand is " + ref15.brand);
-		System.out.println("the type is " + ref15.type);
-		System.out.println("the length is " + ref15.length);
-		System.out.println("the diameter is " + ref15.diameter);
-		System.out.println("the price is " + ref15.price);
+		ref15.getPipeInfo();
 
 		Pipe ref16 = new Pipe();
 		ref16.pipeId = 16;
@@ -219,12 +144,7 @@ class PipeRunner {
 		ref16.length = 22.0;
 		ref16.diameter = 3.5;
 		ref16.price = 1050.0;
-		System.out.println("the pipe id is " + ref16.pipeId);
-		System.out.println("the brand is " + ref16.brand);
-		System.out.println("the type is " + ref16.type);
-		System.out.println("the length is " + ref16.length);
-		System.out.println("the diameter is " + ref16.diameter);
-		System.out.println("the price is " + ref16.price);
+		ref16.getPipeInfo();
 
 		Pipe ref17 = new Pipe();
 		ref17.pipeId = 17;
@@ -233,12 +153,7 @@ class PipeRunner {
 		ref17.length = 16.0;
 		ref17.diameter = 2.0;
 		ref17.price = 340.0;
-		System.out.println("the pipe id is " + ref17.pipeId);
-		System.out.println("the brand is " + ref17.brand);
-		System.out.println("the type is " + ref17.type);
-		System.out.println("the length is " + ref17.length);
-		System.out.println("the diameter is " + ref17.diameter);
-		System.out.println("the price is " + ref17.price);
+		ref17.getPipeInfo();
 
 		Pipe ref18 = new Pipe();
 		ref18.pipeId = 18;
@@ -247,12 +162,7 @@ class PipeRunner {
 		ref18.length = 24.0;
 		ref18.diameter = 4.5;
 		ref18.price = 1150.0;
-		System.out.println("the pipe id is " + ref18.pipeId);
-		System.out.println("the brand is " + ref18.brand);
-		System.out.println("the type is " + ref18.type);
-		System.out.println("the length is " + ref18.length);
-		System.out.println("the diameter is " + ref18.diameter);
-		System.out.println("the price is " + ref18.price);
+		ref18.getPipeInfo();
 
 		Pipe ref19 = new Pipe();
 		ref19.pipeId = 19;
@@ -261,12 +171,7 @@ class PipeRunner {
 		ref19.length = 28.0;
 		ref19.diameter = 5.0;
 		ref19.price = 980.0;
-		System.out.println("the pipe id is " + ref19.pipeId);
-		System.out.println("the brand is " + ref19.brand);
-		System.out.println("the type is " + ref19.type);
-		System.out.println("the length is " + ref19.length);
-		System.out.println("the diameter is " + ref19.diameter);
-		System.out.println("the price is " + ref19.price);
+		ref19.getPipeInfo();
 
 		Pipe ref20 = new Pipe();
 		ref20.pipeId = 20;
@@ -275,13 +180,6 @@ class PipeRunner {
 		ref20.length = 19.0;
 		ref20.diameter = 2.0;
 		ref20.price = 360.0;
-		System.out.println("the pipe id is " + ref20.pipeId);
-		System.out.println("the brand is " + ref20.brand);
-		System.out.println("the type is " + ref20.type);
-		System.out.println("the length is " + ref20.length);
-		System.out.println("the diameter is " + ref20.diameter);
-		System.out.println("the price is " + ref20.price);
-
+		ref20.getPipeInfo();
 	}
-	
-		}
+}

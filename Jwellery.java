@@ -6,4 +6,15 @@ class Jwellery{
 	double weight;
 	double price;
 	String design;
+	
+	public void getJwelleryInfo(){
+		System.out.println("the jwelleryId is"+jwelleryId);
+		System.out.println("the type is " + type);
+		System.out.println("the metal is " + metal);
+		System.out.println("the weight is " +weight);
+		System.out.println("the price is " + price);
+		System.out.println("the design is " + design);
+		System.out.println("");
+		
+	}
 	}

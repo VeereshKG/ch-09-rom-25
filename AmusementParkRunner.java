@@ -9,12 +9,8 @@ class AmusementParkRunner {
 		ref1.entryFee = 1200.0;
 		ref1.openingTime = "10:00 AM";
 		ref1.closingTime = "7:00 PM";
-		System.out.println("the park id is " + ref1.parkId);
-		System.out.println("the name is " + ref1.name);
-		System.out.println("the location is " + ref1.location);
-		System.out.println("the entry fee is " + ref1.entryFee);
-		System.out.println("the opening time is " + ref1.openingTime);
-		System.out.println("the closing time is " + ref1.closingTime);
+		ref1.getAmusementPark();
+	
 
 		AmusementPark ref2 = new AmusementPark();
 		ref2.parkId = 2;
@@ -23,12 +19,8 @@ class AmusementParkRunner {
 		ref2.entryFee = 900.0;
 		ref2.openingTime = "10:30 AM";
 		ref2.closingTime = "6:30 PM";
-		System.out.println("the park id is " + ref2.parkId);
-		System.out.println("the name is " + ref2.name);
-		System.out.println("the location is " + ref2.location);
-		System.out.println("the entry fee is " + ref2.entryFee);
-		System.out.println("the opening time is " + ref2.openingTime);
-		System.out.println("the closing time is " + ref2.closingTime);
+        ref2.getAmusementPark();
+
 
 		AmusementPark ref3 = new AmusementPark();
 		ref3.parkId = 3;
@@ -37,12 +29,9 @@ class AmusementParkRunner {
 		ref3.entryFee = 1100.0;
 		ref3.openingTime = "9:30 AM";
 		ref3.closingTime = "6:00 PM";
-		System.out.println("the park id is " + ref3.parkId);
-		System.out.println("the name is " + ref3.name);
-		System.out.println("the location is " + ref3.location);
-		System.out.println("the entry fee is " + ref3.entryFee);
-		System.out.println("the opening time is " + ref3.openingTime);
-		System.out.println("the closing time is " + ref3.closingTime);
+		ref3.getAmusementPark();
+		
+
 
 		AmusementPark ref4 = new AmusementPark();
 		ref4.parkId = 4;
@@ -51,12 +40,7 @@ class AmusementParkRunner {
 		ref4.entryFee = 800.0;
 		ref4.openingTime = "11:00 AM";
 		ref4.closingTime = "8:00 PM";
-		System.out.println("the park id is " + ref4.parkId);
-		System.out.println("the name is " + ref4.name);
-		System.out.println("the location is " + ref4.location);
-		System.out.println("the entry fee is " + ref4.entryFee);
-		System.out.println("the opening time is " + ref4.openingTime);
-		System.out.println("the closing time is " + ref4.closingTime);
+		ref4.getAmusementPark();
 
 		AmusementPark ref5 = new AmusementPark();
 		ref5.parkId = 5;
@@ -65,12 +49,7 @@ class AmusementParkRunner {
 		ref5.entryFee = 600.0;
 		ref5.openingTime = "10:00 AM";
 		ref5.closingTime = "7:30 PM";
-		System.out.println("the park id is " + ref5.parkId);
-		System.out.println("the name is " + ref5.name);
-		System.out.println("the location is " + ref5.location);
-		System.out.println("the entry fee is " + ref5.entryFee);
-		System.out.println("the opening time is " + ref5.openingTime);
-		System.out.println("the closing time is " + ref5.closingTime);
+		ref5.getAmusementPark();
 
 		AmusementPark ref6 = new AmusementPark();
 		ref6.parkId = 6;
@@ -79,12 +58,7 @@ class AmusementParkRunner {
 		ref6.entryFee = 500.0;
 		ref6.openingTime = "10:30 AM";
 		ref6.closingTime = "6:30 PM";
-		System.out.println("the park id is " + ref6.parkId);
-		System.out.println("the name is " + ref6.name);
-		System.out.println("the location is " + ref6.location);
-		System.out.println("the entry fee is " + ref6.entryFee);
-		System.out.println("the opening time is " + ref6.openingTime);
-		System.out.println("the closing time is " + ref6.closingTime);
+        ref6.getAmusementPark();
 
 		AmusementPark ref7 = new AmusementPark();
 		ref7.parkId = 7;
@@ -93,12 +67,8 @@ class AmusementParkRunner {
 		ref7.entryFee = 450.0;
 		ref7.openingTime = "9:45 AM";
 		ref7.closingTime = "5:30 PM";
-		System.out.println("the park id is " + ref7.parkId);
-		System.out.println("the name is " + ref7.name);
-		System.out.println("the location is " + ref7.location);
-		System.out.println("the entry fee is " + ref7.entryFee);
-		System.out.println("the opening time is " + ref7.openingTime);
-		System.out.println("the closing time is " + ref7.closingTime);
+		ref7.getAmusementPark();
+
 
 		AmusementPark ref8 = new AmusementPark();
 		ref8.parkId = 8;
@@ -107,12 +77,8 @@ class AmusementParkRunner {
 		ref8.entryFee = 700.0;
 		ref8.openingTime = "10:15 AM";
 		ref8.closingTime = "6:00 PM";
-		System.out.println("the park id is " + ref8.parkId);
-		System.out.println("the name is " + ref8.name);
-		System.out.println("the location is " + ref8.location);
-		System.out.println("the entry fee is " + ref8.entryFee);
-		System.out.println("the opening time is " + ref8.openingTime);
-		System.out.println("the closing time is " + ref8.closingTime);
+		ref8.getAmusementPark();
+
 
 		AmusementPark ref9 = new AmusementPark();
 		ref9.parkId = 9;
@@ -121,12 +87,8 @@ class AmusementParkRunner {
 		ref9.entryFee = 1000.0;
 		ref9.openingTime = "11:00 AM";
 		ref9.closingTime = "9:00 PM";
-		System.out.println("the park id is " + ref9.parkId);
-		System.out.println("the name is " + ref9.name);
-		System.out.println("the location is " + ref9.location);
-		System.out.println("the entry fee is " + ref9.entryFee);
-		System.out.println("the opening time is " + ref9.openingTime);
-		System.out.println("the closing time is " + ref9.closingTime);
+		ref9.getAmusementPark();
+
 
 		AmusementPark ref10 = new AmusementPark();
 		ref10.parkId = 10;
@@ -135,26 +97,16 @@ class AmusementParkRunner {
 		ref10.entryFee = 650.0;
 		ref10.openingTime = "10:00 AM";
 		ref10.closingTime = "6:30 PM";
-		System.out.println("the park id is " + ref10.parkId);
-		System.out.println("the name is " + ref10.name);
-		System.out.println("the location is " + ref10.location);
-		System.out.println("the entry fee is " + ref10.entryFee);
-		System.out.println("the opening time is " + ref10.openingTime);
-		System.out.println("the closing time is " + ref10.closingTime);
-		
-				AmusementPark ref11 = new AmusementPark();
+		ref10.getAmusementPark();
+
+		AmusementPark ref11 = new AmusementPark();
 		ref11.parkId = 11;
 		ref11.name = "Snow Kingdom";
 		ref11.location = "Chennai";
 		ref11.entryFee = 550.0;
 		ref11.openingTime = "11:00 AM";
 		ref11.closingTime = "8:00 PM";
-		System.out.println("the park id is " + ref11.parkId);
-		System.out.println("the name is " + ref11.name);
-		System.out.println("the location is " + ref11.location);
-		System.out.println("the entry fee is " + ref11.entryFee);
-		System.out.println("the opening time is " + ref11.openingTime);
-		System.out.println("the closing time is " + ref11.closingTime);
+		ref11.getAmusementPark();
 
 		AmusementPark ref12 = new AmusementPark();
 		ref12.parkId = 12;
@@ -163,12 +115,7 @@ class AmusementParkRunner {
 		ref12.entryFee = 480.0;
 		ref12.openingTime = "10:00 AM";
 		ref12.closingTime = "7:00 PM";
-		System.out.println("the park id is " + ref12.parkId);
-		System.out.println("the name is " + ref12.name);
-		System.out.println("the location is " + ref12.location);
-		System.out.println("the entry fee is " + ref12.entryFee);
-		System.out.println("the opening time is " + ref12.openingTime);
-		System.out.println("the closing time is " + ref12.closingTime);
+		ref12.getAmusementPark();
 
 		AmusementPark ref13 = new AmusementPark();
 		ref13.parkId = 13;
@@ -177,12 +124,7 @@ class AmusementParkRunner {
 		ref13.entryFee = 620.0;
 		ref13.openingTime = "10:15 AM";
 		ref13.closingTime = "6:45 PM";
-		System.out.println("the park id is " + ref13.parkId);
-		System.out.println("the name is " + ref13.name);
-		System.out.println("the location is " + ref13.location);
-		System.out.println("the entry fee is " + ref13.entryFee);
-		System.out.println("the opening time is " + ref13.openingTime);
-		System.out.println("the closing time is " + ref13.closingTime);
+		ref13.getAmusementPark();
 
 		AmusementPark ref14 = new AmusementPark();
 		ref14.parkId = 14;
@@ -191,13 +133,8 @@ class AmusementParkRunner {
 		ref14.entryFee = 850.0;
 		ref14.openingTime = "9:45 AM";
 		ref14.closingTime = "6:00 PM";
-		System.out.println("the park id is " + ref14.parkId);
-		System.out.println("the name is " + ref14.name);
-		System.out.println("the location is " + ref14.location);
-		System.out.println("the entry fee is " + ref14.entryFee);
-		System.out.println("the opening time is " + ref14.openingTime);
-		System.out.println("the closing time is " + ref14.closingTime);
-
+		ref14.getAmusementPark();
+		
 		AmusementPark ref15 = new AmusementPark();
 		ref15.parkId = 15;
 		ref15.name = "Ramoji Film City";
@@ -205,13 +142,8 @@ class AmusementParkRunner {
 		ref15.entryFee = 1150.0;
 		ref15.openingTime = "9:00 AM";
 		ref15.closingTime = "5:30 PM";
-		System.out.println("the park id is " + ref15.parkId);
-		System.out.println("the name is " + ref15.name);
-		System.out.println("the location is " + ref15.location);
-		System.out.println("the entry fee is " + ref15.entryFee);
-		System.out.println("the opening time is " + ref15.openingTime);
-		System.out.println("the closing time is " + ref15.closingTime);
-
+		ref15.getAmusementPark();
+	
 		AmusementPark ref16 = new AmusementPark();
 		ref16.parkId = 16;
 		ref16.name = "Smaaash";
@@ -219,12 +151,7 @@ class AmusementParkRunner {
 		ref16.entryFee = 700.0;
 		ref16.openingTime = "12:00 PM";
 		ref16.closingTime = "10:00 PM";
-		System.out.println("the park id is " + ref16.parkId);
-		System.out.println("the name is " + ref16.name);
-		System.out.println("the location is " + ref16.location);
-		System.out.println("the entry fee is " + ref16.entryFee);
-		System.out.println("the opening time is " + ref16.openingTime);
-		System.out.println("the closing time is " + ref16.closingTime);
+		ref16.getAmusementPark();
 
 		AmusementPark ref17 = new AmusementPark();
 		ref17.parkId = 17;
@@ -233,12 +160,7 @@ class AmusementParkRunner {
 		ref17.entryFee = 560.0;
 		ref17.openingTime = "11:30 AM";
 		ref17.closingTime = "8:30 PM";
-		System.out.println("the park id is " + ref17.parkId);
-		System.out.println("the name is " + ref17.name);
-		System.out.println("the location is " + ref17.location);
-		System.out.println("the entry fee is " + ref17.entryFee);
-		System.out.println("the opening time is " + ref17.openingTime);
-		System.out.println("the closing time is " + ref17.closingTime);
+		ref17.getAmusementPark();
 
 		AmusementPark ref18 = new AmusementPark();
 		ref18.parkId = 18;
@@ -247,12 +169,7 @@ class AmusementParkRunner {
 		ref18.entryFee = 980.0;
 		ref18.openingTime = "10:30 AM";
 		ref18.closingTime = "7:30 PM";
-		System.out.println("the park id is " + ref18.parkId);
-		System.out.println("the name is " + ref18.name);
-		System.out.println("the location is " + ref18.location);
-		System.out.println("the entry fee is " + ref18.entryFee);
-		System.out.println("the opening time is " + ref18.openingTime);
-		System.out.println("the closing time is " + ref18.closingTime);
+		ref18.getAmusementPark();
 
 		AmusementPark ref19 = new AmusementPark();
 		ref19.parkId = 19;
@@ -261,12 +178,7 @@ class AmusementParkRunner {
 		ref19.entryFee = 870.0;
 		ref19.openingTime = "9:30 AM";
 		ref19.closingTime = "6:45 PM";
-		System.out.println("the park id is " + ref19.parkId);
-		System.out.println("the name is " + ref19.name);
-		System.out.println("the location is " + ref19.location);
-		System.out.println("the entry fee is " + ref19.entryFee);
-		System.out.println("the opening time is " + ref19.openingTime);
-		System.out.println("the closing time is " + ref19.closingTime);
+		ref19.getAmusementPark();
 
 		AmusementPark ref20 = new AmusementPark();
 		ref20.parkId = 20;
@@ -275,12 +187,8 @@ class AmusementParkRunner {
 		ref20.entryFee = 620.0;
 		ref20.openingTime = "10:00 AM";
 		ref20.closingTime = "6:00 PM";
-		System.out.println("the park id is " + ref20.parkId);
-		System.out.println("the name is " + ref20.name);
-		System.out.println("the location is " + ref20.location);
-		System.out.println("the entry fee is " + ref20.entryFee);
-		System.out.println("the opening time is " + ref20.openingTime);
-		System.out.println("the closing time is " + ref20.closingTime);
+		ref20.getAmusementPark();
+
 
 	}
 }

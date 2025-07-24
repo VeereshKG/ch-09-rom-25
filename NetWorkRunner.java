@@ -1,6 +1,4 @@
 class NetWorkRunner {
-
-
 	public static void main(String[] network) {
 
 		NetWork ref1 = new NetWork();
@@ -10,12 +8,7 @@ class NetWorkRunner {
 		ref1.provider = "Reliance";
 		ref1.speed = 150.0;
 		ref1.price = 399.0;
-		System.out.println("the network id is " + ref1.networkId);
-		System.out.println("the name is " + ref1.name);
-		System.out.println("the type is " + ref1.type);
-		System.out.println("the provider is " + ref1.provider);
-		System.out.println("the speed is " + ref1.speed);
-		System.out.println("the price is " + ref1.price);
+		ref1.getNetworkInfo();
 
 		NetWork ref2 = new NetWork();
 		ref2.networkId = 2;
@@ -24,12 +17,7 @@ class NetWorkRunner {
 		ref2.provider = "Airtel";
 		ref2.speed = 200.0;
 		ref2.price = 499.0;
-		System.out.println("the network id is " + ref2.networkId);
-		System.out.println("the name is " + ref2.name);
-		System.out.println("the type is " + ref2.type);
-		System.out.println("the provider is " + ref2.provider);
-		System.out.println("the speed is " + ref2.speed);
-		System.out.println("the price is " + ref2.price);
+		ref2.getNetworkInfo();
 
 		NetWork ref3 = new NetWork();
 		ref3.networkId = 3;
@@ -38,12 +26,7 @@ class NetWorkRunner {
 		ref3.provider = "Vodafone Idea";
 		ref3.speed = 60.0;
 		ref3.price = 249.0;
-		System.out.println("the network id is " + ref3.networkId);
-		System.out.println("the name is " + ref3.name);
-		System.out.println("the type is " + ref3.type);
-		System.out.println("the provider is " + ref3.provider);
-		System.out.println("the speed is " + ref3.speed);
-		System.out.println("the price is " + ref3.price);
+		ref3.getNetworkInfo();
 
 		NetWork ref4 = new NetWork();
 		ref4.networkId = 4;
@@ -52,12 +35,7 @@ class NetWorkRunner {
 		ref4.provider = "BSNL";
 		ref4.speed = 100.0;
 		ref4.price = 329.0;
-		System.out.println("the network id is " + ref4.networkId);
-		System.out.println("the name is " + ref4.name);
-		System.out.println("the type is " + ref4.type);
-		System.out.println("the provider is " + ref4.provider);
-		System.out.println("the speed is " + ref4.speed);
-		System.out.println("the price is " + ref4.price);
+		ref4.getNetworkInfo();
 
 		NetWork ref5 = new NetWork();
 		ref5.networkId = 5;
@@ -66,12 +44,7 @@ class NetWorkRunner {
 		ref5.provider = "ACT";
 		ref5.speed = 300.0;
 		ref5.price = 799.0;
-		System.out.println("the network id is " + ref5.networkId);
-		System.out.println("the name is " + ref5.name);
-		System.out.println("the type is " + ref5.type);
-		System.out.println("the provider is " + ref5.provider);
-		System.out.println("the speed is " + ref5.speed);
-		System.out.println("the price is " + ref5.price);
+		ref5.getNetworkInfo();
 
 		NetWork ref6 = new NetWork();
 		ref6.networkId = 6;
@@ -80,12 +53,7 @@ class NetWorkRunner {
 		ref6.provider = "Excitel";
 		ref6.speed = 200.0;
 		ref6.price = 499.0;
-		System.out.println("the network id is " + ref6.networkId);
-		System.out.println("the name is " + ref6.name);
-		System.out.println("the type is " + ref6.type);
-		System.out.println("the provider is " + ref6.provider);
-		System.out.println("the speed is " + ref6.speed);
-		System.out.println("the price is " + ref6.price);
+		ref6.getNetworkInfo();
 
 		NetWork ref7 = new NetWork();
 		ref7.networkId = 7;
@@ -94,12 +62,7 @@ class NetWorkRunner {
 		ref7.provider = "RailTel";
 		ref7.speed = 100.0;
 		ref7.price = 399.0;
-		System.out.println("the network id is " + ref7.networkId);
-		System.out.println("the name is " + ref7.name);
-		System.out.println("the type is " + ref7.type);
-		System.out.println("the provider is " + ref7.provider);
-		System.out.println("the speed is " + ref7.speed);
-		System.out.println("the price is " + ref7.price);
+		ref7.getNetworkInfo();
 
 		NetWork ref8 = new NetWork();
 		ref8.networkId = 8;
@@ -108,12 +71,7 @@ class NetWorkRunner {
 		ref8.provider = "Hathway";
 		ref8.speed = 50.0;
 		ref8.price = 299.0;
-		System.out.println("the network id is " + ref8.networkId);
-		System.out.println("the name is " + ref8.name);
-		System.out.println("the type is " + ref8.type);
-		System.out.println("the provider is " + ref8.provider);
-		System.out.println("the speed is " + ref8.speed);
-		System.out.println("the price is " + ref8.price);
+		ref8.getNetworkInfo();
 
 		NetWork ref9 = new NetWork();
 		ref9.networkId = 9;
@@ -122,12 +80,7 @@ class NetWorkRunner {
 		ref9.provider = "GTPL";
 		ref9.speed = 40.0;
 		ref9.price = 250.0;
-		System.out.println("the network id is " + ref9.networkId);
-		System.out.println("the name is " + ref9.name);
-		System.out.println("the type is " + ref9.type);
-		System.out.println("the provider is " + ref9.provider);
-		System.out.println("the speed is " + ref9.speed);
-		System.out.println("the price is " + ref9.price);
+		ref9.getNetworkInfo();
 
 		NetWork ref10 = new NetWork();
 		ref10.networkId = 10;
@@ -136,26 +89,16 @@ class NetWorkRunner {
 		ref10.provider = "Tikona";
 		ref10.speed = 70.0;
 		ref10.price = 350.0;
-		System.out.println("the network id is " + ref10.networkId);
-		System.out.println("the name is " + ref10.name);
-		System.out.println("the type is " + ref10.type);
-		System.out.println("the provider is " + ref10.provider);
-		System.out.println("the speed is " + ref10.speed);
-		System.out.println("the price is " + ref10.price);
-		
-				NetWork ref11 = new NetWork();
+		ref10.getNetworkInfo();
+
+		NetWork ref11 = new NetWork();
 		ref11.networkId = 11;
 		ref11.name = "YOU Broadband";
 		ref11.type = "Cable";
 		ref11.provider = "Vodafone";
 		ref11.speed = 75.0;
 		ref11.price = 400.0;
-		System.out.println("the network id is " + ref11.networkId);
-		System.out.println("the name is " + ref11.name);
-		System.out.println("the type is " + ref11.type);
-		System.out.println("the provider is " + ref11.provider);
-		System.out.println("the speed is " + ref11.speed);
-		System.out.println("the price is " + ref11.price);
+		ref11.getNetworkInfo();
 
 		NetWork ref12 = new NetWork();
 		ref12.networkId = 12;
@@ -164,12 +107,7 @@ class NetWorkRunner {
 		ref12.provider = "SpectraNet";
 		ref12.speed = 300.0;
 		ref12.price = 999.0;
-		System.out.println("the network id is " + ref12.networkId);
-		System.out.println("the name is " + ref12.name);
-		System.out.println("the type is " + ref12.type);
-		System.out.println("the provider is " + ref12.provider);
-		System.out.println("the speed is " + ref12.speed);
-		System.out.println("the price is " + ref12.price);
+		ref12.getNetworkInfo();
 
 		NetWork ref13 = new NetWork();
 		ref13.networkId = 13;
@@ -178,12 +116,7 @@ class NetWorkRunner {
 		ref13.provider = "Den Networks";
 		ref13.speed = 60.0;
 		ref13.price = 320.0;
-		System.out.println("the network id is " + ref13.networkId);
-		System.out.println("the name is " + ref13.name);
-		System.out.println("the type is " + ref13.type);
-		System.out.println("the provider is " + ref13.provider);
-		System.out.println("the speed is " + ref13.speed);
-		System.out.println("the price is " + ref13.price);
+		ref13.getNetworkInfo();
 
 		NetWork ref14 = new NetWork();
 		ref14.networkId = 14;
@@ -192,12 +125,7 @@ class NetWorkRunner {
 		ref14.provider = "D-Vois";
 		ref14.speed = 150.0;
 		ref14.price = 450.0;
-		System.out.println("the network id is " + ref14.networkId);
-		System.out.println("the name is " + ref14.name);
-		System.out.println("the type is " + ref14.type);
-		System.out.println("the provider is " + ref14.provider);
-		System.out.println("the speed is " + ref14.speed);
-		System.out.println("the price is " + ref14.price);
+		ref14.getNetworkInfo();
 
 		NetWork ref15 = new NetWork();
 		ref15.networkId = 15;
@@ -206,12 +134,7 @@ class NetWorkRunner {
 		ref15.provider = "Netplus";
 		ref15.speed = 100.0;
 		ref15.price = 399.0;
-		System.out.println("the network id is " + ref15.networkId);
-		System.out.println("the name is " + ref15.name);
-		System.out.println("the type is " + ref15.type);
-		System.out.println("the provider is " + ref15.provider);
-		System.out.println("the speed is " + ref15.speed);
-		System.out.println("the price is " + ref15.price);
+		ref15.getNetworkInfo();
 
 		NetWork ref16 = new NetWork();
 		ref16.networkId = 16;
@@ -220,12 +143,7 @@ class NetWorkRunner {
 		ref16.provider = "Siti Networks";
 		ref16.speed = 50.0;
 		ref16.price = 280.0;
-		System.out.println("the network id is " + ref16.networkId);
-		System.out.println("the name is " + ref16.name);
-		System.out.println("the type is " + ref16.type);
-		System.out.println("the provider is " + ref16.provider);
-		System.out.println("the speed is " + ref16.speed);
-		System.out.println("the price is " + ref16.price);
+		ref16.getNetworkInfo();
 
 		NetWork ref17 = new NetWork();
 		ref17.networkId = 17;
@@ -234,12 +152,7 @@ class NetWorkRunner {
 		ref17.provider = "Tikona";
 		ref17.speed = 40.0;
 		ref17.price = 300.0;
-		System.out.println("the network id is " + ref17.networkId);
-		System.out.println("the name is " + ref17.name);
-		System.out.println("the type is " + ref17.type);
-		System.out.println("the provider is " + ref17.provider);
-		System.out.println("the speed is " + ref17.speed);
-		System.out.println("the price is " + ref17.price);
+		ref17.getNetworkInfo();
 
 		NetWork ref18 = new NetWork();
 		ref18.networkId = 18;
@@ -248,12 +161,7 @@ class NetWorkRunner {
 		ref18.provider = "Cherrinet";
 		ref18.speed = 200.0;
 		ref18.price = 599.0;
-		System.out.println("the network id is " + ref18.networkId);
-		System.out.println("the name is " + ref18.name);
-		System.out.println("the type is " + ref18.type);
-		System.out.println("the provider is " + ref18.provider);
-		System.out.println("the speed is " + ref18.speed);
-		System.out.println("the price is " + ref18.price);
+		ref18.getNetworkInfo();
 
 		NetWork ref19 = new NetWork();
 		ref19.networkId = 19;
@@ -262,12 +170,7 @@ class NetWorkRunner {
 		ref19.provider = "Nextra";
 		ref19.speed = 120.0;
 		ref19.price = 499.0;
-		System.out.println("the network id is " + ref19.networkId);
-		System.out.println("the name is " + ref19.name);
-		System.out.println("the type is " + ref19.type);
-		System.out.println("the provider is " + ref19.provider);
-		System.out.println("the speed is " + ref19.speed);
-		System.out.println("the price is " + ref19.price);
+		ref19.getNetworkInfo();
 
 		NetWork ref20 = new NetWork();
 		ref20.networkId = 20;
@@ -276,12 +179,6 @@ class NetWorkRunner {
 		ref20.provider = "Alliance";
 		ref20.speed = 150.0;
 		ref20.price = 550.0;
-		System.out.println("the network id is " + ref20.networkId);
-		System.out.println("the name is " + ref20.name);
-		System.out.println("the type is " + ref20.type);
-		System.out.println("the provider is " + ref20.provider);
-		System.out.println("the speed is " + ref20.speed);
-		System.out.println("the price is " + ref20.price);
-
+		ref20.getNetworkInfo();
 	}
 }

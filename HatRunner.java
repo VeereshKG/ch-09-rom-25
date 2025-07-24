@@ -1,6 +1,5 @@
 class HatRunner {
 
-
 	public static void main(String[] hat) {
 
 		Hat ref1 = new Hat();
@@ -10,12 +9,7 @@ class HatRunner {
 		ref1.size = "M";
 		ref1.type = "Baseball";
 		ref1.price = 499.0;
-		System.out.println("the hat id is " + ref1.hatId);
-		System.out.println("the brand is " + ref1.brand);
-		System.out.println("the color is " + ref1.color);
-		System.out.println("the size is " + ref1.size);
-		System.out.println("the type is " + ref1.type);
-		System.out.println("the price is " + ref1.price);
+		ref1.getHatInfo();
 
 		Hat ref2 = new Hat();
 		ref2.hatId = 2;
@@ -24,12 +18,7 @@ class HatRunner {
 		ref2.size = "L";
 		ref2.type = "Snapback";
 		ref2.price = 599.0;
-		System.out.println("the hat id is " + ref2.hatId);
-		System.out.println("the brand is " + ref2.brand);
-		System.out.println("the color is " + ref2.color);
-		System.out.println("the size is " + ref2.size);
-		System.out.println("the type is " + ref2.type);
-		System.out.println("the price is " + ref2.price);
+		ref2.getHatInfo();
 
 		Hat ref3 = new Hat();
 		ref3.hatId = 3;
@@ -38,12 +27,7 @@ class HatRunner {
 		ref3.size = "S";
 		ref3.type = "Bucket";
 		ref3.price = 399.0;
-		System.out.println("the hat id is " + ref3.hatId);
-		System.out.println("the brand is " + ref3.brand);
-		System.out.println("the color is " + ref3.color);
-		System.out.println("the size is " + ref3.size);
-		System.out.println("the type is " + ref3.type);
-		System.out.println("the price is " + ref3.price);
+		ref3.getHatInfo();
 
 		Hat ref4 = new Hat();
 		ref4.hatId = 4;
@@ -52,12 +36,7 @@ class HatRunner {
 		ref4.size = "M";
 		ref4.type = "Trucker";
 		ref4.price = 450.0;
-		System.out.println("the hat id is " + ref4.hatId);
-		System.out.println("the brand is " + ref4.brand);
-		System.out.println("the color is " + ref4.color);
-		System.out.println("the size is " + ref4.size);
-		System.out.println("the type is " + ref4.type);
-		System.out.println("the price is " + ref4.price);
+		ref4.getHatInfo();
 
 		Hat ref5 = new Hat();
 		ref5.hatId = 5;
@@ -66,12 +45,7 @@ class HatRunner {
 		ref5.size = "L";
 		ref5.type = "Military";
 		ref5.price = 550.0;
-		System.out.println("the hat id is " + ref5.hatId);
-		System.out.println("the brand is " + ref5.brand);
-		System.out.println("the color is " + ref5.color);
-		System.out.println("the size is " + ref5.size);
-		System.out.println("the type is " + ref5.type);
-		System.out.println("the price is " + ref5.price);
+		ref5.getHatInfo();
 
 		Hat ref6 = new Hat();
 		ref6.hatId = 6;
@@ -80,12 +54,7 @@ class HatRunner {
 		ref6.size = "M";
 		ref6.type = "Fedora";
 		ref6.price = 699.0;
-		System.out.println("the hat id is " + ref6.hatId);
-		System.out.println("the brand is " + ref6.brand);
-		System.out.println("the color is " + ref6.color);
-		System.out.println("the size is " + ref6.size);
-		System.out.println("the type is " + ref6.type);
-		System.out.println("the price is " + ref6.price);
+		ref6.getHatInfo();
 
 		Hat ref7 = new Hat();
 		ref7.hatId = 7;
@@ -94,12 +63,7 @@ class HatRunner {
 		ref7.size = "S";
 		ref7.type = "Boater";
 		ref7.price = 480.0;
-		System.out.println("the hat id is " + ref7.hatId);
-		System.out.println("the brand is " + ref7.brand);
-		System.out.println("the color is " + ref7.color);
-		System.out.println("the size is " + ref7.size);
-		System.out.println("the type is " + ref7.type);
-		System.out.println("the price is " + ref7.price);
+		ref7.getHatInfo();
 
 		Hat ref8 = new Hat();
 		ref8.hatId = 8;
@@ -108,12 +72,7 @@ class HatRunner {
 		ref8.size = "L";
 		ref8.type = "Panama";
 		ref8.price = 520.0;
-		System.out.println("the hat id is " + ref8.hatId);
-		System.out.println("the brand is " + ref8.brand);
-		System.out.println("the color is " + ref8.color);
-		System.out.println("the size is " + ref8.size);
-		System.out.println("the type is " + ref8.type);
-		System.out.println("the price is " + ref8.price);
+		ref8.getHatInfo();
 
 		Hat ref9 = new Hat();
 		ref9.hatId = 9;
@@ -122,12 +81,7 @@ class HatRunner {
 		ref9.size = "M";
 		ref9.type = "Top Hat";
 		ref9.price = 670.0;
-		System.out.println("the hat id is " + ref9.hatId);
-		System.out.println("the brand is " + ref9.brand);
-		System.out.println("the color is " + ref9.color);
-		System.out.println("the size is " + ref9.size);
-		System.out.println("the type is " + ref9.type);
-		System.out.println("the price is " + ref9.price);
+		ref9.getHatInfo();
 
 		Hat ref10 = new Hat();
 		ref10.hatId = 10;
@@ -136,26 +90,16 @@ class HatRunner {
 		ref10.size = "S";
 		ref10.type = "Sun Hat";
 		ref10.price = 430.0;
-		System.out.println("the hat id is " + ref10.hatId);
-		System.out.println("the brand is " + ref10.brand);
-		System.out.println("the color is " + ref10.color);
-		System.out.println("the size is " + ref10.size);
-		System.out.println("the type is " + ref10.type);
-		System.out.println("the price is " + ref10.price);
-		
-				Hat ref11 = new Hat();
+		ref10.getHatInfo();
+
+		Hat ref11 = new Hat();
 		ref11.hatId = 11;
 		ref11.brand = "Mufti";
 		ref11.color = "Sky Blue";
 		ref11.size = "M";
 		ref11.type = "Derby";
 		ref11.price = 550.0;
-		System.out.println("the hat id is " + ref11.hatId);
-		System.out.println("the brand is " + ref11.brand);
-		System.out.println("the color is " + ref11.color);
-		System.out.println("the size is " + ref11.size);
-		System.out.println("the type is " + ref11.type);
-		System.out.println("the price is " + ref11.price);
+		ref11.getHatInfo();
 
 		Hat ref12 = new Hat();
 		ref12.hatId = 12;
@@ -164,12 +108,7 @@ class HatRunner {
 		ref12.size = "L";
 		ref12.type = "Boater";
 		ref12.price = 600.0;
-		System.out.println("the hat id is " + ref12.hatId);
-		System.out.println("the brand is " + ref12.brand);
-		System.out.println("the color is " + ref12.color);
-		System.out.println("the size is " + ref12.size);
-		System.out.println("the type is " + ref12.type);
-		System.out.println("the price is " + ref12.price);
+		ref12.getHatInfo();
 
 		Hat ref13 = new Hat();
 		ref13.hatId = 13;
@@ -178,12 +117,7 @@ class HatRunner {
 		ref13.size = "S";
 		ref13.type = "Beret";
 		ref13.price = 499.0;
-		System.out.println("the hat id is " + ref13.hatId);
-		System.out.println("the brand is " + ref13.brand);
-		System.out.println("the color is " + ref13.color);
-		System.out.println("the size is " + ref13.size);
-		System.out.println("the type is " + ref13.type);
-		System.out.println("the price is " + ref13.price);
+		ref13.getHatInfo();
 
 		Hat ref14 = new Hat();
 		ref14.hatId = 14;
@@ -192,12 +126,7 @@ class HatRunner {
 		ref14.size = "M";
 		ref14.type = "Newsboy";
 		ref14.price = 575.0;
-		System.out.println("the hat id is " + ref14.hatId);
-		System.out.println("the brand is " + ref14.brand);
-		System.out.println("the color is " + ref14.color);
-		System.out.println("the size is " + ref14.size);
-		System.out.println("the type is " + ref14.type);
-		System.out.println("the price is " + ref14.price);
+		ref14.getHatInfo();
 
 		Hat ref15 = new Hat();
 		ref15.hatId = 15;
@@ -206,12 +135,7 @@ class HatRunner {
 		ref15.size = "L";
 		ref15.type = "Flat Cap";
 		ref15.price = 625.0;
-		System.out.println("the hat id is " + ref15.hatId);
-		System.out.println("the brand is " + ref15.brand);
-		System.out.println("the color is " + ref15.color);
-		System.out.println("the size is " + ref15.size);
-		System.out.println("the type is " + ref15.type);
-		System.out.println("the price is " + ref15.price);
+		ref15.getHatInfo();
 
 		Hat ref16 = new Hat();
 		ref16.hatId = 16;
@@ -220,12 +144,7 @@ class HatRunner {
 		ref16.size = "M";
 		ref16.type = "Trilby";
 		ref16.price = 580.0;
-		System.out.println("the hat id is " + ref16.hatId);
-		System.out.println("the brand is " + ref16.brand);
-		System.out.println("the color is " + ref16.color);
-		System.out.println("the size is " + ref16.size);
-		System.out.println("the type is " + ref16.type);
-		System.out.println("the price is " + ref16.price);
+		ref16.getHatInfo();
 
 		Hat ref17 = new Hat();
 		ref17.hatId = 17;
@@ -234,12 +153,7 @@ class HatRunner {
 		ref17.size = "S";
 		ref17.type = "Pork Pie";
 		ref17.price = 610.0;
-		System.out.println("the hat id is " + ref17.hatId);
-		System.out.println("the brand is " + ref17.brand);
-		System.out.println("the color is " + ref17.color);
-		System.out.println("the size is " + ref17.size);
-		System.out.println("the type is " + ref17.type);
-		System.out.println("the price is " + ref17.price);
+		ref17.getHatInfo();
 
 		Hat ref18 = new Hat();
 		ref18.hatId = 18;
@@ -248,12 +162,7 @@ class HatRunner {
 		ref18.size = "L";
 		ref18.type = "Ascot Cap";
 		ref18.price = 645.0;
-		System.out.println("the hat id is " + ref18.hatId);
-		System.out.println("the brand is " + ref18.brand);
-		System.out.println("the color is " + ref18.color);
-		System.out.println("the size is " + ref18.size);
-		System.out.println("the type is " + ref18.type);
-		System.out.println("the price is " + ref18.price);
+		ref18.getHatInfo();
 
 		Hat ref19 = new Hat();
 		ref19.hatId = 19;
@@ -262,12 +171,7 @@ class HatRunner {
 		ref19.size = "M";
 		ref19.type = "Cloche";
 		ref19.price = 535.0;
-		System.out.println("the hat id is " + ref19.hatId);
-		System.out.println("the brand is " + ref19.brand);
-		System.out.println("the color is " + ref19.color);
-		System.out.println("the size is " + ref19.size);
-		System.out.println("the type is " + ref19.type);
-		System.out.println("the price is " + ref19.price);
+		ref19.getHatInfo();
 
 		Hat ref20 = new Hat();
 		ref20.hatId = 20;
@@ -276,11 +180,6 @@ class HatRunner {
 		ref20.size = "S";
 		ref20.type = "Cowboy";
 		ref20.price = 715.0;
-		System.out.println("the hat id is " + ref20.hatId);
-		System.out.println("the brand is " + ref20.brand);
-		System.out.println("the color is " + ref20.color);
-		System.out.println("the size is " + ref20.size);
-		System.out.println("the type is " + ref20.type);
-		System.out.println("the price is " + ref20.price);
+		ref20.getHatInfo();
 	}
-		}
+}

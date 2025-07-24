@@ -9,12 +9,7 @@ class FishRunner {
 		ref1.weight = 0.2;
 		ref1.color = "Orange";
 		ref1.origin = "Pacific Ocean";
-		System.out.println("the fish id is " + ref1.fishId);
-		System.out.println("the name is " + ref1.name);
-		System.out.println("the species is " + ref1.species);
-		System.out.println("the weight is " + ref1.weight);
-		System.out.println("the color is " + ref1.color);
-		System.out.println("origin is " + ref1.origin);
+		ref1.getFishInfo();
 
 		Fish ref2 = new Fish();
 		ref2.fishId = 2;
@@ -23,12 +18,7 @@ class FishRunner {
 		ref2.weight = 0.3;
 		ref2.color = "Golden";
 		ref2.origin = "China";
-		System.out.println("the fish id is " + ref2.fishId);
-		System.out.println("the name is " + ref2.name);
-		System.out.println("the species is " + ref2.species);
-		System.out.println("the weight is " + ref2.weight);
-		System.out.println("the color is " + ref2.color);
-		System.out.println("origin is " + ref2.origin);
+		ref2.getFishInfo();
 
 		Fish ref3 = new Fish();
 		ref3.fishId = 3;
@@ -37,12 +27,7 @@ class FishRunner {
 		ref3.weight = 0.15;
 		ref3.color = "Blue";
 		ref3.origin = "Thailand";
-		System.out.println("the fish id is " + ref3.fishId);
-		System.out.println("the name is " + ref3.name);
-		System.out.println("the species is " + ref3.species);
-		System.out.println("the weight is " + ref3.weight);
-		System.out.println("the color is " + ref3.color);
-		System.out.println("origin is " + ref3.origin);
+		ref3.getFishInfo();
 
 		Fish ref4 = new Fish();
 		ref4.fishId = 4;
@@ -51,12 +36,7 @@ class FishRunner {
 		ref4.weight = 1.5;
 		ref4.color = "Brown";
 		ref4.origin = "Indian Ocean";
-		System.out.println("the fish id is " + ref4.fishId);
-		System.out.println("the name is " + ref4.name);
-		System.out.println("the species is " + ref4.species);
-		System.out.println("the weight is " + ref4.weight);
-		System.out.println("the color is " + ref4.color);
-		System.out.println("origin is " + ref4.origin);
+		ref4.getFishInfo();
 
 		Fish ref5 = new Fish();
 		ref5.fishId = 5;
@@ -65,12 +45,7 @@ class FishRunner {
 		ref5.weight = 3.0;
 		ref5.color = "Grey";
 		ref5.origin = "Mississippi River";
-		System.out.println("the fish id is " + ref5.fishId);
-		System.out.println("the name is " + ref5.name);
-		System.out.println("the species is " + ref5.species);
-		System.out.println("the weight is " + ref5.weight);
-		System.out.println("the color is " + ref5.color);
-		System.out.println("origin is " + ref5.origin);
+		ref5.getFishInfo();
 
 		Fish ref6 = new Fish();
 		ref6.fishId = 6;
@@ -79,12 +54,7 @@ class FishRunner {
 		ref6.weight = 0.05;
 		ref6.color = "Multicolor";
 		ref6.origin = "South America";
-		System.out.println("the fish id is " + ref6.fishId);
-		System.out.println("the name is " + ref6.name);
-		System.out.println("the species is " + ref6.species);
-		System.out.println("the weight is " + ref6.weight);
-		System.out.println("the color is " + ref6.color);
-		System.out.println("origin is " + ref6.origin);
+		ref6.getFishInfo();
 
 		Fish ref7 = new Fish();
 		ref7.fishId = 7;
@@ -93,12 +63,7 @@ class FishRunner {
 		ref7.weight = 10.0;
 		ref7.color = "Silver";
 		ref7.origin = "Atlantic Ocean";
-		System.out.println("the fish id is " + ref7.fishId);
-		System.out.println("the name is " + ref7.name);
-		System.out.println("the species is " + ref7.species);
-		System.out.println("the weight is " + ref7.weight);
-		System.out.println("the color is " + ref7.color);
-		System.out.println("origin is " + ref7.origin);
+		ref7.getFishInfo();
 
 		Fish ref8 = new Fish();
 		ref8.fishId = 8;
@@ -107,12 +72,7 @@ class FishRunner {
 		ref8.weight = 15.0;
 		ref8.color = "Dark Blue";
 		ref8.origin = "Indian Ocean";
-		System.out.println("the fish id is " + ref8.fishId);
-		System.out.println("the name is " + ref8.name);
-		System.out.println("the species is " + ref8.species);
-		System.out.println("the weight is " + ref8.weight);
-		System.out.println("the color is " + ref8.color);
-		System.out.println("origin is " + ref8.origin);
+		ref8.getFishInfo();
 
 		Fish ref9 = new Fish();
 		ref9.fishId = 9;
@@ -121,12 +81,7 @@ class FishRunner {
 		ref9.weight = 2.5;
 		ref9.color = "Transparent";
 		ref9.origin = "Pacific Ocean";
-		System.out.println("the fish id is " + ref9.fishId);
-		System.out.println("the name is " + ref9.name);
-		System.out.println("the species is " + ref9.species);
-		System.out.println("the weight is " + ref9.weight);
-		System.out.println("the color is " + ref9.color);
-		System.out.println("origin is " + ref9.origin);
+		ref9.getFishInfo();
 
 		Fish ref10 = new Fish();
 		ref10.fishId = 10;
@@ -135,26 +90,16 @@ class FishRunner {
 		ref10.weight = 0.3;
 		ref10.color = "Silver";
 		ref10.origin = "Amazon River";
-		System.out.println("the fish id is " + ref10.fishId);
-		System.out.println("the name is " + ref10.name);
-		System.out.println("the species is " + ref10.species);
-		System.out.println("the weight is " + ref10.weight);
-		System.out.println("the color is " + ref10.color);
-		System.out.println("origin is " + ref10.origin);
-		
-	    Fish ref11 = new Fish();
+		ref10.getFishInfo();
+
+		Fish ref11 = new Fish();
 		ref11.fishId = 11;
 		ref11.name = "Stripe";
 		ref11.species = "Zebra Danio";
 		ref11.weight = 0.1;
 		ref11.color = "Striped";
 		ref11.origin = "India";
-		System.out.println("the fish id is " + ref11.fishId);
-		System.out.println("the name is " + ref11.name);
-		System.out.println("the species is " + ref11.species);
-		System.out.println("the weight is " + ref11.weight);
-		System.out.println("the color is " + ref11.color);
-		System.out.println("origin is " + ref11.origin);
+		ref11.getFishInfo();
 
 		Fish ref12 = new Fish();
 		ref12.fishId = 12;
@@ -163,12 +108,7 @@ class FishRunner {
 		ref12.weight = 1.2;
 		ref12.color = "Dark Brown";
 		ref12.origin = "Deep Sea";
-		System.out.println("the fish id is " + ref12.fishId);
-		System.out.println("the name is " + ref12.name);
-		System.out.println("the species is " + ref12.species);
-		System.out.println("the weight is " + ref12.weight);
-		System.out.println("the color is " + ref12.color);
-		System.out.println("origin is " + ref12.origin);
+		ref12.getFishInfo();
 
 		Fish ref13 = new Fish();
 		ref13.fishId = 13;
@@ -177,12 +117,7 @@ class FishRunner {
 		ref13.weight = 8.0;
 		ref13.color = "Grey";
 		ref13.origin = "Coral Reefs";
-		System.out.println("the fish id is " + ref13.fishId);
-		System.out.println("the name is " + ref13.name);
-		System.out.println("the species is " + ref13.species);
-		System.out.println("the weight is " + ref13.weight);
-		System.out.println("the color is " + ref13.color);
-		System.out.println("origin is " + ref13.origin);
+		ref13.getFishInfo();
 
 		Fish ref14 = new Fish();
 		ref14.fishId = 14;
@@ -191,12 +126,7 @@ class FishRunner {
 		ref14.weight = 4.5;
 		ref14.color = "Mottled Brown";
 		ref14.origin = "Sea Floor";
-		System.out.println("the fish id is " + ref14.fishId);
-		System.out.println("the name is " + ref14.name);
-		System.out.println("the species is " + ref14.species);
-		System.out.println("the weight is " + ref14.weight);
-		System.out.println("the color is " + ref14.color);
-		System.out.println("origin is " + ref14.origin);
+		ref14.getFishInfo();
 
 		Fish ref15 = new Fish();
 		ref15.fishId = 15;
@@ -205,12 +135,7 @@ class FishRunner {
 		ref15.weight = 1.0;
 		ref15.color = "Bright Blue";
 		ref15.origin = "Tropical Reefs";
-		System.out.println("the fish id is " + ref15.fishId);
-		System.out.println("the name is " + ref15.name);
-		System.out.println("the species is " + ref15.species);
-		System.out.println("the weight is " + ref15.weight);
-		System.out.println("the color is " + ref15.color);
-		System.out.println("origin is " + ref15.origin);
+		ref15.getFishInfo();
 
 		Fish ref16 = new Fish();
 		ref16.fishId = 16;
@@ -219,12 +144,7 @@ class FishRunner {
 		ref16.weight = 0.03;
 		ref16.color = "Neon Blue";
 		ref16.origin = "Amazon Basin";
-		System.out.println("the fish id is " + ref16.fishId);
-		System.out.println("the name is " + ref16.name);
-		System.out.println("the species is " + ref16.species);
-		System.out.println("the weight is " + ref16.weight);
-		System.out.println("the color is " + ref16.color);
-		System.out.println("origin is " + ref16.origin);
+		ref16.getFishInfo();
 
 		Fish ref17 = new Fish();
 		ref17.fishId = 17;
@@ -233,12 +153,7 @@ class FishRunner {
 		ref17.weight = 0.25;
 		ref17.color = "Pearl White";
 		ref17.origin = "Southeast Asia";
-		System.out.println("the fish id is " + ref17.fishId);
-		System.out.println("the name is " + ref17.name);
-		System.out.println("the species is " + ref17.species);
-		System.out.println("the weight is " + ref17.weight);
-		System.out.println("the color is " + ref17.color);
-		System.out.println("origin is " + ref17.origin);
+		ref17.getFishInfo();
 
 		Fish ref18 = new Fish();
 		ref18.fishId = 18;
@@ -247,12 +162,7 @@ class FishRunner {
 		ref18.weight = 0.1;
 		ref18.color = "Blue-Green";
 		ref18.origin = "Coral Reefs";
-		System.out.println("the fish id is " + ref18.fishId);
-		System.out.println("the name is " + ref18.name);
-		System.out.println("the species is " + ref18.species);
-		System.out.println("the weight is " + ref18.weight);
-		System.out.println("the color is " + ref18.color);
-		System.out.println("origin is " + ref18.origin);
+		ref18.getFishInfo();
 
 		Fish ref19 = new Fish();
 		ref19.fishId = 19;
@@ -261,12 +171,7 @@ class FishRunner {
 		ref19.weight = 2.0;
 		ref19.color = "Silver Blue";
 		ref19.origin = "Open Ocean";
-		System.out.println("the fish id is " + ref19.fishId);
-		System.out.println("the name is " + ref19.name);
-		System.out.println("the species is " + ref19.species);
-		System.out.println("the weight is " + ref19.weight);
-		System.out.println("the color is " + ref19.color);
-		System.out.println("origin is " + ref19.origin);
+		ref19.getFishInfo();
 
 		Fish ref20 = new Fish();
 		ref20.fishId = 20;
@@ -275,13 +180,6 @@ class FishRunner {
 		ref20.weight = 6.0;
 		ref20.color = "Red";
 		ref20.origin = "Gulf of Mexico";
-		System.out.println("the fish id is " + ref20.fishId);
-		System.out.println("the name is " + ref20.name);
-		System.out.println("the species is " + ref20.species);
-		System.out.println("the weight is " + ref20.weight);
-		System.out.println("the color is " + ref20.color);
-		System.out.println("origin is " + ref20.origin);
-
-
+		ref20.getFishInfo();
 	}
 }
