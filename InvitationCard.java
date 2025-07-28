@@ -1,5 +1,20 @@
 class InvitationCard{
 	
+	 InvitationCard() {
+        System.out.println("the constructor is invoked");
+    }
+
+    InvitationCard(int cardId, String occasion, String sender, String receiver, String date, String venue) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.cardId = cardId;
+        this.occasion = occasion;
+        this.sender = sender;
+        this.receiver = receiver;
+        this.date = date;
+        this.venue = venue;
+    }
+	
 	int cardId;
 	String occasion;
 	String sender;

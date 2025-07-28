@@ -1,5 +1,20 @@
 class King{
 	
+	 King() {
+        System.out.println("the King constructor is invoked");
+    }
+
+    King(int kingId, String name, String kingdom, int reignYears, String dynasty, boolean isWarrior) {
+        System.out.println("the parameterized  King constructor is invoked");
+
+        this.kingId = kingId;
+        this.name = name;
+        this.kingdom = kingdom;
+        this.reignYears = reignYears;
+        this.dynasty = dynasty;
+        this.isWarrior = isWarrior;
+    }
+	
 	int kingId;
 	String name;
 	String kingdom;

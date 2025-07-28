@@ -1,5 +1,18 @@
 class Blade{
 	
+	Blade(){
+		System.out.println("the constructor is invoked");
+	}
+	
+	Blade(int bladeId,String brand,double price,String type){
+		System.out.println("the parameterized constructor is invoked");
+		
+		this.bladeId =  bladeId;
+		this.brand = brand;
+		this.price = price;
+		this.type = type;
+	}
+	
 	int bladeId;
     String brand;
     double price;

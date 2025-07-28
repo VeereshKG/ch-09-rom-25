@@ -1,5 +1,19 @@
 class Fish{
 	
+	    Fish() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Fish(int fishId, String name, String species, double weight, String color, String origin) {
+        System.out.println("the parameterized constructor is invoked");
+        this.fishId = fishId;
+        this.name = name;
+        this.species = species;
+        this.weight = weight;
+        this.color = color;
+        this.origin = origin;
+    }
+	
 	int fishId;
 	String name;
 	String species;

@@ -1,5 +1,18 @@
 class Festivals{
 	
+	Festivals() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Festivals(int festivalId, String name, String state, String month, String type) {
+        System.out.println("the parameterized constructor is invoked");
+        this.festivalId = festivalId; 
+        this.name = name;
+        this.state = state;
+        this.month = month;
+        this.type = type;
+    }
+	
 	int festivalId;
     String name;
     String state;

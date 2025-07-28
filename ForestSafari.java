@@ -1,5 +1,20 @@
 class ForestSafari{
 	
+	 ForestSafari() {
+        System.out.println("the constructor is invoked");
+    }
+
+    ForestSafari(int safariId, String location, String guideName, int durationInHours, String vehicleType, double ticketPrice) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.safariId = safariId;
+        this.location = location;
+        this.guideName = guideName;
+        this.durationInHours = durationInHours;
+        this.vehicleType = vehicleType;
+        this.ticketPrice = ticketPrice;
+    }
+	
 	int safariId;
 	String location;
 	String guideName;

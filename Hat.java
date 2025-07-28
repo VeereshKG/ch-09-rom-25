@@ -1,5 +1,20 @@
 class Hat{
 	
+	Hat() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Hat(int hatId, String brand, String color, String size, String type, double price) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.hatId = hatId;
+        this.brand = brand;
+        this.color = color;
+        this.size = size;
+        this.type = type;
+        this.price = price;
+    }
+	
    int hatId;
 	String brand;
 	String color;

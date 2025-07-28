@@ -1,160 +1,194 @@
 class BladeRunner{
 	
 	public static void main(String []blade){
-		Blade ref1 = new  Blade();
-		ref1.bladeId = 1;
-		ref1.brand = "Gillette";
-		ref1.price = 20.0;
-		ref1.type = "speyPoint";
-		ref1.getBladeInfo();
+          AmusementPark ref1 = new AmusementPark(1, "Wonderla", "Bangalore", 1200.0, "10:00 AM", "7:00 PM");
+          // ref1.parkId = 1;
+          // ref1.name = "Wonderla";
+          // ref1.location = "Bangalore";
+          // ref1.entryFee = 1200.0;
+          // ref1.openingTime = "10:00 AM";
+          // ref1.closingTime = "7:00 PM";
+          ref1.getAmusementPark();
+          
+          AmusementPark ref2 = new AmusementPark(2, "EsselWorld", "Mumbai", 900.0, "10:30 AM", "6:30 PM");
+          // ref2.parkId = 2;
+          // ref2.name = "EsselWorld";
+          // ref2.location = "Mumbai";
+          // ref2.entryFee = 900.0;
+          // ref2.openingTime = "10:30 AM";
+          // ref2.closingTime = "6:30 PM";
+          ref2.getAmusementPark();
+          
+          AmusementPark ref3 = new AmusementPark(3, "Imagica", "Pune", 1100.0, "9:30 AM", "6:00 PM");	  
+          // ref3.parkId = 3;
+          // ref3.name = "Imagica";
+          // ref3.location = "Pune";
+          // ref3.entryFee = 1100.0;
+          // ref3.openingTime = "9:30 AM";
+          // ref3.closingTime = "6:00 PM";
+          ref3.getAmusementPark();
+          
+          AmusementPark ref4 = new AmusementPark(4, "Adventure Island", "Delhi", 800.0, "11:00 AM", "8:00 PM");
+          // ref4.parkId = 4;
+          // ref4.name = "Adventure Island";
+          // ref4.location = "Delhi";
+          // ref4.entryFee = 800.0;
+          // ref4.openingTime = "11:00 AM";
+          // ref4.closingTime = "8:00 PM";
+          ref4.getAmusementPark();
+          
+          AmusementPark ref5 = new AmusementPark(5, "Fun World", "Bangalore", 600.0, "10:00 AM", "7:30 PM");
+          // ref5.parkId = 5;
+          // ref5.name = "Fun World";
+          // ref5.location = "Bangalore";
+          // ref5.entryFee = 600.0;
+          // ref5.openingTime = "10:00 AM";
+          // ref5.closingTime = "7:30 PM";
+          ref5.getAmusementPark();
+          
+          AmusementPark ref6 = new AmusementPark(6, "Nicco Park", "Kolkata", 500.0, "10:30 AM", "6:30 PM");
+          // ref6.parkId = 6;
+          // ref6.name = "Nicco Park";
+          // ref6.location = "Kolkata";
+          // ref6.entryFee = 500.0;
+          // ref6.openingTime = "10:30 AM";
+          // ref6.closingTime = "6:30 PM";
+          ref6.getAmusementPark();
+          
+		  
+          AmusementPark ref7 = new AmusementPark(7, "Dream World", "Thrissur", 450.0, "9:45 AM", "5:30 PM");
+          // ref7.parkId = 7;
+          // ref7.name = "Dream World";
+          // ref7.location = "Thrissur";
+          // ref7.entryFee = 450.0;
+          // ref7.openingTime = "9:45 AM";
+          // ref7.closingTime = "5:30 PM";
+          ref7.getAmusementPark();
+          
+		  
+          AmusementPark ref8 = new AmusementPark(8, "Black Thunder", "Coimbatore", 700.0, "10:15 AM", "6:00 PM");
+          // ref8.parkId = 8;
+          // ref8.name = "Black Thunder";
+          // ref8.location = "Coimbatore";
+          // ref8.entryFee = 700.0;
+          // ref8.openingTime = "10:15 AM";
+          // ref8.closingTime = "6:00 PM";
+          ref8.getAmusementPark();
+          
+          AmusementPark ref9 = new AmusementPark(9, "Kingdom of Dreams", "Gurgaon", 1000.0, "11:00 AM", "9:00 PM");
+          /*ref9.parkId = 9;
+          ref9.name = "Kingdom of Dreams";
+          ref9.location = "Gurgaon";
+          ref9.entryFee = 1000.0;
+          ref9.openingTime = "11:00 AM";
+          ref9.closingTime = "9:00 PM";*/
+          ref9.getAmusementPark();
+          
+          AmusementPark ref10 = new AmusementPark(10, "Ocean Park", "Hyderabad", 650.0, "10:00 AM", "6:30 PM"); 
+          // ref10.parkId = 10;
+          // ref10.name = "Ocean Park";
+          // ref10.location = "Hyderabad";
+          // ref10.entryFee = 650.0;
+          // ref10.openingTime = "10:00 AM";
+          // ref10.closingTime = "6:30 PM";
+          ref10.getAmusementPark();
+          
+		  AmusementPark ref11 = new AmusementPark(11, "Snow Kingdom", "Chennai", 550.0, "11:00 AM", "8:00 PM");
+          // ref11.parkId = 11;
+          // ref11.name = "Snow Kingdom";
+          // ref11.location = "Chennai";
+          // ref11.entryFee = 550.0;
+          // ref11.openingTime = "11:00 AM";
+          // ref11.closingTime = "8:00 PM";
+          ref11.getAmusementPark();
+          
+          AmusementPark ref12 = new AmusementPark(12, "Fantasy Park", "Palakkad", 480.0, "10:00 AM", "7:00 PM");
+          // ref12.parkId = 12;
+          // ref12.name = "Fantasy Park";
+          // ref12.location = "Palakkad";
+          // ref12.entryFee = 480.0;
+          // ref12.openingTime = "10:00 AM";
+          // ref12.closingTime = "7:00 PM";
+          ref12.getAmusementPark();
+          
+          AmusementPark ref13 = new AmusementPark(13, "Adventure World", "Mysore", 620.0, "10:15 AM", "6:45 PM");
+          // ref13.parkId = 13;
+          // ref13.name = "Adventure World";
+          // ref13.location = "Mysore";
+          // ref13.entryFee = 620.0;
+          // ref13.openingTime = "10:15 AM";
+          // ref13.closingTime = "6:45 PM";
+          ref13.getAmusementPark();
+          
+          AmusementPark ref14 = new AmusementPark(14, "Water Kingdom", "Mumbai", 850.0, "9:45 AM", "6:00 PM");
+          // ref14.parkId = 14;
+          // ref14.name = "Water Kingdom";
+          // ref14.location = "Mumbai";
+          // ref14.entryFee = 850.0;
+          // ref14.openingTime = "9:45 AM";
+          // ref14.closingTime = "6:00 PM";
+          ref14.getAmusementPark();
+          
+          AmusementPark ref15 = new AmusementPark(15, "Ramoji Film City", "Hyderabad", 1150.0, "9:00 AM", "5:30 PM");
+		  
+          // ref15.parkId = 15;
+          // ref15.name = "Ramoji Film City";
+          // ref15.location = "Hyderabad";
+          // ref15.entryFee = 1150.0;
+          // ref15.openingTime = "9:00 AM";
+          // ref15.closingTime = "5:30 PM";
+          ref15.getAmusementPark();
+          
+          AmusementPark ref16 = new AmusementPark(16, "Smaaash", "Pune", 700.0, "12:00 PM", "10:00 PM");
+		  
+          // ref16.parkId = 16;
+          // ref16.name = "Smaaash";
+          // ref16.location = "Pune";
+          // ref16.entryFee = 700.0;
+          // ref16.openingTime = "12:00 PM";
+          // ref16.closingTime = "10:00 PM";
+          ref16.getAmusementPark();
+          
+          AmusementPark ref17 = new AmusementPark(17, "Funderland", "Chandigarh", 560.0, "11:30 AM", "8:30 PM");
+		  
+          // ref17.parkId = 17;
+          // ref17.name = "Funderland";
+          // ref17.location = "Chandigarh";
+          // ref17.entryFee = 560.0;
+          // ref17.openingTime = "11:30 AM";
+          // ref17.closingTime = "8:30 PM";
+          ref17.getAmusementPark();
+          
+          AmusementPark ref18 = new AmusementPark(18, "Kidzania", "Noida", 980.0, "10:30 AM", "7:30 PM");
+		  
+          // ref18.parkId = 18;
+          // ref18.name = "Kidzania";
+          // ref18.location = "Noida";
+          // ref18.entryFee = 980.0;
+          // ref18.openingTime = "10:30 AM";
+          // ref18.closingTime = "7:30 PM";
+          ref18.getAmusementPark();
+          
+          AmusementPark ref19 = new AmusementPark(19, "Veegaland", "Kochi", 870.0, "9:30 AM", "6:45 PM");
+		  
+          // ref19.parkId = 19;
+          // ref19.name = "Veegaland";
+          // ref19.location = "Kochi";
+          // ref19.entryFee = 850.0;
+          // ref19.openingTime = "9:30 AM";
+          // ref19.closingTime = "6:45 PM";
+          ref19.getAmusementPark();
+          
+          AmusementPark ref20 = new AmusementPark(20, "Splash Water Park", "Jaipur", 620.0, "10:00 AM", "6:00 PM");
+		  
+          // ref20.parkId = 20;
+          // ref20.name = "Splash Water Park";
+          // ref20.location = "Jaipur";
+          // ref20.entryFee = 620.0;
+          // ref20.openingTime = "10:00 AM";
+          // ref20.closingTime = "6:00 PM";
+          ref20.getAmusementPark();
 
-		Blade ref2 = new Blade();
-		ref2.bladeId = 2;
-		ref2.brand = "SuperMax";
-		ref2.price = 15.0;
-		ref2.type = "speyPoint";
-		ref2.getBladeInfo();
-
-
-		Blade ref3 = new Blade();
-		ref3.bladeId = 3;
-		ref3.brand = "Wilkinson";
-		ref3.price = 18.5;
-		ref3.type = "speyPoint";
-		ref3.getBladeInfo();
-
-
-		Blade ref4 = new Blade();
-		ref4.bladeId = 4;
-		ref4.brand = "Feather";
-		ref4.price = 25.0;
-		ref4.type = "Double Edge";
-		ref4.getBladeInfo();
-
-		Blade ref5 = new Blade();
-		ref5.bladeId = 5;
-		ref5.brand = "Derby";
-		ref5.price = 12.0;
-		ref5.type = "Double Edge";
-		ref5.getBladeInfo();
-
-
-		Blade ref6 = new Blade();
-		ref6.bladeId = 6;
-		ref6.brand = "Astra";
-		ref6.price = 14.5;
-		ref6.type = "Double Edge";
-		ref6.getBladeInfo();
-
-
-		Blade ref7 = new Blade();
-		ref7.bladeId = 7;
-		ref7.brand = "Personna";
-		ref7.price = 17.0;
-		ref7.type = "Safety Razor";
-		ref7.getBladeInfo();
-
-
-		Blade ref8 = new Blade();
-		ref8.bladeId = 8;
-		ref8.brand = "Shick";
-		ref8.price = 16.0;
-		ref8.type = "Cartridge";
-		ref8.getBladeInfo();
-
-
-		Blade ref9 = new Blade();
-		ref9.bladeId = 9;
-		ref9.brand = "Kai";
-		ref9.price = 22.0;
-		ref9.type = "speyPoint";
-		ref9.getBladeInfo();
-
-
-		Blade ref10 = new Blade();
-		ref10.bladeId = 10;
-		ref10.brand = "Dorco";
-		ref10.price = 13.0;
-		ref10.type = "Cartridge";
-		ref10.getBladeInfo();
-
-
-		Blade ref11 = new Blade();
-		ref11.bladeId = 11;
-		ref11.brand = "Laser";
-		ref11.price = 10.0;
-		ref11.type = "Disposable";
-		ref11.getBladeInfo();
-
-
-		Blade ref12 = new Blade();
-		ref12.bladeId = 12;
-		ref12.brand = "Topaz";
-		ref12.price = 11.0;
-		ref12.type = "speyPoint";
-		ref12.getBladeInfo();
-
-
-		Blade ref13 = new Blade();
-		ref13.bladeId = 13;
-		ref13.brand = "Bic";
-		ref13.price = 9.0;
-		ref13.type = "Disposable";
-		ref13.getBladeInfo();
-
-
-		Blade ref14 = new Blade();
-		ref14.bladeId = 14;
-		ref14.brand = "Treet";
-		ref14.price = 11.5;
-		ref14.type = "Double Edge";
-		ref14.getBladeInfo();
-
-
-		Blade ref15 = new Blade();
-		ref15.bladeId = 15;
-		ref15.brand = "Nacet";
-		ref15.price = 18.0;
-		ref15.type = "Double Edge";
-		ref15.getBladeInfo();
-
-
-		Blade ref16 = new Blade();
-		ref16.bladeId = 16;
-		ref16.brand = "Voskhod";
-		ref16.price = 17.5;
-		ref16.type = "speyPoint";
-		ref16.getBladeInfo();
-
-
-		Blade ref17 = new Blade();
-		ref17.bladeId = 17;
-		ref17.brand = "Rapira";
-		ref17.price = 16.0;
-		ref17.type = "Double Edge";
-		ref17.getBladeInfo();
-
-
-		Blade ref18 = new Blade();
-		ref18.bladeId = 18;
-		ref18.brand = "Shark";
-		ref18.price = 12.5;
-		ref18.type = "speyPoint";
-		ref18.getBladeInfo();
-
-		Blade ref19 = new Blade();
-		ref19.bladeId = 19;
-		ref19.brand = "Tiger";
-		ref19.price = 14.0;
-		ref19.type = "speyPoint";
-		ref19.getBladeInfo();
-
-		Blade ref20 = new Blade();
-		ref20.bladeId = 20;
-		ref20.brand = "Lord";
-		ref20.price = 13.0;
-		ref20.type = "Double Edge";
-		ref20.getBladeInfo();
 
 	}
 }

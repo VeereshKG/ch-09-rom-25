@@ -1,5 +1,20 @@
 public class HairClip {
 	
+	   HairClip() {
+        System.out.println("the constructor is invoked");
+    }
+
+    HairClip(int clipId, String brand, double price, String color, String material, String size) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.clipId = clipId;
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+        this.material = material;
+        this.size = size;
+    }
+	
 	int clipId;
 	String brand;
 	double price;

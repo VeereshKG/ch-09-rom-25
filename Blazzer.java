@@ -1,5 +1,20 @@
 class Blazzer{
 	
+	    Blazzer() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Blazzer(int blazzerId, String color, int size, String brand, double price, String fabric) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.blazzerId = blazzerId;
+        this.color = color;
+        this.size = size;
+        this.brand = brand;
+        this.price = price;
+        this.fabric = fabric;
+    }
+	
 	int blazzerId;
 	String color;
     int size;

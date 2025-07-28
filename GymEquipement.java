@@ -1,5 +1,20 @@
 class GymEquipement{
 	
+	    GymEquipement() {
+        System.out.println("the constructor is invoked");
+    }
+
+    GymEquipement(int equipmentId, String name, String brand, double price, String type, double weight) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.equipmentId = equipmentId;
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.type = type;
+        this.weight = weight;
+    }
+	
 	int equipmentId;
 	String name;
 	String brand;

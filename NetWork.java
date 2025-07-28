@@ -1,4 +1,19 @@
 class NetWork{
+	
+	NetWork() {
+        System.out.println("the NetWork constructor is invoked");
+    }
+
+    NetWork(int networkId, String name, String type, String provider, double speed, double price) {
+        System.out.println("the parameterized NetWork constructor is invoked");
+
+        this.networkId = networkId;
+        this.name = name;
+        this.type = type;
+        this.provider = provider;
+        this.speed = speed;
+        this.price = price;
+    }
 	int networkId;
 	String name;
 	String type;

@@ -1,5 +1,22 @@
 class Jwellery{
 	
+	
+    Jwellery() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Jwellery(int jwelleryId, String type, String metal, double weight, double price, String design) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.jwelleryId = jwelleryId;
+        this.type = type;
+        this.metal = metal;
+        this.weight = weight;
+        this.price = price;
+        this.design = design;
+    }
+
+	
 	int jwelleryId;
 	String type;
 	String metal;

@@ -1,5 +1,21 @@
 class Coins{
 	
+		Coins() {
+		System.out.println("the constructor is invoked");
+	}
+
+	
+	Coins(int coinId, String country, String material, int year, double value, String shape) {
+		System.out.println("the parameterized constructor is invoked");
+		
+		this.coinId = coinId;
+		this.country = country;
+		this.material = material;
+		this.year = year;
+		this.value = value;
+		this.shape = shape;
+	}
+	
 	int coinId;
 	String country;
 	String material;

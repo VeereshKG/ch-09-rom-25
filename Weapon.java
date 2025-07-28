@@ -1,5 +1,20 @@
 class Weapon{
 	
+	 Weapon() {
+        System.out.println("the constructor is invoked");
+    }
+
+    Weapon(int weaponId, String name, String type, String origin, String usage, double price) {
+        System.out.println("the parameterized constructor is invoked");
+
+        this.weaponId = weaponId;
+        this.name = name;
+        this.type = type;
+        this.origin = origin;
+        this.usage = usage;
+        this.price = price;
+    }
+	
     int weaponId;
 	String name;
 	String type;
