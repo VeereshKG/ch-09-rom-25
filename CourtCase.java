@@ -1,31 +1,33 @@
 class CourtCase{
 	
-	  CourtCase() {
-        System.out.println("The constructor is invoked");
-    }
-
-    CourtCase(int caseId, String caseName, String lawerName, String caseOpenDate, boolean isCaseClosed) {
-        System.out.println("The parameterized constructor is invoked");
-        this.caseId = caseId;
-        this.caseName = caseName;
-        this.lawerName = lawerName;
-        this.caseOpenDate = caseOpenDate;
-        this.isCaseClosed = isCaseClosed;
-    }
-	
 	int caseId;
-	String caseName;
+	String caseNames[];
 	String lawerName;
 	String caseOpenDate;
 	boolean isCaseClosed;
 	
+	  CourtCase() {
+
+    }
+
+    CourtCase(int caseId, String caseNames[]){
+		this.caseId = caseId;
+        this.caseNames = caseNames;
+	}
+	 CourtCase(String lawerName, String caseOpenDate){
+		 this.lawerName = lawerName;
+        this.caseOpenDate = caseOpenDate;
+	 } 
+	 CourtCase(boolean isCaseClosed) {
+        this.isCaseClosed = isCaseClosed;
+    }
+	
+	
+	
 	public void getCourtCase(){
 	
-		System.out.println("the case id is "+caseId);
-		System.out.println("the case name is "+caseName);
-		System.out.println("the lawerName is "+lawerName);
-		System.out.println("the case open Date "+caseOpenDate);
-		System.out.println("is case closed "+isCaseClosed);
-        System.out.println(" " );
+		System.out.println("the case names are");			
+			for(String  caseName: caseNames)
+				System.out.println(caseName);
 }
 }

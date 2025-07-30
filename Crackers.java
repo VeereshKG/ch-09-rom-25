@@ -1,34 +1,34 @@
 class Crackers{
 	
-	Crackers(){
-		System.out.println("the constructor is invoked");
-	}
-	
-		Crackers(int crackerId, String name, String brand, double price, String type, boolean isLoud) {
-		System.out.println("the parameterized constructor is invoked");
-			
-		this.crackerId = crackerId;
-		this.name = name;
-		this.brand = brand;
-		this.price = price;
-		this.type = type;
-		this.isLoud = isLoud;
-		}
-	
 	int crackerId;
 	String name;
-	String brand;
+	String brands[];
 	double price;
 	String type;
 	boolean isLoud;
 	
+	Crackers(){
+		
+	}
+	
+		Crackers(int crackerId, String name, String brands[]){
+			this.crackerId = crackerId;
+		    this.name = name;
+		    this.brands = brands;
+		}
+		Crackers(double price, String type){
+			this.price = price;
+		    this.type = type;
+		}
+		Crackers(boolean isLoud) {
+		this.isLoud = isLoud;
+		}
+	
+	
+	
 	public void getCrackers(){
-		System.out.println("the cracker id is " + crackerId);
-		System.out.println("the cracker name is " + name);
-		System.out.println("the brand is " + brand);
-		System.out.println("the price is " + price);
-		System.out.println("the type is " + type);
-		System.out.println("is it loud " + isLoud);
-		System.out.println("");
+		System.out.println("the cracker brand is");			
+			for(String  brand:brands )
+				System.out.println(brand);
 	}
 }

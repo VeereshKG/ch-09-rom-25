@@ -1,36 +1,36 @@
 class GymEquipement{
 	
-	    GymEquipement() {
-        System.out.println("the constructor is invoked");
-    }
-
-    GymEquipement(int equipmentId, String name, String brand, double price, String type, double weight) {
-        System.out.println("the parameterized constructor is invoked");
-
-        this.equipmentId = equipmentId;
-        this.name = name;
-        this.brand = brand;
-        this.price = price;
-        this.type = type;
-        this.weight = weight;
-    }
-	
 	int equipmentId;
 	String name;
 	String brand;
 	double price;
 	String type;
-	double weight;
+	double weights[];
+	
+	    GymEquipement() {
+
+    }
+
+    GymEquipement(int equipmentId, String name){
+		this.equipmentId = equipmentId;
+        this.name = name;
+	}
+	GymEquipement(String brand, double price, String type){
+		this.brand = brand;
+        this.price = price;
+        this.type = type;
+	}
+	GymEquipement(double weights[]) {
+        this.weights = weights;
+    }
+	
+	
 	
 
   public  void getGymEquipementInfo() {
-    	System.out.println("the equipment id is " + equipmentId);
-		System.out.println("the name is " + name);
-		System.out.println("the brand is " + brand);
-		System.out.println("the price of equipment is " + price);
-		System.out.println("the type is " + type);
-		System.out.println("the weight is " + weight);
-        System.out.println("");
+    	System.out.println("the weights are ");			
+			for(double  weight: weights)
+				System.out.println(weight);
     }
 }
 

@@ -1,32 +1,34 @@
 class Karate{
 	
-	 Karate() {
-        System.out.println("the constructor is invoked");
-    }
-
-    Karate(int karateId, String style, String master, String originCountry, boolean isOlympicSport) {
-        System.out.println("the parameterized constructor is invoked");
-
-        this.karateId = karateId;
-        this.style = style;
-        this.master = master;
-        this.originCountry = originCountry;
-        this.isOlympicSport = isOlympicSport;
-    }
-	
 	int karateId;
-	String style;
+	String styles[];
 	String master;
 	String originCountry;
 	boolean isOlympicSport;
 	
+	 Karate() {
+ 
+    }
+
+    Karate(int karateId, String styles[]){
+		this.karateId = karateId;
+        this.styles = styles;
+	}
+	Karate(String master, String originCountry){
+		this.master = master;
+        this.originCountry = originCountry;
+	}
+	Karate(boolean isOlympicSport) {
+        this.isOlympicSport = isOlympicSport;
+    }
+	
+	
+	
 	public void getKarateInfo(){
-		System.out.println("the karate id is " + karateId);
-		System.out.println("the style is " + style);
-		System.out.println("the master is " + master);
-		System.out.println("the origin country is " + originCountry);
-		System.out.println("is olympic sport " + isOlympicSport);
-		System.out.println("");
 		
+		System.out.println("the style are");			
+			for(String  style:styles )
+				System.out.println(style);
+
 	}
 }

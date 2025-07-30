@@ -1,29 +1,34 @@
 class Blade{
 	
-	Blade(){
-		System.out.println("the constructor is invoked");
-	}
-	
-	Blade(int bladeId,String brand,double price,String type){
-		System.out.println("the parameterized constructor is invoked");
-		
-		this.bladeId =  bladeId;
-		this.brand = brand;
-		this.price = price;
-		this.type = type;
-	}
-	
 	int bladeId;
     String brand;
     double price;
 	String type;
+	String uses[];
+	
+	Blade(){
+
+	}
+	
+	Blade(int bladeId,String brand){
+		this.bladeId =  bladeId;
+		this.brand = brand;
+	}
+	Blade(double price){
+		this.price = price;
+	}
+	Blade(String type ,String uses[]){	
+		this.type = type;
+		this.uses = uses;
+	}
+	
+
 	
 	public  void getBladeInfo(){
-		System.out.println("the blade id is " +bladeId);
-		System.out.println("the brand is " + brand);
-		System.out.println("the price of blade is " + price);
-		System.out.println("the type of blade is " +type);
-		System.out.println(" " );
+
+		System.out.println("the uses are");			
+			for(String use  : uses )
+				System.out.println(use);
 
 	}
 }

@@ -1,34 +1,34 @@
 class Flowers{
 	
-	Flowers() {
-        System.out.println("the constructor is invoked");
-    }
-	
-		Flowers(int flowerId, String name, String color, double price, String origin, boolean isFragrant) {
-		System.out.println("the parameterized constructor is invoked");		
-		this.flowerId = flowerId;
-		this.name = name;
-		this.color = color;
-		this.price = price;
-		this.origin = origin;
-		this.isFragrant = isFragrant;
-	}
-	
 	int flowerId;
 	String name;
-	String color;
+	String colors[];
 	double price;
 	String origin;
 	boolean isFragrant;
 	
+	Flowers() {
+
+    }
+	
+		Flowers(int flowerId, String name){
+			this.flowerId = flowerId;
+		    this.name = name;
+		}
+		Flowers(String colors[], double price){
+			this.colors = colors;
+		    this.price = price;
+		}
+		Flowers(String origin, boolean isFragrant) {
+		this.origin = origin;
+		this.isFragrant = isFragrant;
+	}
+	
+	
+	
 	public void getFlowersInfo(){
-	   System.out.println("the flower id is " + flowerId);
-		System.out.println("the flower name is " + name);
-		System.out.println("the color is " + color);
-		System.out.println("the price is " + price);
-		System.out.println("the origin is " + origin);
-		System.out.println("is it fragrant " + isFragrant);
-		
-		System.out.println("");
+	   System.out.println("the colors are");			
+			for(String  color:colors )
+				System.out.println(color);
 	}
 }

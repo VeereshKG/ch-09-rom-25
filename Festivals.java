@@ -1,30 +1,32 @@
 class Festivals{
 	
-	Festivals() {
-        System.out.println("the constructor is invoked");
-    }
-
-    Festivals(int festivalId, String name, String state, String month, String type) {
-        System.out.println("the parameterized constructor is invoked");
-        this.festivalId = festivalId; 
-        this.name = name;
-        this.state = state;
-        this.month = month;
-        this.type = type;
-    }
-	
 	int festivalId;
-    String name;
+    String names[];
     String state;
     String month;
     String type;
 	
+	Festivals() {
+
+    }
+
+    Festivals(int festivalId){
+		this.festivalId = festivalId;
+	}
+	Festivals(String names[], String state, String month){
+		this.names = names;
+        this.state = state;
+        this.month = month;
+	}
+	Festivals(String type) {
+        this.type = type;
+    }
+	
+	
+	
 	public void getFestivals(){
-		System.out.println("The festival id is " + festivalId);
-		System.out.println("the name is " + name);
-		System.out.println("the state is " + state);
-		System.out.println("the month is " + month);
-		System.out.println("the type is " + type);
-		System.out.println("");
+		System.out.println("the festival names are");			
+			for(String  name: names)
+				System.out.println(name);
 	}
 }
