@@ -7,4 +7,9 @@ public class Bgmi extends Game {
     public Bgmi(){
         System.out.println("bgmi constructor is invoked");
     }
+
+    @Override
+    public void type() {
+        System.out.println("bgmi is online multiplayer game");
+    }
 }

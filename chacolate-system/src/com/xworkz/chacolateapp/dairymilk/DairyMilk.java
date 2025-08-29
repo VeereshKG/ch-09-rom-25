@@ -8,4 +8,8 @@ public class DairyMilk extends Chacolate {
        super();
         System.out.println("Dairymilk constructor is invoked");
     }
+    @Override
+    public void doChacolate(){
+       System.out.println("to do only dairyMilk");
+    }
 }

@@ -8,4 +8,8 @@ public class Lipstick extends Cosmetics {
         super();
         System.out.println("Lipstick constructor is invoked");
     }
+    @Override
+    public void toMakeUp(){
+        System.out.println("lipstick for only lips");
+    }
 }

@@ -2,6 +2,10 @@ package com.xworkz.utensilapp.utensil;
 
 public class Utensil {
     public Utensil(){
-        System.out.println("the utensil constructor is invoked");
+        super();
+        System.out.println("utensil constructor is invoked");
+    }
+    public void toFeed(){
+        System.out.println("to feed and cook food using utensile");
     }
 }

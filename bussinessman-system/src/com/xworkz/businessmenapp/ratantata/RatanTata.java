@@ -8,4 +8,9 @@ public class RatanTata extends Bussinessmen {
        super();
         System.out.println("ratanTata constructor is invoked");
     }
+    @Override
+    public double doBussiness(){
+       System.out.println("business in itsector and vehicle field");
+       return 80000.00;
+    }
 }

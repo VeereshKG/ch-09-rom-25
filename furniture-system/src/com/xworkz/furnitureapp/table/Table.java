@@ -6,4 +6,9 @@ public class Table extends Furniture {
     public Table(){
         System.out.println("table constructor is invoked");
     }
+
+    @Override
+    public void typeAvailable() {
+        System.out.println("only table type is available");
+    }
 }

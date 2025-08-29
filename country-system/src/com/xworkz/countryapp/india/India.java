@@ -8,4 +8,8 @@ public class India extends Country {
         super();
         System.out.println("india constructor is invoked");
     }
+    @Override
+    public void country(){
+        System.out.println("india");
+    }
 }

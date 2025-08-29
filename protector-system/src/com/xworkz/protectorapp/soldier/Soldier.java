@@ -4,6 +4,11 @@ import com.xworkz.protectorapp.protector.Protector;
 
 public class Soldier extends Protector {
     public Soldier(){
-        System.out.println("the Soldier constructor is invoked");
+        super();
+        System.out.println("Soldier constructor is invoked");
+    }
+    @Override
+    public void toProtect(){
+        System.out.println("to protect  country");
     }
 }

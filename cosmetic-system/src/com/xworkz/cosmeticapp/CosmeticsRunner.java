@@ -1,5 +1,6 @@
 package com.xworkz.cosmeticapp;
 
+import com.xworkz.cosmeticapp.cosmetics.Cosmetics;
 import com.xworkz.cosmeticapp.lipstick.Lipstick;
 
 public class CosmeticsRunner {
@@ -7,7 +8,8 @@ public class CosmeticsRunner {
 
         System.out.println("main started");
 
-        Lipstick lipstick = new Lipstick();
+        Cosmetics cosmetics = new Lipstick();
+        cosmetics.toMakeUp();
         System.out.println("main ended");
 
     }

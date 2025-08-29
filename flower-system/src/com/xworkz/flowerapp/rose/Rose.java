@@ -6,4 +6,8 @@ public class Rose extends Flower {
     public Rose(){
         System.out.println("Rose constructor is invoked");
     }
+    @Override
+    public void toDecoration(){
+        System.out.println("to do decoration and flower bhocke ");
+    }
 }

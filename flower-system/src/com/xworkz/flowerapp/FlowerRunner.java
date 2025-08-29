@@ -1,5 +1,6 @@
 package com.xworkz.flowerapp;
 
+import com.xworkz.flowerapp.flower.Flower;
 import com.xworkz.flowerapp.rose.Rose;
 
 public class FlowerRunner {
@@ -7,7 +8,8 @@ public class FlowerRunner {
 
         System.out.println("main started");
 
-        Rose rose = new Rose();
+        Flower flower = new Rose();
+        flower.toDecoration();
         System.out.println("main ended");
 
     }

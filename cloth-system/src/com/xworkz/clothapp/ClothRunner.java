@@ -1,5 +1,6 @@
 package com.xworkz.clothapp;
 
+import com.xworkz.clothapp.cloth.Cloth;
 import com.xworkz.clothapp.shirt.Shirt;
 
 public class ClothRunner {
@@ -8,7 +9,8 @@ public class ClothRunner {
 
         System.out.println("main started");
 
-        Shirt shirt = new Shirt();
+        Cloth cloth = new Shirt();
+        cloth.Available();
         System.out.println("main ended");
     }
 }

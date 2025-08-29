@@ -4,6 +4,10 @@ import com.xworkz.plasticapp.plastic.Plastic;
 
 public class Bottle extends Plastic {
     public Bottle(){
-        System.out.println("the bottle constructor is invoked");
+        super();
+        System.out.println("Bottle constructor is invoked");
+    }
+    public void toStore(){
+        System.out.println("to store water ");
     }
 }

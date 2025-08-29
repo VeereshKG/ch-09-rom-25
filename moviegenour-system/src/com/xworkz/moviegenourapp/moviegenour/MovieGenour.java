@@ -1,9 +1,11 @@
 package com.xworkz.moviegenourapp.moviegenour;
 
-import com.xworkz.moviegenourapp.MovieGenourRunner;
-
 public class MovieGenour {
     public MovieGenour(){
-        System.out.println("movie constructor is invoked");
+        super();
+        System.out.println("Movigenour constructor is invoked");
+    }
+    public void tobelongs(){
+        System.out.println("all type of movies");
     }
 }

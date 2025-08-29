@@ -6,6 +6,10 @@ public class VishnuVardhana extends Actor {
 
     public VishnuVardhana(){
         super();
-        System.out.println("the vishnuVardhana cons is invoked");
+        System.out.println("the vishnuVardhna cons is invoked");
+    }
+    @Override
+    public void doActing(){
+        System.out.println("vishnuVardhna do family entertainment cinema");
     }
 }

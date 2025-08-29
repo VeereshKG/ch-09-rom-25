@@ -6,4 +6,8 @@ public class Dev extends Trainer {
     public Dev(){
         System.out.println("dev constructor is invoked");
     }
+    @Override
+    public void teach(){
+        System.out.println("only java related concepts");
+    }
 }

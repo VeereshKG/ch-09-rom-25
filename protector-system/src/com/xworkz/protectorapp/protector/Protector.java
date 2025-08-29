@@ -2,6 +2,10 @@ package com.xworkz.protectorapp.protector;
 
 public class Protector {
     public Protector(){
-        System.out.println("the protector constructor is invoked");
+        super();
+        System.out.println("Protector constructor is invoked");
+    }
+    public void toProtect(){
+        System.out.println("protect lifes of people");
     }
 }

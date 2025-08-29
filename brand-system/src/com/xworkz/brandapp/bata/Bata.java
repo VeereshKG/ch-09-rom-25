@@ -8,4 +8,8 @@ public class Bata extends Brand {
         super();
         System.out.println("bata cons is invoked");
     }
+    @Override
+    public void toProvide(){
+        System.out.println("only provide bata type of shoes and slipper");
+    }
 }

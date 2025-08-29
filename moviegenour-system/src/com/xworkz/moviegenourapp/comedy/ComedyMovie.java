@@ -4,6 +4,11 @@ import com.xworkz.moviegenourapp.moviegenour.MovieGenour;
 
 public class ComedyMovie extends MovieGenour {
     public ComedyMovie(){
-        System.out.println("comedy constructor is invoked");
+        super();
+        System.out.println("ComedyMovie constructor is invoked");
+    }
+    @Override
+    public void tobelongs(){
+        System.out.println("only comedy movies");
     }
 }
