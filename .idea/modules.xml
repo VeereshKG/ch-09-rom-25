@@ -2,39 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Task.iml" filepath="$PROJECT_DIR$/.idea/Task.iml" />
-      <module fileurl="file://$PROJECT_DIR$/actor-system/actor-system.iml" filepath="$PROJECT_DIR$/actor-system/actor-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/brand-system/brand-system.iml" filepath="$PROJECT_DIR$/brand-system/brand-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bussinessman-system/bussinessman-system.iml" filepath="$PROJECT_DIR$/bussinessman-system/bussinessman-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/chacolate-system/chacolate-system.iml" filepath="$PROJECT_DIR$/chacolate-system/chacolate-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloth-system/cloth-system.iml" filepath="$PROJECT_DIR$/cloth-system/cloth-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cosmetic-system/cosmetic-system.iml" filepath="$PROJECT_DIR$/cosmetic-system/cosmetic-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/country-system/country-system.iml" filepath="$PROJECT_DIR$/country-system/country-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cricketer-system/cricketer-system.iml" filepath="$PROJECT_DIR$/cricketer-system/cricketer-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/device-system/device-system.iml" filepath="$PROJECT_DIR$/device-system/device-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/doctor-system/doctor-system.iml" filepath="$PROJECT_DIR$/doctor-system/doctor-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/flower-system/flower-system.iml" filepath="$PROJECT_DIR$/flower-system/flower-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/furniture-system/furniture-system.iml" filepath="$PROJECT_DIR$/furniture-system/furniture-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/game-system/game-system.iml" filepath="$PROJECT_DIR$/game-system/game-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/harbour-system/harbour-system.iml" filepath="$PROJECT_DIR$/harbour-system/harbour-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hospital-system/hospital-system.iml" filepath="$PROJECT_DIR$/hospital-system/hospital-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/institution-system/institution-system.iml" filepath="$PROJECT_DIR$/institution-system/institution-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/language-system/language-system.iml" filepath="$PROJECT_DIR$/language-system/language-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/laptop-system/laptop-system.iml" filepath="$PROJECT_DIR$/laptop-system/laptop-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/medicine-system/medicine-system.iml" filepath="$PROJECT_DIR$/medicine-system/medicine-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moviegenour-system/moviegenour-system.iml" filepath="$PROJECT_DIR$/moviegenour-system/moviegenour-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/musicinstruments-system/musicinstruments-system.iml" filepath="$PROJECT_DIR$/musicinstruments-system/musicinstruments-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plastic-system/plastic-system.iml" filepath="$PROJECT_DIR$/plastic-system/plastic-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/protector-system/protector-system.iml" filepath="$PROJECT_DIR$/protector-system/protector-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/search-system/search-system.iml" filepath="$PROJECT_DIR$/search-system/search-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shoppingmall-system/shoppingmall-system.iml" filepath="$PROJECT_DIR$/shoppingmall-system/shoppingmall-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/show-system/show-system.iml" filepath="$PROJECT_DIR$/show-system/show-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stationary-system/stationary-system.iml" filepath="$PROJECT_DIR$/stationary-system/stationary-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trainer-system/trainer-system.iml" filepath="$PROJECT_DIR$/trainer-system/trainer-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utensil-system/utensil-system.iml" filepath="$PROJECT_DIR$/utensil-system/utensil-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vegetable-system/vegetable-system.iml" filepath="$PROJECT_DIR$/vegetable-system/vegetable-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webbrowser-system/webbrowser-system.iml" filepath="$PROJECT_DIR$/webbrowser-system/webbrowser-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/worker-system/worker-system.iml" filepath="$PROJECT_DIR$/worker-system/worker-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amazon-system/amazon-system.iml" filepath="$PROJECT_DIR$/amazon-system/amazon-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/company-system/company-system.iml" filepath="$PROJECT_DIR$/company-system/company-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/institute-system/institute-system.iml" filepath="$PROJECT_DIR$/institute-system/institute-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-system/library-system.iml" filepath="$PROJECT_DIR$/library-system/library-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lokha-system/lokha-system.iml" filepath="$PROJECT_DIR$/lokha-system/lokha-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/policestation-system/policestation-system.iml" filepath="$PROJECT_DIR$/policestation-system/policestation-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopmall-system/shopmall-system.iml" filepath="$PROJECT_DIR$/shopmall-system/shopmall-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/task1.iml" filepath="$PROJECT_DIR$/.idea/task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theater-system/theater-system.iml" filepath="$PROJECT_DIR$/theater-system/theater-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watch-system/watch-system.iml" filepath="$PROJECT_DIR$/watch-system/watch-system.iml" />
     </modules>
   </component>
 </project>
