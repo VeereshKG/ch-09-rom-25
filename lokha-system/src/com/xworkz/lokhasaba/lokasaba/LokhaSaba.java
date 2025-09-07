@@ -1,10 +1,13 @@
 package com.xworkz.lokhasaba.lokasaba;
 
 import com.xworkz.lokhasaba.politician.Politician;
-import com.xworkz.lokhasaba.politicianvalidator.PoliticianValidator;
 
 public class LokhaSaba {
-    Politician[] politicians = new Politician[12];
+
+    public LokhaSaba(int size){
+        politicians = new Politician[size];
+    }
+    public Politician[] politicians ;
     int index;
 
     public boolean addPolitician(Politician politician) {
@@ -17,7 +20,7 @@ public class LokhaSaba {
         return isPoliticianAdded;
     }
 
-    public void getAllPoiticiansInfo() {
+    public void getAllPoliticiansInfo() {
         System.out.println("the politicians are ");
         for (Politician politician : politicians) {
 
@@ -26,7 +29,7 @@ public class LokhaSaba {
             System.out.println("the name of the politicion is   " + politician.getName());
             System.out.println("the constitution of the politicion is   " + politician.getConstitution());
             System.out.println("the age of the politicion is   " + politician.getAge());
-            System.out.println("the is Indian of the politicion is   " + politician.getNationality());
+            System.out.println("the  nationality of the politicion is   " + politician.getNationality());
 
         }
     }

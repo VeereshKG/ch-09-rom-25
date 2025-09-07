@@ -3,7 +3,11 @@ package com.xworkz.policeapp.policestation;
 import com.xworkz.policeapp.police.Police;
 
 public class PoliceStation {
-    Police[] polices = new Police[5];
+
+    public PoliceStation(int size){
+        polices = new Police[size];
+    }
+   public  Police[] polices ;
     int index;
 
     public boolean addPolice(Police police) {
@@ -17,7 +21,7 @@ public class PoliceStation {
     }
 
     public void getAllPoliceDetails() {
-        System.out.println("the list of polise are:");
+        System.out.println("the list of police are:");
         for (Police police : polices) {
 
 

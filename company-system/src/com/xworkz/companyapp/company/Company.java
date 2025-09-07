@@ -4,7 +4,11 @@ import com.xworkz.companyapp.project.Project;
 
 public class Company {
 
-    Project[] projects = new Project[20];
+    public Company(int size){
+        projects = new Project[size];
+    }
+
+   public Project[] projects ;
     int index;
 
     public boolean addProject(Project project) {

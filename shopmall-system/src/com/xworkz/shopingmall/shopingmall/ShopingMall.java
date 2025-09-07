@@ -4,7 +4,11 @@ import com.xworkz.shopingmall.shop.Shop;
 
 public class ShopingMall {
 
-    Shop[] shops = new Shop[13];
+    public ShopingMall(int size){
+        shops = new Shop[size];
+    }
+
+   public  Shop[] shops ;
     int index;
 
     public boolean addShop(Shop shop) {

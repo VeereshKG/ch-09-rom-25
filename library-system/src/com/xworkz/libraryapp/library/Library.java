@@ -3,7 +3,11 @@ package com.xworkz.libraryapp.library;
 import com.xworkz.libraryapp.book.Book;
 
 public class Library {
-    Book[] books = new Book[14];
+
+    public Library(int size){
+        books =new Book[size];
+    }
+    public Book[] books ;
     int index;
 
     public boolean addBook(Book book) {

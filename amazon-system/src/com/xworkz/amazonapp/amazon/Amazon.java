@@ -4,7 +4,11 @@ import com.xworkz.amazonapp.product.Product;
 
 public class Amazon {
 
-    Product[] products = new Product[20];
+    public Amazon(int size){
+        products = new Product[size];
+    }
+
+    public Product[] products ;
     int index;
 
     public boolean addProduct(Product product) {

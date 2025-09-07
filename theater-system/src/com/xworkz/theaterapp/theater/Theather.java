@@ -4,8 +4,12 @@ import com.xworkz.theaterapp.movie.Movie;
 
 public class Theather {
 
+    public Theather(int size){
+        movies = new Movie[size];
+    }
 
-    Movie[] movies = new Movie[10];
+
+   public Movie[] movies = new Movie[10];
     int index;
 
     public boolean addmovie(Movie movie) {

@@ -4,7 +4,11 @@ import com.xworkz.watchapp.watch.Watch;
 
 public class WatchShop {
 
-    Watch[] watches = new Watch[9];
+    public WatchShop(int size){
+         watches = new Watch[size];
+    }
+
+   public  Watch[] watches ;
     int index;
 
     public boolean addWatch(Watch watch) {

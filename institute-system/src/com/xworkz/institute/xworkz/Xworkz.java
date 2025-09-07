@@ -5,7 +5,11 @@ import com.xworkz.institute.trainee.Trainee;
 
 public class Xworkz {
 
-    Trainee[] trainees = new Trainee[15];
+    public Xworkz( int size){
+        trainees = new Trainee[size];
+    }
+
+   public Trainee[] trainees ;
     int index;
 
     public boolean addTrainee(Trainee trainee) {
