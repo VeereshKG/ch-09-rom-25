@@ -1,5 +1,6 @@
 package com.xworkz.amazonapp.product;
 
+import com.xworkz.amazonapp.constants.Type;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,12 +10,13 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Product {
+public class
+Product {
     private int productId;
     private String productName;
-    private String productType;
+    private Type productType;
     private double productPrice;
-   private String mfgDate;
+    private String mfgDate;
 
 
 }

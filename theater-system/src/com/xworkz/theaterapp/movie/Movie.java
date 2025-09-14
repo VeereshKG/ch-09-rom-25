@@ -1,5 +1,6 @@
 package com.xworkz.theaterapp.movie;
 
+import com.xworkz.theaterapp.constants.Certification;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ public class Movie {
     private String movieName;
     private String hero;
     private String duration;
-    private String certification;
+    private Certification certification;
 
 
 }

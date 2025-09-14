@@ -1,5 +1,6 @@
 package com.xworkz.policeapp;
 
+import com.xworkz.policeapp.constants.TypeOfPost;
 import com.xworkz.policeapp.police.Police;
 import com.xworkz.policeapp.policestation.PoliceStation;
 
@@ -7,20 +8,7 @@ import java.util.Scanner;
 
 public class PoliceStationRunner {
     public static void main(String[] args) {
-//        Police police1= new Police(402,"suresh","constable",15000.00,5);
-//
-//        Police police2 = new Police(2,"SI","Raju",40000.00,5);
-//        Police police3 = new Police(3,"constable","ramu",20000.00,2);
-//        Police police4 = new Police(4,"inspector","baba",35000.00,6);
-//        Police police5 = new Police(5,"inspector","kalam",37000.00,5);
-//
-//        PoliceStation policeStation=new PoliceStation();
-//
-//        policeStation.addPolice(police1);
-//        policeStation.addPolice(police2);
-//        policeStation.addPolice(police3);
-//        policeStation.addPolice(police4);
-//        policeStation.addPolice(police5);
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter no of police to be add :");
@@ -38,8 +26,8 @@ public class PoliceStationRunner {
             System.out.println("Enter police name");
             police.setName(scanner.next());
 
-            System.out.println("Enter type of post :");
-            police.setTypeOfPost(scanner.next());
+            System.out.println("Enter type of post  from PI,API,SI,ASI,HC,SC,PC:");
+            police.setTypeOfPost(TypeOfPost.valueOf(scanner.next().toUpperCase()));
 
             System.out.println("Enter salary :");
             police.setSalary(scanner.nextDouble());
@@ -51,5 +39,66 @@ public class PoliceStationRunner {
         }
 
         policeStation.getAllPoliceDetails();
+
+
+
+//            System.out.println("enter police Id");
+//            System.out.println("the Post is " + policeStation.getPostById(scanner.nextInt()));
+//
+//            System.out.println("enter police Id");
+//            System.out.println("the Name is " + policeStation.getNameById(scanner.nextInt()));
+//
+//            System.out.println("enter police Id");
+//            System.out.println("the Salary is " + policeStation.getSalaryById(scanner.nextInt()));
+//
+//            System.out.println("enter police Id");
+//            System.out.println("the Experience is " + policeStation.getExperienceById(scanner.nextInt()));
+//
+//            System.out.println("enter police Name");
+//            System.out.println("the Id is " + policeStation.getIdByName(scanner.next()));
+//
+//            System.out.println("enter police Name");
+//            System.out.println("the Post is " + policeStation.getPostByName(scanner.next()));
+//
+//            System.out.println("enter police Name");
+//            System.out.println("the Salary is " + policeStation.getSalaryByName(scanner.next()));
+//
+//            System.out.println("enter police Name");
+//            System.out.println("the Experience is " + policeStation.getExperienceByName(scanner.next()));
+//
+//            System.out.println("enter police Id");
+//            int id = scanner.nextInt();
+//            System.out.println("enter new Name");
+//            String newName = scanner.next();
+//            policeStation.updateNameById(id, newName);
+//                policeStation.getAllPoliceDetails();
+//
+//            System.out.println("enter police Id");
+//            int id1 = scanner.nextInt();
+//            System.out.println("enter new Post (e.g., SI, INSPECTOR, CONSTABLE, DSP, SP)");
+//            TypeOfPost newPost = TypeOfPost.valueOf(scanner.next().toUpperCase());
+//            policeStation.updatePostById(id1, newPost);
+//                policeStation.getAllPoliceDetails();
+//
+//            System.out.println("enter police Id");
+//            int id2 = scanner.nextInt();
+//            System.out.println("enter new Salary");
+//            double newSalary = scanner.nextDouble();
+//            policeStation.updateSalaryById(id2, newSalary);
+//                policeStation.getAllPoliceDetails();
+//
+//            System.out.println("enter police Id");
+//            int id3 = scanner.nextInt();
+//            System.out.println("enter new Experience (in years)");
+//            int newExperience = scanner.nextInt();
+//            policeStation.updateExperienceById(id3, newExperience);
+//                policeStation.getAllPoliceDetails();
+//
+
+        System.out.println("Enter id to get book details");
+        int id = scanner.nextInt();
+       Police police = policeStation.getPoliceDetailsById(id);
+       policeStation.fetchPoliceDetails(police);
+
     }
 }

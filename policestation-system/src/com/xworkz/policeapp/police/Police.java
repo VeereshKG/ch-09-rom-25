@@ -1,5 +1,6 @@
 package com.xworkz.policeapp.police;
 
+import com.xworkz.policeapp.constants.TypeOfPost;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -12,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Police {
    private int policeId;
-    private String typeOfPost;
+    private TypeOfPost typeOfPost;
     private String name;
     private double salary;
     private int experience;

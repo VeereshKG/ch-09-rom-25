@@ -1,5 +1,6 @@
 package com.xworkz.lokhasaba.politician;
 
+import com.xworkz.lokhasaba.nationality.Nationality;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ public class Politician {
     private String name;
     private String constitution;
     private int age;
-    private String nationality;
+    private Nationality nationality;
 
 
 }

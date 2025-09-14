@@ -1,5 +1,6 @@
 package com.xworkz.institute;
 
+import com.xworkz.institute.constants.Subject;
 import com.xworkz.institute.trainee.Trainee;
 import com.xworkz.institute.xworkz.Xworkz;
 
@@ -8,38 +9,7 @@ import java.util.Scanner;
 public class XworkzRunner {
     public static void main(String[] args) {
 
-//        Trainee trainee1 =new Trainee(1,"veeresh",60,7204287213l,"full stack");
-//       Trainee trainee2 = new Trainee(2,"shashank",60,9620221944l,"full stack");
-//        Trainee trainee3 = new Trainee(3,"chethan",60,8521479635l,"full stack");
-//        Trainee trainee4 =new Trainee(4,"pramod",60,874596713l,"full stack");
-//        Trainee trainee5 = new Trainee(5,"tejas",60,9620221944l,"full stack");
-//        Trainee trainee6 = new Trainee(6,"prajwal",60,8521479635l,"full stack");
-//        Trainee trainee7 =new Trainee(7,"manoj",60,7204287213l,"full stack");
-//        Trainee trainee8 = new Trainee(8,"suprith",60,9620221944l,"full stack");
-//        Trainee trainee9 = new Trainee(9,"shekar",60,8521479635l,"full stack");
-//        Trainee trainee10 =new Trainee(10,"shiva",60,7204287213l,"full stack");
-//        Trainee trainee11 = new Trainee(11,"kiran",60,9620221944l,"full stack");
-//        Trainee trainee12 = new Trainee(12,"chiru",60,8521479635l,"full stack");
-//        Trainee trainee13 =new Trainee(13,"shewath",60,7204287213l,"full stack");
-//        Trainee trainee14 = new Trainee(14,"jay",60,9620221944l,"full stack");
-//        Trainee trainee15 = new Trainee(15,"lakshimi",60,7412589635l,"full stack");
-//
-//        Xworkz xworkz=new Xworkz();
-//       xworkz.addTrainee(trainee1);
-//       xworkz.addTrainee(trainee2);
-//       xworkz.addTrainee(trainee3);
-//        xworkz.addTrainee(trainee4);
-//        xworkz.addTrainee(trainee5);
-//        xworkz.addTrainee(trainee6);
-//        xworkz.addTrainee(trainee7);
-//        xworkz.addTrainee(trainee8);
-//        xworkz.addTrainee(trainee9);
-//        xworkz.addTrainee(trainee10);
-//        xworkz.addTrainee(trainee11);
-//        xworkz.addTrainee(trainee12);
-//        xworkz.addTrainee(trainee13);
-//        xworkz.addTrainee(trainee14);
-//        xworkz.addTrainee(trainee15);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the no of trainees to be add");
         int size = scanner.nextInt();
@@ -56,8 +26,8 @@ public class XworkzRunner {
            System.out.println("Enter name:");
            trainee.setName(scanner.next());
 
-           System.out.println("Enter subject name:");
-           trainee.setSubject(scanner.next());
+           System.out.println("Enter subject from these JAVAFULLSTACK , FRONTEND , SQL , DATA;:");
+           trainee.setSubject(Subject.valueOf(scanner.next().toUpperCase()));
 
            System.out.println("Enter trainee phno:");
            trainee.setPhoneNumber(scanner.nextLong());
@@ -69,5 +39,65 @@ public class XworkzRunner {
 
        }
        xworkz.getAllTraineeInfo();
+
+
+
+//            System.out.println("enter ID");
+//            System.out.println("The Subject is: " + xworkz.getSubjectNameByTraineeId(scanner.nextInt()));
+//
+//            System.out.println("enter Name");
+//            System.out.println("The Subject is: " + xworkz.getSubjectByTraineeName(scanner.next()));
+//
+//            System.out.println("enter ID");
+//            System.out.println("The Phone Number is: " + xworkz.getPhoneNumberByTraineeId(scanner.nextInt()));
+//
+//            System.out.println("enter Name");
+//            System.out.println("The Phone Number is: " + xworkz.getPhoneNumberByName(scanner.next()));
+//
+//            System.out.println("enter ID");
+//            System.out.println("No. of Classes Taken: " + xworkz.getNoOfClassesTakenByTraineeId(scanner.nextInt()));
+//
+//            System.out.println("enter Name");
+//            System.out.println("No. of Classes Taken: " + xworkz.getNoOfClassesTakenByName(scanner.next()));
+//
+//            System.out.println("enter Name");
+//            System.out.println("The Trainee ID is: " + xworkz.getTraineeIdByName(scanner.next()));
+//
+//            System.out.println("enter ID");
+//            System.out.println("The Trainee Name is: " + xworkz.getTraineeNameById(scanner.nextInt()));
+//
+//            System.out.println("enter Trainee ID");
+//            int traineeId = scanner.nextInt();
+//            System.out.println("enter new Name");
+//            String newName = scanner.next();
+//            xworkz.updateTraineeNameById(traineeId, newName);
+//
+//            System.out.println("enter Trainee ID");
+//            int traineeId1 = scanner.nextInt();
+//            System.out.println("enter new Subject from JAVAFULLSTACK , FRONTEND , SQL , DATA;:");
+//            Subject subject = Subject.valueOf(scanner.next().toUpperCase());
+//            xworkz.updateSubjectByTraineeId(traineeId1, subject);
+//
+//            System.out.println("enter Trainee ID");
+//            int traineeId2 = scanner.nextInt();
+//            System.out.println("enter new Phone Number");
+//            long phoneNumber = scanner.nextLong();
+//            xworkz.updatePhoneNumberByTraineeId(traineeId2, phoneNumber);
+//
+//            System.out.println("enter Trainee ID");
+//            int traineeId3 = scanner.nextInt();
+//            System.out.println("enter new No. of Classes Taken");
+//            int noOfClasses = scanner.nextInt();
+//            xworkz.updateNoOfClassesTakenByTraineeId(traineeId3, noOfClasses);
+//
+//
+
+        System.out.println("enter id to fetch trainee details");
+        int id  = scanner.nextInt();
+        Trainee trainee = xworkz.getTraineeDetailsbyId(id);
+
+        xworkz.fetchTraineeDetails(trainee);
+
+
     }
 }

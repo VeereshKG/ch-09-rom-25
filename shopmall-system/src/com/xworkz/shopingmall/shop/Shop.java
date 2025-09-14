@@ -1,5 +1,6 @@
 package com.xworkz.shopingmall.shop;
 
+import com.xworkz.shopingmall.constants.Type;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import lombok.Setter;
 public class Shop {
     private int  shopId;
     private String name;
-    private String shopType;
+    private Type shopType;
     private int whichFloor;
     private String address;
 

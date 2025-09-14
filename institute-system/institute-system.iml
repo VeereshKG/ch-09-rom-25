@@ -7,6 +7,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib (3)" level="project" />
+    <orderEntry type="library" name="lombok-1.18.305" level="project" />
+    <orderEntry type="library" name="lombok-1.18.302" level="project" />
+    <orderEntry type="library" name="lombok-1.18.30" level="project" />
+    <orderEntry type="library" name="lombok-1.18.303" level="project" />
+    <orderEntry type="library" name="lombok-1.18.306" level="project" />
+    <orderEntry type="library" name="lombok-1.18.307" level="project" />
+    <orderEntry type="library" name="lombok-1.18.304" level="project" />
+    <orderEntry type="library" name="lombok-1.18.308" level="project" />
+    <orderEntry type="library" name="lombok-1.18.301" level="project" />
   </component>
 </module>
