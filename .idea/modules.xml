@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/interface-creation -task.iml" filepath="$PROJECT_DIR$/.idea/interface-creation -task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-system/library-system.iml" filepath="$PROJECT_DIR$/library-system/library-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registration-system/registration-system.iml" filepath="$PROJECT_DIR$/registration-system/registration-system.iml" />
+    </modules>
+  </component>
+</project>
