@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class HospitalRunner {
     public static void main(String[] args) {
-
 //        Patient patient = new Patient(1,"ravi",25,"male","fever");
 //
 //        Patient patient1 = new Patient(2,"raju",20,"male","fever");
@@ -18,87 +17,116 @@ public class HospitalRunner {
         //        hospital.addPatient(patient);
 //        hospital.addPatient(patient1);
 //        hospital.addPatient(patient2);
+
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter number of patients to be add");
         int size = scr.nextInt();
+
         Hospital hospital = new HospitalImpl(size);
-
-
-        System.out.println("the available patients are " + hospital.size());
-
-
+        System.out.println("The available patients are: " + hospital.size());
+        boolean isAdded = false;
         for (int index = 0; index < size; index++) {
             Patient patient = new Patient();
-            System.out.println("Enter the patient Id");
-            int patientId = scr.nextInt();
-            patient.setPatientId(patientId);
 
-            System.out.println("Enter patient Name ");
-            String patientName = scr.next();
-            patient.setName(patientName);
+            System.out.println("Enter the patient Id: ");
+            patient.setPatientId(scr.nextInt());
 
-            System.out.println("enter patient Age");
-            int patientAge = scr.nextInt();
-            patient.setAge(patientAge);
+            System.out.println("Enter patient Name: ");
+            patient.setName(scr.next());
 
-            System.out.println("Enter patient gender");
+            System.out.println("Enter patient Age: ");
+            patient.setAge(scr.nextInt());
 
+            System.out.println("Enter patient Gender (MALE/FEMALE): ");
             patient.setGender(scr.next().toUpperCase());
 
-            System.out.println("Enter the disease ");
-//            String disease = scr.next();
+            System.out.println("Enter patient Disease: ");
             patient.setDisease(scr.next());
 
-            hospital.addPatient(patient);
+            isAdded = hospital.addPatient(patient);
         }
+        if (isAdded == true) {
+            String input = null;
+            do {
 
+                System.out.println("Press 1 to Get All Patient Info");
+                System.out.println("Press 2 to Update Patient Age by Id");
+                System.out.println("Press 3 to Get Gender by Patient Name");
+                System.out.println("Press 4 to Update Disease by Patient Name");
+                System.out.println("Press 5 to Update Disease by Id");
+                System.out.println("Press 6 to Get Patient Name by Id");
+                System.out.println("Press 7 to Get Disease by Id");
+                System.out.println("Press 8 to Get Age by Id");
+                System.out.println("Press 9 to Get Disease by Name");
 
-        hospital.getAllPatientInfo();
+                int option = scr.nextInt();
+                switch (option) {
+                    case 1:
+                        hospital.getAllPatientInfo();
+                        break;
+                    case 2:
+                        System.out.println("Enter patient Id to update patient age ");
+                        int id = scr.nextInt();
+                        System.out.println("Enter new Age ");
+                        int age = scr.nextInt();
+                        boolean ageUpdated = hospital.updatePatientAgeById(age, id);
+                        System.out.println("Age updated: " + ageUpdated);
+                        break;
+                    case 3:
+                        System.out.println("Enter patient name to get Gender ");
+                        String nameForGender = scr.next();
+                        String gender = hospital.getGenderByPatientName(nameForGender);
+                        System.out.println("Gender: " + gender);
+                        break;
+                    case 4:
+                        System.out.println("Enter patient name to update DiseaseName");
+                        String patientName = scr.next();
+                        System.out.println("Enter new Disease: ");
+                        String diseaseName = scr.next();
+                        boolean diseaseUpdated = hospital.updateDiseaseNameByPatientName(patientName, diseaseName);
+                        System.out.println("Disease updated: " + diseaseUpdated);
+                        break;
+                    case 5:
+                        System.out.println("Enter patient Id to update Disease ");
+                        int id1 = scr.nextInt();
+                        System.out.println("Enter new Disease: ");
+                        String disease = scr.next();
+                        boolean updated = hospital.updateDiseaseById(disease, id1);
+                        System.out.println("Disease updated: " + updated);
+                        break;
+                    case 6:
+                        System.out.println("Enter patient Id to get PatientName ");
+                        int id2 = scr.nextInt();
+                        String patientNameById = hospital.getPatientNameById(id2);
+                        System.out.println("Patient name: " + patientNameById);
+                        break;
+                    case 7:
+                        System.out.println("Enter patient Id to get Disease ");
+                        int id3 = scr.nextInt();
+                        String diseaseById = hospital.getDiseaseById(id3);
+                        System.out.println("Disease: " + diseaseById);
+                        break;
+                    case 8:
+                        System.out.println("Enter patient Id to get age ");
+                        int id4 = scr.nextInt();
+                        int ageById = hospital.getAgeById(id4);
+                        System.out.println("Age: " + ageById);
+                        break;
+                    case 9:
+                        System.out.println("Enter patient name to get disease ");
+                        String nameForDisease = scr.next();
+                        String diseaseByName = hospital.getDiseaseByName(nameForDisease);
+                        System.out.println("Disease: " + diseaseByName);
+                        break;
+                    default:
+                        System.out.println("Please enter a valid option");
+                }
 
-        System.out.println("Enter id to update age");
-     int id = scr.nextInt();
-        System.out.println("Enter age to update");
-        int age = scr.nextInt();
+                System.out.println("Do you want to continue yes/no: ");
+                input = scr.next();
+            } while (input.equalsIgnoreCase("yes"));
 
-        boolean ageUpdated = hospital.updatePatientAgeById(age, id);
-        System.out.println(ageUpdated);
-        hospital.getAllPatientInfo();
-
-        System.out.println("Enter Patient name to fetch gender");
-      String gender =   hospital.getGenderByPatientName(scr.next());
-        System.out.println(gender);
-
-        System.out.println("enter patient name to update disease");
-        String patName = scr.next();
-        System.out.println("enter disease  name to update disease on patient" + patName);
-        String diseaseName = scr.next();
-
-     boolean diseaseupdated =  hospital.updateDiseaseNameByPatientName(patName,diseaseName);
-        System.out.println(diseaseupdated);
-          hospital.getAllPatientInfo();
-
-        System.out.println("Enter id to update disease");
-        int id1 = scr.nextInt();
-        System.out.println("Enter disease to update id "+id1);
-        String disease = scr.next();
-        hospital.updateDiseaseById(disease,id1);
-        hospital.getAllPatientInfo();
-
-        System.out.println("Enter id to fetch patientName");
-        String name = hospital.getPatientNameById(scr.nextInt());
-        System.out.println(name);
-
-        System.out.println("Enter id to fetch disease ");
-        String disease1 = hospital.getDiseaseById(scr.nextInt());
-        System.out.println(disease1);
-
-
-        System.out.println("Enter id to fetch age");
-       int age1 = hospital.getAgeById(scr.nextInt());
-        System.out.println(age1);
-
-        System.out.println("enter name to fetch Disease");
-        String disease2 = hospital.getDiseaseByName(scr.next());
-        System.out.println(disease2);
+            System.out.println("Thank you.. Visit again");
+        } else System.out.println("patient not added");
     }
 }

@@ -1,12 +1,13 @@
 package com.xworkz.amazonapp.amazon;
 
 import com.xworkz.amazonapp.constants.Type;
+import com.xworkz.amazonapp.exception.*;
 import com.xworkz.amazonapp.product.Product;
 import com.xworkz.amazonapp.validator.ProductValidator;
 
 public class AmazonImpl implements AmazonRules {
 
-    public AmazonImpl(int size){
+    public AmazonImpl(int size) {
         products = new Product[size];
     }
 
@@ -17,17 +18,22 @@ public class AmazonImpl implements AmazonRules {
     @Override
     public boolean addProduct(Product product) {
         boolean isProductAdded = false;
-
-        if (product != null) {
+        try {
             if (productValidator.isProductInfoValid(product)) {
                 products[index++] = product;
                 isProductAdded = true;
+            } else {
+                ProductNotAddedException productNotAddedException = new ProductNotAddedException("product not added");
+                throw productNotAddedException;
             }
-        } else System.out.println("invalid product");
+
+        } catch (ProductNotAddedException e) {
+            e.printStackTrace();
+        }
         return isProductAdded;
     }
 
-@Override
+    @Override
     public void getAllProductInfo() {
         System.out.println("the list of product are : ");
         for (Product product : products) {
@@ -43,217 +49,323 @@ public class AmazonImpl implements AmazonRules {
 
     }
 
-
     @Override
-    public Type  getProductTypeByProductName(String productName){
-            Type type= null;
-             if(productName != null){
-                 for(Product product:products){
-                     if(product.getProductName().equals(productName)){
-                         type = product.getProductType();
-                     }
-                 }
-             }else System.out.println("enter valid name");
-             if(type == null) System.out.println("name not found");
+    public Type getProductTypeByProductName(String productName) {
+        Type type = null;
+        try {
+            if (productName != null && !productName.equals("null")) {
+                for (Product product : products) {
+                    if (product.getProductName().equals(productName)) {
+                        type = product.getProductType();
+                    }
+                }
+            } else {
+                System.out.println("product name not valid");
+            }
+            if (type == null) {
+                ProductTypeNotFoundException productTypeNotFoundException = new ProductTypeNotFoundException("product type not found");
+                throw productTypeNotFoundException;
+            }
 
-            return type;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        @Override
-    public Type  getProductTypeByProductId(int productId){
-        Type type= null;
-        if(productId != 0){
-            for(Product product:products){
-                if(product.getProductId() == productId){
-                    type = product.getProductType();
+        return type;
+    }
+
+    @Override
+    public Type getProductTypeByProductId(int productId) {
+        Type type = null;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        type = product.getProductType();
+                    }
                 }
+            } else {
+                System.out.println("Enter valid id");
+
             }
-        }else System.out.println("enter valid ID");
-        if(type == null) System.out.println("ID not found");
+            if (type == null) {
+                ProductTypeNotFoundException productTypeNotFoundException = new ProductTypeNotFoundException("product type not found");
+                throw productTypeNotFoundException;
+            }
+        } catch (ProductTypeNotFoundException e) {
+            e.printStackTrace();
+        }
 
         return type;
-}
+    }
 
-@Override
-    public double getProductPriceByProductName(String productName){
-        double price = 0;
-        if(productName != null){
-            for(Product product : products){
-                if(product.getProductName().equals(productName)){
-                    price = product.getProductPrice();
+    @Override
+    public double getProductPriceByProductName(String productName) {
+        double price = 0.0;
+        try {
+            if (productName != null) {
+                for (Product product : products) {
+                    if (product.getProductName().equals(productName)) {
+                        price = product.getProductPrice();
+                    }
                 }
+            } else System.out.println("enter valid product name");
+            if (price == 0.0) {
+                ProductPriceNotFoundException productPriceNotFoundException = new ProductPriceNotFoundException("product price not found");
+                throw productPriceNotFoundException;
             }
-        }else System.out.println("enter valid name");
-        if(price == 0) System.out.println("name not found");
+        } catch (ProductPriceNotFoundException e) {
+            e.printStackTrace();
+        }
         return price;
     }
 
     @Override
-    public double getProductPriceByProductId(int productId){
-        double price = 0;
-        if(productId != 0){
-            for(Product product : products){
-                if(product.getProductId() == productId){
-                    price = product.getProductPrice();
+    public double getProductPriceByProductId(int productId) {
+        double price = 0.0;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        price = product.getProductPrice();
+                    }
                 }
+            } else System.out.println("enter valid id");
+            if (price == 0.0) {
+                ProductPriceNotFoundException productPriceNotFoundException = new ProductPriceNotFoundException("product price not found");
+                throw productPriceNotFoundException;
             }
-        }else System.out.println("enter valid ID");
-        if(price == 0) System.out.println("ID not found");
+        } catch (ProductPriceNotFoundException e) {
+            e.printStackTrace();
+        }
         return price;
     }
+
     @Override
-    public String getMfgDateByProductName(String productName){
+    public String getMfgDateByProductName(String productName) {
         String date = null;
-        if(productName != null){
-            for(Product product : products){
-                if(product.getProductName().equals(productName)){
-                    date = product.getMfgDate();
+        try {
+            if (productName != null) {
+                for (Product product : products) {
+                    if (product.getProductName().equals(productName)) {
+                        date = product.getMfgDate();
+                    }
                 }
+            } else if (date == null) {
+                MfgDateNotFoundException mfgDateNotFoundException = new MfgDateNotFoundException("mfg date not found");
+                throw mfgDateNotFoundException;
             }
-        }else System.out.println("enter valid name");
-        if(date == null) System.out.println("name not found");
+        } catch (MfgDateNotFoundException e) {
+            e.printStackTrace();
+        }
         return date;
     }
 
     @Override
-    public String getMfgDateByProductId(int productId){
-            String date = null;
-            if(productId != 0){
-                for(Product product : products){
-                    if(product.getProductId() == productId){
+    public String getMfgDateByProductId(int productId) {
+        String date = null;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
                         date = product.getMfgDate();
                     }
                 }
-            }else System.out.println("enter valid ID");
-            if(date == null) System.out.println("ID not found");
-            return date;
+            }
+            if (date == null) {
+                MfgDateNotFoundException mfgDateNotFoundException = new MfgDateNotFoundException("mfg date not found");
+                throw mfgDateNotFoundException;
+            }
+        } catch (MfgDateNotFoundException e) {
+            e.printStackTrace();
         }
+        return date;
+    }
 
-        @Override
-    public String getProductNameByProductId(int productId){
+    @Override
+    public String getProductNameByProductId(int productId) {
         String name = null;
-        if(productId != 0){
-            for(Product product : products){
-                if(product.getProductId() == productId){
-                    name = product.getProductName();
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        name = product.getProductName();
+                    }
                 }
             }
-        }else System.out.println("enter valid ID");
-        if(name == null) System.out.println("ID not found");
+            if (name == null) {
+                ProductNameNotFoundException productNameNotFoundException = new ProductNameNotFoundException("product name not found");
+                throw productNameNotFoundException;
+            }
+        } catch (ProductNameNotFoundException e) {
+            e.printStackTrace();
+        }
         return name;
     }
 
     @Override
-    public int getProductIdByProductName(String productName){
+    public int getProductIdByProductName(String productName) {
         int id = 0;
-        if(productName != null){
-            for(Product product : products){
-                if(product.getProductName().equals(productName)){
-                    id = product.getProductId();
+        try {
+            if (productName != null) {
+                for (Product product : products) {
+                    if (product.getProductName().equals(productName)) {
+                        id = product.getProductId();
+                    }
                 }
             }
-        }else System.out.println("enter valid name");
-        if(id == 0) System.out.println("name not found");
+            if (id == 0) {
+                ProduCtIdNotFoundException produCtIdNotFoundException = new ProduCtIdNotFoundException("Product id not found");
+                throw produCtIdNotFoundException;
+            }
+        } catch (ProduCtIdNotFoundException e) {
+            e.printStackTrace();
+        }
         return id;
     }
-@Override
-    public boolean updateProductNameByProductId(int productId, String NewProductName ){
+
+    @Override
+    public boolean updateProductNameByProductId(int productId, String NewProductName) {
         boolean isUpdated = false;
-            if(productId !=0 ){
-                for(Product product :products){
-                    if(product.getProductId() == productId){
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
                         product.setProductName(NewProductName);
                         isUpdated = true;
                     }
                 }
-            }else System.out.println("enter correct id");
-
-        return isUpdated;
-    }
-    @Override
-    public boolean updateProductTypeByProductId(int productId, Type newProductType){
-        boolean isUpdated = false;
-        if(productId != 0){
-            for(Product product : products){
-                if(product.getProductId() == productId){
-                    product.setProductType(newProductType);
-                    isUpdated = true;
-                }
             }
-        }else System.out.println("enter correct id");
-        return isUpdated;
-    }
-    @Override
-    public boolean updateProductPriceByProductId(int productId, double newProductPrice){
-        boolean isUpdated = false;
-        if(productId != 0){
-            for(Product product : products){
-                if(product.getProductId() == productId){
-                    product.setProductPrice(newProductPrice);
-                    isUpdated = true;
-                }
+            if (isUpdated == false) {
+                UpdateProductNameNotDoneException updateProductNameNotDoneException = new UpdateProductNameNotDoneException("product name not updated");
+                throw updateProductNameNotDoneException;
             }
-        }else System.out.println("enter correct id");
+        } catch (UpdateProductNameNotDoneException e) {
+            e.printStackTrace();
+        }
+
         return isUpdated;
     }
+
     @Override
-    public boolean updateMfgDateByProductId(int productId, String newMfgDate){
+    public boolean updateProductTypeByProductId(int productId, Type newProductType) {
         boolean isUpdated = false;
-        if(productId != 0){
-            for(Product product : products){
-                if(product.getProductId() == productId){
-                    product.setMfgDate(newMfgDate);
-                    isUpdated = true;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        product.setProductType(newProductType);
+                        isUpdated = true;
+                    }
                 }
+            } else {
+                UpdateProductTypeNotDoneException updateProductTypeNotDoneException = new UpdateProductTypeNotDoneException("product type not updated");
+                throw updateProductTypeNotDoneException;
             }
-        }else System.out.println("enter correct id");
+        } catch (UpdateProductTypeNotDoneException e) {
+            e.printStackTrace();
+        }
+        return isUpdated;
+    }
+
+    @Override
+    public boolean updateProductPriceByProductId(int productId, double newProductPrice) {
+        boolean isUpdated = false;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        product.setProductPrice(newProductPrice);
+                        isUpdated = true;
+                    }
+                }
+            } else {
+                UpdateProductPriceNotDoneException updateProductPriceNotDoneException = new UpdateProductPriceNotDoneException("product price not update");
+                throw updateProductPriceNotDoneException;
+            }
+        } catch (UpdateProductPriceNotDoneException e) {
+            e.printStackTrace();
+        }
+        return isUpdated;
+    }
+
+    @Override
+    public boolean updateMfgDateByProductId(int productId, String newMfgDate) {
+        boolean isUpdated = false;
+        try {
+            if (productId != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == productId) {
+                        product.setMfgDate(newMfgDate);
+                        isUpdated = true;
+                    }
+                }
+            } else {
+                UpdateMfgDateNotDoneExcetion updateMfgDateNotDoneExcetion = new UpdateMfgDateNotDoneExcetion("mfg date not updated");
+                throw updateMfgDateNotDoneExcetion;
+            }
+        } catch (UpdateMfgDateNotDoneExcetion e) {
+            e.printStackTrace();
+        }
         return isUpdated;
     }
 
 
-
-@Override
-    public String getProductNameByMfgDate(String mfgDate){
+    @Override
+    public String getProductNameByMfgDate(String mfgDate) {
 
         String names = null;
-        if(mfgDate != null){
-            for(Product product : products){
-                if(product.getMfgDate().equals(mfgDate)){
-                         names = product.getProductName();
-
-
+        try {
+            if (mfgDate != null) {
+                for (Product product : products) {
+                    if (product.getMfgDate().equals(mfgDate)) {
+                        names = product.getProductName();
+                    }
                 }
+            } else {
+                ProductNameNotFoundException productNameNotFoundException = new ProductNameNotFoundException("product name not found");
+                throw productNameNotFoundException;
             }
+        } catch (ProductNameNotFoundException e) {
+            e.printStackTrace();
         }
         return names;
     }
-@Override
-   public Product getProductByid(int id){
+
+    @Override
+    public Product getProductByid(int id) {
 
         Product product1 = null;
-        if (id != 0){
-            for (Product product : products){
-                if(product.getProductId()==id){
-                    product1 = product;
+        try {
+            if (id != 0) {
+                for (Product product : products) {
+                    if (product.getProductId() == id) {
+                        product1 = product;
+                    }
                 }
+            } else {
+                ProductDetailsNotFoundException productDetailsNotFoundException = new ProductDetailsNotFoundException("product details not found");
+                throw productDetailsNotFoundException;
+
             }
-        }else System.out.println("id not exist");
+        } catch (ProductDetailsNotFoundException e) {
+            e.printStackTrace();
+        }
+        return product1;
+    }
 
-        if (product1 == null) System.out.println("product is null");
-       return product1;
-   }
-
-   @Override
-   public void fetchProductDetailsById(Product product1){
-
-
-        System.out.println("the id of the product is  " + product1.getProductId());
-        System.out.println("the name of the product is  " + product1.getProductName());
-        System.out.println("the type of the product is  " + product1.getProductType());
-        System.out.println("the price of the product is  " + product1.getProductPrice());
-        System.out.println("the mfg date of the product is  " + product1.getMfgDate());
-        System.out.println("------------------------------------------");
-
+    @Override
+    public void fetchProductDetailsById(Product product1) {
+        try {
+            System.out.println("the id of the product is  " + product1.getProductId());
+            System.out.println("the name of the product is  " + product1.getProductName());
+            System.out.println("the type of the product is  " + product1.getProductType());
+            System.out.println("the price of the product is  " + product1.getProductPrice());
+            System.out.println("the mfg date of the product is  " + product1.getMfgDate());
+            System.out.println("------------------------------------------");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

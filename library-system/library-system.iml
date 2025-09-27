@@ -16,5 +16,8 @@
     <orderEntry type="library" name="lombok-1.18.304" level="project" />
     <orderEntry type="library" name="lombok-1.18.308" level="project" />
     <orderEntry type="library" name="lombok-1.18.301" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="lib (2)" level="project" />
+    <orderEntry type="library" name="lib (3)" level="project" />
   </component>
 </module>

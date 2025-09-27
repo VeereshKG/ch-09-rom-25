@@ -5,13 +5,13 @@ import com.xworkz.amazonapp.product.Product;
 
 public interface AmazonRules {
 
-     boolean addProduct(Product product);
+    boolean addProduct(Product product);
 
     void getAllProductInfo();
 
     Type getProductTypeByProductName(String productName);
 
-    Type  getProductTypeByProductId(int productId);
+    Type getProductTypeByProductId(int productId);
 
     double getProductPriceByProductName(String productName);
 
@@ -25,7 +25,7 @@ public interface AmazonRules {
 
     int getProductIdByProductName(String productName);
 
-    boolean updateProductNameByProductId(int productId, String NewProductName );
+    boolean updateProductNameByProductId(int productId, String NewProductName);
 
     boolean updateProductTypeByProductId(int productId, Type newProductType);
 
